@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="page-header mb-4">
+    <div class="d-flex align-items-center justify-content-between">
+        <div>
+            <h1 class="page-title">
+                <i class="bi bi-check2-square me-2 text-primary"></i>
+                Welcome back, {{ request.user.get_full_name|default:request.user.email|truncatechars:30 }}
+            </h1>
+            <p class="text-muted mb-0">
+                {% if total_pending %}
+                    You have <strong>{{ total_pending }}</strong> task{{ total_pending|pluralize }} to do.
+                {% else %}
+                    All caught up! Nothing pending.
+                {% endif %}
+            </p>
+        </div>
+        <a href="{% url 'task_list_create' %}" class="btn btn-primary">
+            <i class="bi bi-plus-lg me-1"></i>New List
+        </a>
+    </div>
+</div>
+
+{% if not task_lists %}
+<div class="empty-state text-center py-5">
+    <div class="empty-icon mb-3"><i class="bi bi-clipboard-plus"></i></div>
+    <h3>No lists yet</h3>
+    <p class="text-muted">Create your first to-do list to get started.</p>
+    <a href="{% url 'task_list_create' %}" class="btn btn-primary btn-lg">
+        <i class="bi bi-plus-lg me-1"></i>Create a List
+    </a>
+</div>
+{% else %}
+<div class="row g-4">
+    {% for tl in task_lists %}
+    <div class="col-md-6 col-xl-4">
+        <div class="task-list-card h-100">
+            <div class="card-body">
+                <div class="d-flex align-items-start justify-content-between mb-3">
+                    <div>
+                        <h2 class="card-title">
+                            <a href="{% url 'task_list_detail' tl.slug %}" class="stretched-link text-decoration-none">
+                                {{ tl.name }}
+                            </a>
+                        </h2>
+                        {% if tl.description %}
+                        <p class="text-muted small mb-0">{{ tl.description }}</p>
+                        {% endif %}
+                    </div>
+                    {% if tl.is_default %}
+                    <span class="badge bg-primary-subtle text-primary">Default</span>
+                    {% endif %}
+                </div>
+                <div class="task-list-stats">
+                    <div class="stat">
+                        <span class="stat-value text-primary">{{ tl.pending_count }}</span>
+                        <span class="stat-label">Pending</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value text-success">{{ tl.completed_count }}</span>
+                        <span class="stat-label">Done</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value text-muted">{{ tl.total_count }}</span>
+                        <span class="stat-label">Total</span>
+                    </div>
+                </div>
+                {% if tl.total_count %}
+                <div class="progress mt-3" style="height: 6px;">
+                    <div class="progress-bar bg-success" style="width: {% widthratio tl.completed_count tl.total_count 100 %}%"></div>
+                </div>
+                {% endif %}
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+                <a href="{% url 'task_list_detail' tl.slug %}" class="btn btn-sm btn-primary">
+                    <i class="bi bi-arrow-right me-1"></i>Open
+                </a>
+                <a href="{% url 'task_list_delete' tl.slug %}" class="btn btn-sm btn-outline-danger"
+                   onclick="return confirm('Delete &quot;{{ tl.name }}&quot;? This cannot be undone.')">
+                    <i class="bi bi-trash"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,96 @@
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: to-do-backup-local
+  namespace: to-do
+spec:
+  schedule: "0 */6 * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: backup
+              image: postgres:17-alpine
+              env:
+                - name: PGPASSWORD
+                  valueFrom:
+                    secretKeyRef:
+                      name: to-do
+                      key: postgres_password
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  set -e
+                  DATE=$(date +%Y%m%d-%H%M%S)
+                  FILE="/backups/to-do-${DATE}.dump"
+                  pg_dump -h postgresql-rw.postgresql.svc.cluster.local \
+                          -U $(cat /dev/stdin) \
+                          -d to-do \
+                          --format=custom \
+                          --compress=9 \
+                          -f "$FILE"
+                  find /backups -name "*.dump" -mtime +7 -delete
+                  echo "Backup complete: $FILE"
+              volumeMounts:
+                - name: backup-storage
+                  mountPath: /backups
+          volumes:
+            - name: backup-storage
+              persistentVolumeClaim:
+                claimName: to-do-postgres-backup-pvc
+
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: to-do-backup-cloud-daily
+  namespace: to-do
+spec:
+  schedule: "0 2 * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: s3-upload
+              image: amazon/aws-cli:latest
+              env:
+                - name: AWS_ACCESS_KEY_ID
+                  valueFrom:
+                    secretKeyRef:
+                      name: to-do
+                      key: aws_access_key_id
+                - name: AWS_SECRET_ACCESS_KEY
+                  valueFrom:
+                    secretKeyRef:
+                      name: to-do
+                      key: aws_secret_access_key
+                - name: AWS_DEFAULT_REGION
+                  value: "us-east-1"
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  LATEST=$(ls -t /backups/*.dump 2>/dev/null | head -1)
+                  if [ -z "$LATEST" ]; then echo "No backup found"; exit 1; fi
+                  DATE_PATH=$(date +%Y/%m/%d)
+                  aws s3 cp "$LATEST" "s3://jay-curtis-backup/to-do/backups/daily/${DATE_PATH}/$(basename $LATEST)" \
+                    --storage-class STANDARD_IA
+              volumeMounts:
+                - name: backup-storage
+                  mountPath: /backups
+          volumes:
+            - name: backup-storage
+              persistentVolumeClaim:
+                claimName: to-do-postgres-backup-pvc

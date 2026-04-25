@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Django
+*.sqlite3
+staticfiles/
+media/
+
+# Secrets
+.env
+k8s/temp.yaml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/settings.json
+
+# Coverage
+.coverage
+htmlcov/
+coverage.xml

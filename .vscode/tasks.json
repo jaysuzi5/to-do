@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compact Session",
+      "type": "shell",
+      "command": "echo '/compact' | pbcopy && echo 'Copied /compact to clipboard'",
+      "problemMatcher": []
+    },
+    {
+      "label": "View Token Usage",
+      "type": "shell",
+      "command": "echo '/tokens' | pbcopy && echo 'Copied /tokens to clipboard'",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Dev Server",
+      "type": "shell",
+      "command": "uv run python manage.py runserver",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Migrations",
+      "type": "shell",
+      "command": "uv run python manage.py migrate",
+      "problemMatcher": []
+    },
+    {
+      "label": "Make Migrations",
+      "type": "shell",
+      "command": "uv run python manage.py makemigrations",
+      "problemMatcher": []
+    },
+    {
+      "label": "Open ChatGPT",
+      "type": "shell",
+      "command": "open 'https://chatgpt.com'",
+      "problemMatcher": []
+    },
+    {
+      "label": "Open Grok",
+      "type": "shell",
+      "command": "open 'https://grok.com'",
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: to-do
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: to-do
+  namespace: to-do
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: to-do
+  template:
+    metadata:
+      labels:
+        app: to-do
+    spec:
+      initContainers:
+        - name: migrate
+          image: jaysuzi5/to-do:latest
+          command: ["uv", "run", "python", "manage.py", "migrate", "--no-input"]
+          env:
+            - name: DJANGO_ENV
+              value: "production"
+            - name: SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: secret_key
+            - name: POSTGRES_DB
+              value: "to-do"
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: postgres_user
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: postgres_password
+            - name: POSTGRES_HOST
+              value: "postgresql-rw.postgresql.svc.cluster.local"
+            - name: POSTGRES_PORT
+              value: "5432"
+            - name: ALLOWED_HOSTS
+              value: "todo.jaycurtis.org"
+            - name: CSRF_TRUSTED_ORIGINS
+              value: "https://todo.jaycurtis.org"
+
+      containers:
+        - name: to-do
+          image: jaysuzi5/to-do:latest
+          ports:
+            - containerPort: 8000
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 5
+            failureThreshold: 6
+          env:
+            - name: DJANGO_ENV
+              value: "production"
+            - name: SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: secret_key
+            - name: POSTGRES_DB
+              value: "to-do"
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: postgres_user
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: postgres_password
+            - name: POSTGRES_HOST
+              value: "postgresql-rw.postgresql.svc.cluster.local"
+            - name: POSTGRES_PORT
+              value: "5432"
+            - name: ALLOWED_HOSTS
+              value: "todo.jaycurtis.org"
+            - name: CSRF_TRUSTED_ORIGINS
+              value: "https://todo.jaycurtis.org"
+            - name: LOG_LEVEL
+              value: "INFO"
+            - name: EMAIL_HOST
+              value: "smtp.gmail.com"
+            - name: EMAIL_PORT
+              value: "587"
+            - name: EMAIL_HOST_USER
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: email_user
+            - name: EMAIL_HOST_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: email_password
+            - name: ALEXA_SKILL_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: alexa_skill_token
+                  optional: true
+            - name: OTEL_SERVICE_NAME
+              value: "to-do"
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: "http://otel-collector-collector.monitoring.svc.cluster.local:4317"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: to-do
+  namespace: to-do
+spec:
+  selector:
+    app: to-do
+  ports:
+    - port: 80
+      targetPort: 8000
+  type: LoadBalancer
