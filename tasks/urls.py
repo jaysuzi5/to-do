@@ -2,6 +2,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    # Health check (no auth, used by k8s readiness probe)
+    path('health/', views.health, name='health'),
+
     # Dashboard
     path('', views.DashboardView.as_view(), name='dashboard'),
 

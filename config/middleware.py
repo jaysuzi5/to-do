@@ -5,7 +5,7 @@ import uuid
 
 logger = logging.getLogger('todo')
 
-SKIP_PATHS = ('/static/', '/media/', '/health', '/favicon.ico')
+SKIP_PATHS = ('/static/', '/media/', '/health/', '/favicon.ico')
 
 
 class RequestLoggingMiddleware:

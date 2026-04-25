@@ -60,12 +60,17 @@ spec:
             - containerPort: 8000
           readinessProbe:
             httpGet:
-              path: /
+              path: /health/
               port: 8000
+              httpHeaders:
+                - name: Host
+                  value: todo.jaycurtis.org
             initialDelaySeconds: 10
             periodSeconds: 5
             failureThreshold: 6
           env:
+            - name: DJANGO_SETTINGS_MODULE
+              value: "config.settings"
             - name: DJANGO_ENV
               value: "production"
             - name: SECRET_KEY

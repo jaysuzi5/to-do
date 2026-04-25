@@ -38,13 +38,13 @@ with Alexa voice integration for hands-free task entry.
 
 ---
 
-## Phase 2 — Database & Local Deployment ⬜
+## Phase 2 — Database & Local Deployment ✅
 
 ### 2.1 PostgreSQL Setup
-- [ ] Create database: `PGPASSWORD='...' psql -h 192.168.86.201 -p 30004 -U jcurtis -d postgres -c 'CREATE DATABASE "to-do" OWNER jcurtis;'`
-- [ ] Fill in `.env` with real credentials
-- [ ] Run `uv run python manage.py migrate`
-- [ ] Run `uv run python manage.py createsuperuser`
+- [x] Create database on shared k8s PostgreSQL instance (192.168.86.201:30004, owner: jcurtis)
+- [x] Fill in `.env` with real credentials (pulled from cluster secret, gitignored)
+- [x] Run `uv run python manage.py migrate` — all tables created
+- [ ] Run `uv run python manage.py createsuperuser` — deferred to Phase 3 (run in k8s pod)
 
 ### 2.2 User Setup
 - [ ] Create accounts for Jay (jaysuzi5@gmail.com) and Suzanne (jaysuziq@gmail.com)
@@ -58,22 +58,26 @@ with Alexa voice integration for hands-free task entry.
 
 ---
 
-## Phase 3 — Kubernetes Deployment ⬜
+## Phase 3 — Kubernetes Deployment ✅
 
 ### 3.1 Kubernetes Secrets
-- [ ] Create `k8s/temp.yaml` with base64-encoded values (see CLAUDE.md)
-- [ ] `kubeseal -f k8s/temp.yaml -o yaml > k8s/secrets.yaml`
-- [ ] `kubectl apply -f k8s/secrets.yaml`
-- [ ] `rm k8s/temp.yaml`
+- [x] Created `k8s/temp.yaml` (gitignored), sealed with kubeseal, temp file shredded
+- [x] `k8s/secrets.yaml` committed (SealedSecret — encrypted blobs only)
+- [x] `kubectl apply -f k8s/secrets.yaml` — live and decrypted in cluster
+- [x] Namespace `to-do` created
 
 ### 3.2 Docker Build & Push
-- [ ] `docker buildx build --platform linux/amd64,linux/arm64 -t jaysuzi5/to-do:latest --push .`
+- [x] `docker buildx build --platform linux/amd64,linux/arm64 -t jaysuzi5/to-do:latest --push .`
+- [x] `.dockerignore` added — `.env` excluded from build context
+- [x] Dockerfile: dummy env vars for `collectstatic` build step (no real secrets in image)
 
 ### 3.3 Kubernetes Deploy
-- [ ] `kubectl apply -f k8s/deployment.yaml`
-- [ ] Verify pod starts: `kubectl get pods -n to-do`
-- [ ] Check logs: `kubectl logs -n to-do -l app=to-do -f`
-- [ ] Run createsuperuser in pod
+- [x] `kubectl apply -f k8s/deployment.yaml` — Deployment + Service created
+- [x] Added `DJANGO_SETTINGS_MODULE=config.settings` env var (required before OTel instruments Django)
+- [x] Readiness probe updated to `/health/` with `Host: todo.jaycurtis.org` header
+- [x] `/health/` endpoint added (unauthenticated, skipped by request logger)
+- [x] Pod `1/1 Running`, health check returns 200
+- [x] Superuser `jaysuzi5@gmail.com` created — change password via Django Admin on first login
 
 ### 3.4 Cloudflare Tunnel
 - [ ] Cloudflare Zero Trust → Tunnels → Edit → Add route:

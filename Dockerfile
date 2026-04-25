@@ -14,7 +14,10 @@ COPY pyproject.toml uv.lock ./
 RUN uv sync --frozen --no-dev
 
 COPY . .
-RUN uv run python manage.py collectstatic --noinput
+RUN SECRET_KEY=build-placeholder \
+    POSTGRES_DB=build POSTGRES_USER=build POSTGRES_PASSWORD=build \
+    POSTGRES_HOST=localhost POSTGRES_PORT=5432 \
+    uv run python manage.py collectstatic --noinput
 
 EXPOSE 8000
 

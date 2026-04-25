@@ -6,6 +6,7 @@ from django.db.models import Count, Q
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, redirect
 from django.views import View
+from django.http import HttpResponse
 from django.views.generic import CreateView, DeleteView, TemplateView, UpdateView
 from django.urls import reverse, reverse_lazy
 
@@ -13,6 +14,10 @@ from .forms import QuickAddTaskForm, TaskForm, TaskListForm
 from .models import Task, TaskList
 
 logger = logging.getLogger('todo')
+
+
+def health(request):
+    return HttpResponse('ok')
 
 
 class DashboardView(LoginRequiredMixin, TemplateView):
