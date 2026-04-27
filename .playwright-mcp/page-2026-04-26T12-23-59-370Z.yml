@@ -1,0 +1,49 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - navigation [ref=e5]:
+      - link "Alexa Developer Console developer console" [ref=e7] [cursor=pointer]:
+        - /url: /alexa/console/ask
+        - generic [ref=e8]:
+          - img "Alexa Developer Console" [ref=e10]
+          - generic [ref=e12]: developer console
+      - generic:   
+      - list [ref=e14]:
+        - listitem [ref=e15]
+        - listitem [ref=e16]:
+          - link "Notifications" [ref=e18] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+        - listitem [ref=e26]:
+          - link "SC" [ref=e27] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e28]: SC
+        - listitem [ref=e29]:
+          - link "" [ref=e30] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e33]: 
+  - generic [ref=e37]:
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - link "Back" [ref=e42] [cursor=pointer]:
+          - /url: /alexa/console/ask
+          - img [ref=e43]
+          - text: Back
+        - generic [ref=e47]: To-Do
+      - generic [ref=e48]:
+        - link "Build" [ref=e50] [cursor=pointer]:
+          - /url: /alexa/console/ask/build/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+        - link "Code" [ref=e52] [cursor=pointer]:
+          - /url: /alexa/console/ask/editor/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+        - link "Test" [ref=e54] [cursor=pointer]:
+          - /url: /alexa/console/ask/test/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+        - link "Distribution" [ref=e56] [cursor=pointer]:
+          - /url: /alexa/console/ask/publish/alexapublishing/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/skill-info
+        - link "Certification" [ref=e58] [cursor=pointer]:
+          - /url: /alexa/console/ask/certify/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/validation
+        - link "Analytics" [ref=e60] [cursor=pointer]:
+          - /url: /alexa/console/ask/measure/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+    - generic [ref=e61]:
+      - button "Feedback" [ref=e62] [cursor=pointer]
+      - button "Cancel" [ref=e63] [cursor=pointer]:
+        - img [ref=e65]
+    - main

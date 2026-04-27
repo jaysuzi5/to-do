@@ -1,0 +1,230 @@
+[    3041ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[    3123ms] [LOG] ecid @ :4
+[   89996ms] [LOG] ecid @ :4
+[   89998ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[  154415ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[  154415ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[  154415ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[  193166ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[  193166ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[  193166ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[  222051ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://developer.amazon.com/alexa/console/ask/editor/public/v1/skill/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/endpoints?skillEndpoint=arn%3Aaws%3Alambda%3Aus-east-1%3A318883658404%3Afunction%3AReflectorTemplateSkill:0
+[  364155ms] [LOG] options after click: 0  @ :11
+[  644987ms] [LOG] ecid @ :4
+[  644987ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[  646300ms] [LOG] ecid @ :4
+[  646320ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[  809026ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[  809077ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[  809078ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[  809079ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[  809105ms] [LOG] ecid @ :4
+[  838467ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[  838468ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[  838468ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[  899443ms] [LOG] ecid @ :4
+[  899617ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[ 1582241ms] [LOG] ecid @ :4
+[ 1582466ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[ 1583034ms] [WARNING] adcReporting.uiEvent is not found @ webpack:///./src/utils/reporting.js?:245
+[ 1585234ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://developer.amazon.com/alexa/console/ask/test/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/mejs-controls.svg#icon-play:0
+[ 1585535ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://d3u7caksmkfrzm.cloudfront.net') does not match the recipient window's origin ('https://developer.amazon.com'). @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:62815
+[ 1585535ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://d3u7caksmkfrzm.cloudfront.net') does not match the recipient window's origin ('https://developer.amazon.com'). @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:62815
+[ 1585968ms] [WARNING] Warning: Accessing PropTypes via the main React package is deprecated, and will be removed in  React v16.0. Use the latest available v15.* prop-types package from npm instead. For info on usage, compatibility, migration and more, see https://fb.me/prop-types-docs @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 1585990ms] [WARNING] Warning: Accessing createClass via the main React package is deprecated, and will be removed in React v16.0. Use a plain JavaScript class instead. If you're not yet ready to migrate, create-react-class v15.* is available on npm as a temporary, drop-in replacement. For more info see https://fb.me/react-create-class @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 1585994ms] [LOG] IntlProviderWrapper: conecting to STWBridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37903
+[ 1585994ms] [LOG] Rendering IntlProviderWrapper widget @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37908
+[ 1586003ms] [WARNING] Warning: Accessing PropTypes via the main React package is deprecated, and will be removed in  React v16.0. Use the latest available v15.* prop-types package from npm instead. For info on usage, compatibility, migration and more, see https://fb.me/prop-types-docs @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 1586006ms] [WARNING] Warning: Accessing createClass via the main React package is deprecated, and will be removed in React v16.0. Use a plain JavaScript class instead. If you're not yet ready to migrate, create-react-class v15.* is available on npm as a temporary, drop-in replacement. For more info see https://fb.me/react-create-class @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 1586007ms] [LOG] IntlProviderWrapper: conecting to STWBridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37903
+[ 1586007ms] [LOG] Rendering IntlProviderWrapper widget @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37908
+[ 1586008ms] [ERROR] Warning: Failed prop type: Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types
+    in Unknown (created by SkillPersonalizationCardView)
+    in SkillPersonalizationCardView (created by Connect(SkillPersonalizationCardView))
+    in Connect(SkillPersonalizationCardView) (created by Route)
+    in Route (created by Routes)
+    in Switch (created by Routes)
+    in Router (created by HashRouter)
+    in HashRouter (created by Routes)
+    in Routes
+    in Provider
+    in IntlProvider (created by IntlProviderWrapper)
+    in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:4262
+[ 1586049ms] [LOG] Connected to STW tenant bridge in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37912
+[ 1586049ms] [LOG] Selected locale : en-US @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37915
+[ 1586049ms] [LOG] Connected to STW tenant bridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:36749
+[ 1586132ms] [LOG] Connected to STW tenant bridge in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37912
+[ 1586132ms] [LOG] Selected locale : en-US @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37915
+[ 1693775ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[ 1694035ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[ 1694035ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[ 1694035ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[ 1694076ms] [LOG] ecid @ :4
+[ 1710836ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[ 1710837ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[ 1710837ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://m.media-amazon.com/images/I/C10xENauLrL.js:1
+[ 1792482ms] [WARNING] adcReporting.uiEvent is not found @ webpack:///./src/utils/reporting.js?:245
+[ 1792548ms] [LOG] ecid @ :4
+[ 1792636ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[ 1792716ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://developer.amazon.com/alexa/console/ask/test/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/mejs-controls.svg#icon-play:0
+[ 1792763ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://d3u7caksmkfrzm.cloudfront.net') does not match the recipient window's origin ('https://developer.amazon.com'). @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:62815
+[ 1792763ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://d3u7caksmkfrzm.cloudfront.net') does not match the recipient window's origin ('https://developer.amazon.com'). @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:62815
+[ 1792851ms] [WARNING] Warning: Accessing PropTypes via the main React package is deprecated, and will be removed in  React v16.0. Use the latest available v15.* prop-types package from npm instead. For info on usage, compatibility, migration and more, see https://fb.me/prop-types-docs @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 1792872ms] [WARNING] Warning: Accessing createClass via the main React package is deprecated, and will be removed in React v16.0. Use a plain JavaScript class instead. If you're not yet ready to migrate, create-react-class v15.* is available on npm as a temporary, drop-in replacement. For more info see https://fb.me/react-create-class @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 1792876ms] [LOG] IntlProviderWrapper: conecting to STWBridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37903
+[ 1792876ms] [LOG] Rendering IntlProviderWrapper widget @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37908
+[ 1792890ms] [WARNING] Warning: Accessing PropTypes via the main React package is deprecated, and will be removed in  React v16.0. Use the latest available v15.* prop-types package from npm instead. For info on usage, compatibility, migration and more, see https://fb.me/prop-types-docs @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 1792893ms] [WARNING] Warning: Accessing createClass via the main React package is deprecated, and will be removed in React v16.0. Use a plain JavaScript class instead. If you're not yet ready to migrate, create-react-class v15.* is available on npm as a temporary, drop-in replacement. For more info see https://fb.me/react-create-class @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 1792894ms] [LOG] IntlProviderWrapper: conecting to STWBridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37903
+[ 1792894ms] [LOG] Rendering IntlProviderWrapper widget @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37908
+[ 1792895ms] [ERROR] Warning: Failed prop type: Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types
+    in Unknown (created by SkillPersonalizationCardView)
+    in SkillPersonalizationCardView (created by Connect(SkillPersonalizationCardView))
+    in Connect(SkillPersonalizationCardView) (created by Route)
+    in Route (created by Routes)
+    in Switch (created by Routes)
+    in Router (created by HashRouter)
+    in HashRouter (created by Routes)
+    in Routes
+    in Provider
+    in IntlProvider (created by IntlProviderWrapper)
+    in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:4262
+[ 1792918ms] [LOG] Connected to STW tenant bridge in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37912
+[ 1792918ms] [LOG] Selected locale : en-US @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37915
+[ 1792918ms] [LOG] Connected to STW tenant bridge in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37912
+[ 1792918ms] [LOG] Selected locale : en-US @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37915
+[ 1792918ms] [LOG] Connected to STW tenant bridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:36749
+[ 2195140ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:244544
+[ 2195140ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:244544
+[ 2199923ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:244544
+[ 2199927ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:244544
+[ 2270945ms] [LOG] ecid @ :4
+[ 2270972ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[ 2334206ms] [WARNING] adcReporting.uiEvent is not found @ webpack:///./src/utils/reporting.js?:245
+[ 2334266ms] [LOG] ecid @ :4
+[ 2334328ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[ 2334547ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://developer.amazon.com/alexa/console/ask/test/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/mejs-controls.svg#icon-play:0
+[ 2334676ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://d3u7caksmkfrzm.cloudfront.net') does not match the recipient window's origin ('https://developer.amazon.com'). @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:62815
+[ 2334676ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://d3u7caksmkfrzm.cloudfront.net') does not match the recipient window's origin ('https://developer.amazon.com'). @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:62815
+[ 2334770ms] [WARNING] Warning: Accessing PropTypes via the main React package is deprecated, and will be removed in  React v16.0. Use the latest available v15.* prop-types package from npm instead. For info on usage, compatibility, migration and more, see https://fb.me/prop-types-docs @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 2334775ms] [WARNING] Warning: Accessing createClass via the main React package is deprecated, and will be removed in React v16.0. Use a plain JavaScript class instead. If you're not yet ready to migrate, create-react-class v15.* is available on npm as a temporary, drop-in replacement. For more info see https://fb.me/react-create-class @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 2334776ms] [LOG] IntlProviderWrapper: conecting to STWBridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37903
+[ 2334776ms] [LOG] Rendering IntlProviderWrapper widget @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37908
+[ 2334793ms] [WARNING] Warning: Accessing PropTypes via the main React package is deprecated, and will be removed in  React v16.0. Use the latest available v15.* prop-types package from npm instead. For info on usage, compatibility, migration and more, see https://fb.me/prop-types-docs @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 2334796ms] [WARNING] Warning: Accessing createClass via the main React package is deprecated, and will be removed in React v16.0. Use a plain JavaScript class instead. If you're not yet ready to migrate, create-react-class v15.* is available on npm as a temporary, drop-in replacement. For more info see https://fb.me/react-create-class @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 2334797ms] [LOG] IntlProviderWrapper: conecting to STWBridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37903
+[ 2334797ms] [LOG] Rendering IntlProviderWrapper widget @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37908
+[ 2334798ms] [ERROR] Warning: Failed prop type: Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types
+    in Unknown (created by SkillPersonalizationCardView)
+    in SkillPersonalizationCardView (created by Connect(SkillPersonalizationCardView))
+    in Connect(SkillPersonalizationCardView) (created by Route)
+    in Route (created by Routes)
+    in Switch (created by Routes)
+    in Router (created by HashRouter)
+    in HashRouter (created by Routes)
+    in Routes
+    in Provider
+    in IntlProvider (created by IntlProviderWrapper)
+    in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:4262
+[ 2334808ms] [LOG] Connected to STW tenant bridge in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37912
+[ 2334808ms] [LOG] Selected locale : en-US @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37915
+[ 2334808ms] [LOG] Connected to STW tenant bridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:36749
+[ 2334809ms] [LOG] Connected to STW tenant bridge in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37912
+[ 2334809ms] [LOG] Selected locale : en-US @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37915
+[ 2382664ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:244544
+[ 2382664ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:244544
+[ 2437831ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:244544
+[ 2437832ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:244544
+[ 2438170ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:244544
+[ 2438175ms] [WARNING] Automatically scrolling cursor into view after selection change this will be disabled in the next version set editor.$blockScrolling = Infinity to disable this message @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:244544
+[ 6639610ms] [LOG] ecid @ :4
+[ 6639613ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[ 6718764ms] [WARNING] adcReporting.uiEvent is not found @ webpack:///./src/utils/reporting.js?:245
+[ 6718867ms] [LOG] ecid @ :4
+[ 6718906ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[ 6719172ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://developer.amazon.com/alexa/console/ask/test/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/mejs-controls.svg#icon-play:0
+[ 6719429ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://d3u7caksmkfrzm.cloudfront.net') does not match the recipient window's origin ('https://developer.amazon.com'). @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:62815
+[ 6719429ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://d3u7caksmkfrzm.cloudfront.net') does not match the recipient window's origin ('https://developer.amazon.com'). @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:62815
+[ 6719530ms] [WARNING] Warning: Accessing PropTypes via the main React package is deprecated, and will be removed in  React v16.0. Use the latest available v15.* prop-types package from npm instead. For info on usage, compatibility, migration and more, see https://fb.me/prop-types-docs @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 6719538ms] [WARNING] Warning: Accessing createClass via the main React package is deprecated, and will be removed in React v16.0. Use a plain JavaScript class instead. If you're not yet ready to migrate, create-react-class v15.* is available on npm as a temporary, drop-in replacement. For more info see https://fb.me/react-create-class @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 6719540ms] [LOG] IntlProviderWrapper: conecting to STWBridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37903
+[ 6719540ms] [LOG] Rendering IntlProviderWrapper widget @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37908
+[ 6719551ms] [WARNING] Warning: Accessing PropTypes via the main React package is deprecated, and will be removed in  React v16.0. Use the latest available v15.* prop-types package from npm instead. For info on usage, compatibility, migration and more, see https://fb.me/prop-types-docs @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 6719555ms] [WARNING] Warning: Accessing createClass via the main React package is deprecated, and will be removed in React v16.0. Use a plain JavaScript class instead. If you're not yet ready to migrate, create-react-class v15.* is available on npm as a temporary, drop-in replacement. For more info see https://fb.me/react-create-class @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[ 6719556ms] [LOG] IntlProviderWrapper: conecting to STWBridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37903
+[ 6719556ms] [LOG] Rendering IntlProviderWrapper widget @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37908
+[ 6719557ms] [ERROR] Warning: Failed prop type: Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types
+    in Unknown (created by SkillPersonalizationCardView)
+    in SkillPersonalizationCardView (created by Connect(SkillPersonalizationCardView))
+    in Connect(SkillPersonalizationCardView) (created by Route)
+    in Route (created by Routes)
+    in Switch (created by Routes)
+    in Router (created by HashRouter)
+    in HashRouter (created by Routes)
+    in Routes
+    in Provider
+    in IntlProvider (created by IntlProviderWrapper)
+    in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:4262
+[ 6719603ms] [LOG] Connected to STW tenant bridge in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37912
+[ 6719603ms] [LOG] Selected locale : en-US @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37915
+[ 6719604ms] [LOG] Connected to STW tenant bridge in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37912
+[ 6719604ms] [LOG] Selected locale : en-US @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37915
+[ 6719604ms] [LOG] Connected to STW tenant bridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:36749
+[ 7149399ms] [LOG] Delivering Alexa.Presentation.APL.RenderDocument directive. @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:87238
+[ 7149406ms] [LOG] Delivering SpeechSynthesizer.Speak directive. @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:87238
+[ 7149409ms] [LOG] Delivering directive immediately @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:87196
+[ 7149412ms] [LOG] Delivering SpeechRecognizer.RequestProcessingCompleted directive. @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:87238
+[ 7149418ms] [INFO] I APLViewhost_3LUDQWM2:  APLViewhostWASM created @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:171277
+[ 7149428ms] [INFO] I DocumentContext_3LUDQWM2:  creating Content @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:171277
+[ 7149437ms] [LOG] W /Users/arerande/workplace/APLViewhostWeb/src/APLCoreEngine/aplcore/src/utils/log.cpp:getLogger : Logs not initialized. Using default bridge. @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:171277
+[ 7149437ms] [LOG] I LZSHYLIMRS:content.cpp:init : Initializing experience using apl-2025.1-05.05.2025-8-gab6beafd @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:171277
+[ 7149797ms] [INFO] I APLRenderer_3LUDQWM2:  APL Renderer Set View Size: 1278 x 799 @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:171277
+[ 7150230ms] [WARNING] W Container:  Component :1100 has bounds that is bigger than parent bounds.
+Check your template correctness.
+Adjusting :1100 to parent :1074
+WIDTH: 1166 => 1166
+HEIGHT: 1.999962568283081 => 1.999908447265625
+ @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:171277
+[ 7150230ms] [WARNING] W Frame:  Component :1101 has bounds that is bigger than parent bounds.
+Check your template correctness.
+Adjusting :1101 to parent :1100
+WIDTH: 1166 => 1166
+HEIGHT: 1.999962568283081 => 1.999908447265625
+ @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:171277
+[ 7150277ms] [LOG] W recalculatesource.h:addDownstream : Attempted to add duplicate pair isCompleted @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:171277
+[ 7150284ms] [LOG] W recalculatesource.h:addDownstream : Attempted to add duplicate pair isCompleted @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:171277
+[ 7151892ms] [LOG] Delivering SpeechSynthesizer.Speak directive. @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:87238
+[ 7151903ms] Uncaught (in promise) AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+    at push.14292.HTML5AudioPlayer.play (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:80898:34)
+    at push.65852.AudioChannel.dispatchItemToPlayer (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:194059:20)
+    at push.65852.AudioChannel.onAudioItemPlayFinished (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:194012:17)
+    at push.14292.HTML5AudioPlayer.onHtmlAudioElementEnded (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:80929:17)
+[ 7155256ms] [LOG] W LZSHYLIMRS:dynamiclistdatasourceprovider.cpp:constructAndReportError : Datasource reminderList; Error: Retrying timed out request: 101 @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:171277
+[ 7155258ms] [WARNING] W APLRenderer_3LUDQWM2:  onRunTimeError: [{"listId":"reminderList","listVersion":0,"message":"Retrying timed out request: 101","reason":"LOAD_TIMEOUT","type":"LIST_ERROR"}] @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:171277
+[ 7155851ms] [LOG] Delivering SpeechSynthesizer.Speak directive. @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:87238
+[ 7155864ms] Uncaught (in promise) AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+    at push.14292.HTML5AudioPlayer.play (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:80898:34)
+    at push.65852.AudioChannel.dispatchItemToPlayer (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:194059:20)
+    at push.65852.AudioChannel.onAudioItemPlayFinished (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:194012:17)
+    at push.14292.HTML5AudioPlayer.onHtmlAudioElementEnded (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:80929:17)
+[ 7159322ms] [LOG] Delivering SpeechSynthesizer.Speak directive. @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:87238
+[ 7159335ms] Uncaught (in promise) AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+    at push.14292.HTML5AudioPlayer.play (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:80898:34)
+    at push.65852.AudioChannel.dispatchItemToPlayer (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:194059:20)
+    at push.65852.AudioChannel.onAudioItemPlayFinished (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:194012:17)
+    at push.14292.HTML5AudioPlayer.onHtmlAudioElementEnded (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:80929:17)
+[ 7160255ms] [LOG] W LZSHYLIMRS:dynamiclistdatasourceprovider.cpp:constructAndReportError : Datasource reminderList; Error: Retrying timed out request: 102 @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:171277
+[ 7160256ms] [WARNING] W APLRenderer_3LUDQWM2:  onRunTimeError: [{"listId":"reminderList","listVersion":0,"message":"Retrying timed out request: 102","reason":"LOAD_TIMEOUT","type":"LIST_ERROR"}] @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:171277
+[ 7165509ms] [LOG] Delivering SpeechSynthesizer.Speak directive. @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:87238
+[ 7165524ms] Uncaught (in promise) AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+    at push.14292.HTML5AudioPlayer.play (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:80898:34)
+    at push.65852.AudioChannel.dispatchItemToPlayer (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:194059:20)
+    at push.65852.AudioChannel.onAudioItemPlayFinished (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:194012:17)
+    at push.14292.HTML5AudioPlayer.onHtmlAudioElementEnded (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:80929:17)
+[ 7172526ms] [LOG] Delivering SpeechSynthesizer.Speak directive. @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:87238
+[ 7172543ms] Uncaught (in promise) AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+    at push.14292.HTML5AudioPlayer.play (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:80898:34)
+    at push.65852.AudioChannel.dispatchItemToPlayer (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:194059:20)
+    at push.65852.AudioChannel.onAudioItemPlayFinished (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:194012:17)
+    at push.14292.HTML5AudioPlayer.onHtmlAudioElementEnded (https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:80929:17)
+[ 7174291ms] [LOG] Delivering SpeechRecognizer.ExpectSpeech directive. @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:87238

@@ -1,0 +1,169 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Alexa Developer Console developer console" [ref=e7] [cursor=pointer]:
+          - /url: /alexa/console/ask
+          - generic [ref=e8]:
+            - img "Alexa Developer Console" [ref=e10]
+            - generic [ref=e12]: developer console
+        - generic [ref=e17]:
+          - button "All Search" [expanded] [ref=e21] [cursor=pointer]:
+            - text: All
+            - img "Search" [ref=e23]
+          - textbox "Search" [ref=e27]
+          - img "Search Logo" [ref=e30] [cursor=pointer]
+        - generic:   
+        - list [ref=e32]:
+          - listitem [ref=e33]
+          - listitem [ref=e34]:
+            - link "Notifications" [ref=e36] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e39]
+          - listitem [ref=e44]:
+            - link "SC" [ref=e45] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e46]: SC
+          - listitem [ref=e47]:
+            - link "" [ref=e48] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e51]: 
+    - generic [ref=e55]:
+      - generic [ref=e58]:
+        - button "Feedback" [ref=e59] [cursor=pointer]
+        - button "Cancel" [ref=e60] [cursor=pointer]:
+          - img [ref=e62]
+      - generic [ref=e70]:
+        - navigation [ref=e71]:
+          - generic [ref=e72]:
+            - link "Name, Locale To-Do , English (US)" [ref=e138] [cursor=pointer]:
+              - /url: /alexa/console/ask/create-new-skill/name
+              - generic [ref=e75]:
+                - img [ref=e140]
+                - generic [ref=e78]:
+                  - paragraph [ref=e79]: Name, Locale
+                  - generic [ref=e142]:
+                    - generic [ref=e143]: To-Do
+                    - generic [ref=e144]: ", English (US)"
+            - link "2 Experience, Model, Hosting service" [ref=e145] [cursor=pointer]:
+              - /url: /alexa/console/ask/create-new-skill/models
+              - generic [ref=e146]:
+                - generic [ref=e148]: "2"
+                - paragraph [ref=e150]: Experience, Model, Hosting service
+            - generic [ref=e81]:
+              - link "3 Templates":
+                - /url: https://developer.amazon.com/alexa/console/ask/editor/templates?runtime=nodejs10.x&locale=en_US&name=To-Do&hosting=provision-your-own&category=
+                - generic:
+                  - generic:
+                    - generic: "3"
+                  - generic:
+                    - paragraph: Templates
+            - generic [ref=e82]:
+              - link "4 Review":
+                - /url: /alexa/console/ask/create-new-skill/review
+                - generic:
+                  - generic:
+                    - generic: "4"
+                  - generic:
+                    - paragraph: Review
+          - generic [ref=e83]:
+            - link "Back" [ref=e151] [cursor=pointer]:
+              - /url: /alexa/console/ask/create-new-skill/name
+              - button "Back" [ref=e152]
+            - link "Next" [ref=e153] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa/console/ask/editor/templates?runtime=nodejs10.x&locale=en_US&name=To-Do&hosting=provision-your-own&category=
+              - button "Next" [disabled] [ref=e154]
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - paragraph [ref=e158]: 1. Choose a type of experience
+            - paragraph [ref=e160]: Tell us what kind of experience you want to build and we'll recommend a voice interaction model (also known as a skill model) to get you started. A skill model has pre-defined words and phrases that users can say when interacting with your skill. You'll be able to customize what Alexa responds with that is unique to your skill's use-case.
+            - group [ref=e162]:
+              - generic [ref=e163]:
+                - generic [ref=e164]:
+                  - generic [ref=e165] [cursor=pointer]:
+                    - radio "Food & Drink"
+                    - generic [ref=e168]: Food & Drink
+                  - img [ref=e171] [cursor=pointer]:
+                    - generic [ref=e174]: "?"
+                - generic [ref=e175]:
+                  - generic [ref=e176] [cursor=pointer]:
+                    - radio "Games & trivia"
+                    - generic [ref=e179]: Games & trivia
+                  - img [ref=e182] [cursor=pointer]:
+                    - generic [ref=e185]: "?"
+                - generic [ref=e186]:
+                  - generic [ref=e187] [cursor=pointer]:
+                    - radio "Movies & TV"
+                    - generic [ref=e190]: Movies & TV
+                  - img [ref=e193] [cursor=pointer]:
+                    - generic [ref=e196]: "?"
+                - generic [ref=e197]:
+                  - generic [ref=e198] [cursor=pointer]:
+                    - radio "Music & Audio"
+                    - generic [ref=e201]: Music & Audio
+                  - img [ref=e204] [cursor=pointer]:
+                    - generic [ref=e207]: "?"
+                - generic [ref=e208]:
+                  - generic [ref=e209] [cursor=pointer]:
+                    - radio "News"
+                    - generic [ref=e212]: News
+                  - img [ref=e215] [cursor=pointer]:
+                    - generic [ref=e218]: "?"
+                - generic [ref=e219]:
+                  - generic [ref=e220] [cursor=pointer]:
+                    - radio "Smart home"
+                    - generic [ref=e223]: Smart home
+                  - img [ref=e226] [cursor=pointer]:
+                    - generic [ref=e229]: "?"
+                - generic [ref=e230]:
+                  - generic [ref=e231] [cursor=pointer]:
+                    - radio "Other"
+                    - generic [ref=e234]: Other
+                  - img [ref=e237] [cursor=pointer]:
+                    - generic [ref=e240]: "?"
+          - generic:
+            - generic:
+              - paragraph: 2. Choose a model
+              - generic: Choose between a pre-built or custom skill model.
+            - generic:
+              - link:
+                - /url: "#"
+          - generic:
+            - generic:
+              - paragraph: 3. Hosting services
+              - generic: Choose a hosting service for your skill. For most models, you will have to provision your own.
+            - generic:
+              - link:
+                - /url: "#"
+    - contentinfo [ref=e115]:
+      - generic [ref=e117]:
+        - button "English (US)" [ref=e120] [cursor=pointer]:
+          - generic [ref=e122]: English (US)
+        - generic [ref=e124]:
+          - generic [ref=e125]: © 2010 - 2026, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+          - generic [ref=e127]:
+            - link "Terms" [ref=e128] [cursor=pointer]:
+              - /url: https://developer.amazon.com/terms-and-agreements
+            - link "Docs" [ref=e129] [cursor=pointer]:
+              - /url: /alexa/alexa-developer-documentation-welcome
+            - link "Stack Overflow" [ref=e130] [cursor=pointer]:
+              - /url: https://stackoverflow.com/tags/alexa-skills-kit
+            - link "Blog" [ref=e131] [cursor=pointer]:
+              - /url: https://developer.amazon.com/blogs/alexa
+            - link "Alexa Developer Home" [ref=e132] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa
+  - img "Amazon Developer Assistant" [ref=e135]
+  - generic:
+    - generic: Food & drink experiences include skills around cooking, receipies, and restaurant booking. You can build these with our food ordering model or custom model with pre-built templates.
+  - generic:
+    - generic: Games & trivia experiences include skills like games, game information, and knowledge & trivia. You can build these with our custom model and pre-built templates.
+  - generic:
+    - generic: Movies & TV experience includes skills around movie & tv games, reviews, and trivia. You can either use the video skill model kit or the custom model to build these types of skills.
+  - generic:
+    - generic: Music & Audio experiences include skills like music, podcasts, and radio skills. All three can be built using our music skill model or custom model.
+  - generic:
+    - generic: News experiences include news skills and flash briefings. You can build these experiences with our flash briefing skill model or custom model.
+  - generic:
+    - generic: Smart home experiences can be built using our smart home skill model or our custom model.
+  - generic:
+    - generic: If your skill doesn’t fit any of the experience groups that are listed, then select this option to see all models.

@@ -1,0 +1,191 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Alexa Developer Console developer console" [ref=e7] [cursor=pointer]:
+          - /url: /alexa/console/ask
+          - generic [ref=e8]:
+            - img "Alexa Developer Console" [ref=e10]
+            - generic [ref=e12]: developer console
+        - generic [ref=e17]:
+          - button "All Search" [expanded] [ref=e21] [cursor=pointer]:
+            - text: All
+            - img "Search" [ref=e23]
+          - textbox "Search" [ref=e27]
+          - img "Search Logo" [ref=e30] [cursor=pointer]
+        - generic:   
+        - list [ref=e32]:
+          - listitem [ref=e33]
+          - listitem [ref=e34]:
+            - link "Notifications" [ref=e36] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e39]
+          - listitem [ref=e44]:
+            - link "SC" [ref=e45] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e46]: SC
+          - listitem [ref=e47]:
+            - link "" [ref=e48] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e51]: 
+    - generic [ref=e55]:
+      - generic [ref=e58]:
+        - button "Feedback" [ref=e59] [cursor=pointer]
+        - button "Cancel" [ref=e60] [cursor=pointer]:
+          - img [ref=e62]
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - tablist [ref=e70]:
+            - generic [ref=e71]:
+              - tab "Skills" [ref=e72]:
+                - radio "Skills" [checked] [ref=e73]
+                - generic [ref=e75] [cursor=pointer]: Skills
+              - tab "Earnings" [ref=e76]:
+                - radio "Earnings" [ref=e77]
+                - generic [ref=e79] [cursor=pointer]: Earnings
+              - tab "Payments" [ref=e80]:
+                - radio "Payments" [ref=e81]
+                - generic [ref=e83] [cursor=pointer]: Payments
+              - tab "Hosting" [ref=e84]:
+                - radio "Hosting" [ref=e85]
+                - generic [ref=e87] [cursor=pointer]: Hosting
+              - tab "Settings" [ref=e88]:
+                - radio "Settings" [ref=e89]
+                - generic [ref=e91] [cursor=pointer]: Settings
+          - generic:
+            - tabpanel "Skills"
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - heading "Alexa Skills" [level=2] [ref=e96]
+              - link "Skill examples" [ref=e97] [cursor=pointer]:
+                - /url: https://github.com/alexa-samples
+              - generic [ref=e98]: "|"
+              - link "Learn more" [ref=e99] [cursor=pointer]:
+                - /url: https://developer.amazon.com/en-US/alexa/alexa-skills-kit/start
+            - generic [ref=e109]:
+              - heading "Resources" [level=5] [ref=e110]
+              - generic [ref=e113]:
+                - generic [ref=e114]:
+                  - heading "Recommended" [level=4] [ref=e115]
+                  - generic [ref=e116]:
+                    - generic [ref=e117]: Office Hour Video
+                    - link "Q&A with Alexa Certification team" [ref=e118] [cursor=pointer]:
+                      - /url: https://www.youtube.com/watch?v=s7IjPFQPj14
+                  - generic [ref=e119]:
+                    - generic [ref=e120]: Course
+                    - link "How to design for in-skill purchasing" [ref=e121] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/alexa/alexa-skills-kit/get-deeper/tutorials-code-samples/design-for-in-skill-purchasing?&sc_category=Owned&sc_channel=DC&sc_campaign=ASK-mon-q2-23&sc_publisher=AZ&sc_content=Tutorial&sc_funnel=Awareness&sc_country=WW&sc_medium=Owned_DC_ASK-mon-q2-23_AZ_Tutorial_Awareness_WW_Registered_Devs&sc_segment=Registered_Devs
+                  - generic [ref=e122]:
+                    - generic [ref=e123]: Blog Post
+                    - link "Two videos to get you up and running with the Skill Quality Coach" [ref=e124] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/blogs/alexa/alexa-skills-kit/2023/01/Alexa-skill-quality-coach-videos-december-20221?&sc_category=Owned&sc_channel=DC&sc_campaign=ASK-dpcsqc-q1-23&sc_publisher=ASK&sc_content=Product_LP&sc_funnel=Awareness&sc_country=WW&sc_medium=Owned_DC_ASK-dpcsqc-q1-23_ASK_Product_LP_Awareness_WW_Registered_Devs&sc_segment=Registered_Devs
+                  - generic [ref=e125]:
+                    - generic [ref=e126]: Tech Doc
+                    - link "Earn up to 10% commission on eligible product purchases referred from skills by participating in Amazon Associates on Alexa" [ref=e127] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/docs/alexa/alexa-shopping/register-for-associates.html?&sc_category=Owned&sc_channel=DC&sc_campaign=ASK-dpcmon-q1-23&sc_publisher=ASK&sc_content=Product_LP&sc_funnel=Awareness&sc_country=WW&sc_medium=Owned_DC_ASK-dpcmon-q1-23_ASK_Product_LP_Awareness_WW_Registered_Devs&sc_segment=Registered_Devs
+                  - generic [ref=e128]:
+                    - generic [ref=e129]: Blog
+                    - link "6 tips for designing seamless shopping experiences within your skills" [ref=e130] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/blogs/alexa/alexa-skills-kit/2023/02/six-tips-designing-alexa-shopping-experiences-february-2022?&sc_category=Owned&sc_channel=DC&sc_campaign=ASK-dpcmon-q1-23&sc_publisher=ASK&sc_content=Blog&sc_funnel=Awareness&sc_country=WW&sc_medium=Owned_DC_ASK-dpcmon-q1-23_ASK_Blog_Awareness_WW_Skill_Builders&sc_segment=Skill_Builders
+                  - heading "Tools" [level=4] [ref=e131]
+                  - link "Smart Home State Reporter" [ref=e133] [cursor=pointer]:
+                    - /url: /alexa/console/ask/devices/
+                - generic [ref=e134]:
+                  - heading "Popular" [level=4] [ref=e135]
+                  - generic [ref=e136]:
+                    - generic [ref=e137]: Tutorial
+                    - link "How to Build a Multimodal Skill" [ref=e138] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/alexa/alexa-skills-kit/get-deeper/tutorials-code-samples/build-a-multimodal-alexa-skill?&sc_category=Owned&sc_channel=DC&sc_campaign=Evergreen&sc_publisher=ASK&sc_content=Programmatic&sc_funnel=Awareness&sc_country=WW&sc_medium=Owned_DC_Evergreen_ASK_Programmatic_Awareness_WW_DF&sc_segment=DF
+                  - generic [ref=e139]:
+                    - generic [ref=e140]: Web Page
+                    - link "Get personalized skill improvement recommendations with the Skill Quality Coach" [ref=e141] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/alexa/alexa-skill-quality-coach?&sc_category=Owned&sc_channel=DC&sc_campaign=ASK-dpcsqc-q1-23&sc_publisher=ASK&sc_content=Product_LP&sc_funnel=Awareness&sc_country=WW&sc_medium=Owned_DC_ASK-dpcsqc-q1-23_ASK_Product_LP_Awareness_WW_Registered_Devs&sc_segment=Registered_Devs
+                  - generic [ref=e142]:
+                    - generic [ref=e143]: Web Page
+                    - link "5 tips on how you can grow revenue from your skills using Alexa Shopping Actions" [ref=e144] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/blogs/alexa/alexa-skills-kit/2022/07/Alexa-shopping-actions-july-2022?&sc_category=Owned&sc_channel=DC&sc_campaign=ASK-dpcmon-q1-23&sc_publisher=ASK&sc_content=Product_LP&sc_funnel=Awareness&sc_country=WW&sc_medium=Owned_DC_ASK-dpcmon-q1-23_ASK_Product_LP_Awareness_WW_Registered_Devs&sc_segment=Registered_Devs
+                - generic [ref=e145]:
+                  - heading "More" [level=4] [ref=e146]
+                  - link "Tutorials and code samples" [ref=e148] [cursor=pointer]:
+                    - /url: https://developer.amazon.com/en-US/alexa/alexa-skills-kit/get-deeper/tutorials-code-samples/?&sc_category=Owned&sc_channel=EM&sc_publisher=DC&sc_content=Content&sc_funnel=Publish&sc_country=WW&sc_medium=Owned_EM_DC_Content_Publish_WW_registereddevs&sc_segment=registereddevs
+                  - link "Alexa Design Guide" [ref=e150] [cursor=pointer]:
+                    - /url: " https://alexa.design/design-guide"
+                  - link "Webinars" [ref=e152] [cursor=pointer]:
+                    - /url: https://developer.amazon.com/en-US/alexa/alexa-skills-kit/get-deeper/webinars?&sc_category=Owned&sc_channel=DC&sc_publisher=DC&sc_content=Content&sc_funnel=Publish&sc_country=WW&sc_medium=Owned_DC_Content_Publish_WW_registereddevs&sc_segment=registereddevs (https://developer.amazon.com/en-US/alexa/alexa-skills-kit/get-deeper/tutorials-code-samples/build-an-engaging-alexa-skill?&sc_category=Owned&sc_channel=EM&sc_publisher=DC&sc_content=Content&sc_funnel=Publish&sc_country=WW&sc_medium=Owned_EM_DC_Content_Publish_WW_registereddevs&sc_segment=registereddevs)
+                  - link "Whitepapers" [ref=e154] [cursor=pointer]:
+                    - /url: https://developer.amazon.com/en-US/alexa/alexa-skills-kit/get-deeper/whitepapers?&sc_category=Owned&sc_channel=DC&sc_publisher=DC&sc_content=Content&sc_funnel=Publish&sc_country=WW&sc_medium=Owned_DC_Content_Publish_WW_registereddevs&sc_segment=registereddevs (https://developer.amazon.com/en-US/alexa/alexa-skills-kit/get-deeper/tutorials-code-samples/build-an-engaging-alexa-skill?&sc_category=Owned&sc_channel=EM&sc_publisher=DC&sc_content=Content&sc_funnel=Publish&sc_country=WW&sc_medium=Owned_EM_DC_Content_Publish_WW_registereddevs&sc_segment=registereddevs)
+                  - link "Case studies" [ref=e156] [cursor=pointer]:
+                    - /url: https://developer.amazon.com/en-US/alexa/alexa-skills-kit/get-deeper/case-studies?&sc_category=Owned&sc_channel=DC&sc_publisher=DC&sc_content=Content&sc_funnel=Publish&sc_country=WW&sc_medium=Owned_DC_Content_Publish_WW_registereddevs&sc_segment=registereddevs (https://developer.amazon.com/en-US/alexa/alexa-skills-kit/get-deeper/tutorials-code-samples/build-an-engaging-alexa-skill?&sc_category=Owned&sc_channel=EM&sc_publisher=DC&sc_content=Content&sc_funnel=Publish&sc_country=WW&sc_medium=Owned_EM_DC_Content_Publish_WW_registereddevs&sc_segment=registereddevs)
+                  - link "Documentation" [ref=e158] [cursor=pointer]:
+                    - /url: https://developer.amazon.com/en-US/docs/alexa/ask-overviews/build-skills-with-the-alexa-skills-kit.html?&sc_category=Owned&sc_channel=DC&sc_publisher=DC&sc_content=Content&sc_funnel=Publish&sc_country=WW&sc_medium=Owned_DC_Content_Publish_WW_registereddevs&sc_segment=registereddevs (https://developer.amazon.com/en-US/alexa/alexa-skills-kit/get-deeper/tutorials-code-samples/build-an-engaging-alexa-skill?&sc_category=Owned&sc_channel=EM&sc_publisher=DC&sc_content=Content&sc_funnel=Publish&sc_country=WW&sc_medium=Owned_EM_DC_Content_Publish_WW_registereddevs&sc_segment=registereddevs)
+                  - link "Office Hours" [ref=e160] [cursor=pointer]:
+                    - /url: https://www.twitch.tv/amazonalexa?&sc_category=Owned&sc_channel=DC&sc_campaign=depoh-q1-23&sc_publisher=ASK&sc_content=Product_LP&sc_funnel=Awareness&sc_country=WW&sc_medium=Owned_DC_depoh-q1-23_ASK_Product_LP_Awareness_WW_Registered_Devs&sc_segment=Registered_Devs (https://www.twitch.tv/amazonalexa?&sc_category=Owned&sc_channel=DC&sc_campaign=depoh-q1-23&sc_publisher=ASK&sc_content=Product_LP&sc_funnel=Awareness&sc_country=WW&sc_medium=Owned_DC_depoh-q1-23_ASK_Product_LP_Awareness_WW_Registered_Devs&sc_segment=Registered_Devs)
+          - generic [ref=e161]:
+            - link "Create an Alexa Widget in 15 minutes or less - View tech doc" [ref=e170] [cursor=pointer]:
+              - /url: https://developer.amazon.com/en-US/blogs/alexa/alexa-skills-kit/2023/04/alexa-widgets-april-2023?sc_category=Owned&sc_channel=DC&sc_campaign=ASK-apl-q2-23&sc_publisher=ASK&sc_content=Blog&sc_detail=Learn_More&sc_funnel=Awareness&sc_country=WW&sc_segment=Skill_Builders
+              - img "Create an Alexa Widget in 15 minutes or less - View tech doc" [ref=e173]
+            - generic [ref=e174]:
+              - generic [ref=e175]:
+                - heading "Alexa Skill Insights" [level=5] [ref=e176]
+                - generic [ref=e179]:
+                  - img [ref=e180]
+                  - heading "Check back for more" [level=6] [ref=e181]
+                  - paragraph [ref=e182]: The insights in this section have been updated to show opportunities to improve your skills. We'll have suggestions for your skills soon.
+              - generic [ref=e183]:
+                - heading "To Dos" [level=5] [ref=e184]
+                - generic [ref=e186]:
+                  - article [ref=e187]:
+                    - paragraph [ref=e188]: Make money by enabling in-skill purchases
+                    - link "Get started" [ref=e190] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/docs/alexa/in-skill-purchase/isp-overview.html?&sc_category=Owned&sc_channel=DC&sc_campaign=ASK-dpcmon-q2-23&sc_publisher=ASK&sc_content=Product_LP&sc_funnel=Awareness&sc_country=WW&sc_medium=Owned_DC_ASK-dpcmon-q2-23_ASK_Product_LP_Awareness_WW_Skill_Builders&sc_segment=Skill_Builders
+                      - text: Get started
+                      - img [ref=e192]
+                  - separator [ref=e195]
+                  - article [ref=e196]:
+                    - paragraph [ref=e197]: Drive incremental revenue by offering deals on your in-skill purchases
+                    - link "Read tech doc" [ref=e199] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/docs/alexa/skill-deals/overview.html?&sc_category=Owned&sc_channel=DC&sc_campaign=ASK-mon-q2-23&sc_publisher=AZ&sc_content=Tech_Doc&sc_funnel=Awareness&sc_country=WW&sc_medium=Owned_DC_ASK-mon-q2-23_AZ_Tech_Doc_Awareness_WW_Registered_Devs&sc_segment=Registered_Devs
+                      - text: Read tech doc
+                      - img [ref=e201]
+                  - separator [ref=e204]
+                  - article [ref=e205]:
+                    - paragraph [ref=e206]
+                    - img [ref=e210]
+            - generic [ref=e213]:
+              - heading "Announcements" [level=5] [ref=e214]
+              - generic [ref=e215]:
+                - article [ref=e216]:
+                  - heading [level=6] [ref=e217]
+                  - paragraph [ref=e218]
+                  - img [ref=e222]
+                - article [ref=e226]:
+                  - heading [level=6] [ref=e227]
+                  - paragraph [ref=e228]
+                  - img [ref=e232]
+                - article [ref=e236]:
+                  - heading [level=6] [ref=e237]
+                  - paragraph [ref=e238]
+                  - img [ref=e242]
+                - link "See all feature announcements" [ref=e246] [cursor=pointer]:
+                  - /url: https://developer.amazon.com/en-US/alexa/alexa-skills-kit/new#feature-updates
+                  - text: See all feature announcements
+                  - img [ref=e248]
+    - contentinfo [ref=e251]:
+      - generic [ref=e253]:
+        - button "English (US)" [ref=e256] [cursor=pointer]:
+          - generic [ref=e258]: English (US)
+        - generic [ref=e260]:
+          - generic [ref=e261]: © 2010 - 2026, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+          - generic [ref=e263]:
+            - link "Terms" [ref=e264] [cursor=pointer]:
+              - /url: https://developer.amazon.com/terms-and-agreements
+            - link "Docs" [ref=e265] [cursor=pointer]:
+              - /url: /alexa/alexa-developer-documentation-welcome
+            - link "Stack Overflow" [ref=e266] [cursor=pointer]:
+              - /url: https://stackoverflow.com/tags/alexa-skills-kit
+            - link "Blog" [ref=e267] [cursor=pointer]:
+              - /url: https://developer.amazon.com/blogs/alexa
+            - link "Alexa Developer Home" [ref=e268] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa
+  - img "Amazon Developer Assistant" [ref=e270]

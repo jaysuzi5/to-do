@@ -1,0 +1,328 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Alexa Developer Console developer console" [ref=e7] [cursor=pointer]:
+          - /url: /alexa/console/ask
+          - generic [ref=e8]:
+            - img "Alexa Developer Console" [ref=e10]
+            - generic [ref=e12]: developer console
+        - generic [ref=e17]:
+          - button "All Search" [expanded] [ref=e21] [cursor=pointer]:
+            - text: All
+            - img "Search" [ref=e23]
+          - textbox "Search" [ref=e27]
+          - img "Search Logo" [ref=e30] [cursor=pointer]
+        - generic:   
+        - list [ref=e32]:
+          - listitem [ref=e33]
+          - listitem [ref=e34]:
+            - generic [ref=e35]:
+              - link "Notifications" [ref=e36] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e39]
+              - alert [ref=e582]:
+                - generic "Success" [ref=e583]:
+                  - img [ref=e585]
+                - generic [ref=e590]:
+                  - generic [ref=e591]:
+                    - heading "Skill Saved Successfully" [level=6] [ref=e592]
+                    - link "Dismiss" [ref=e594] [cursor=pointer]:
+                      - /url: "#"
+                  - paragraph [ref=e595]: The skill has been saved without errors. The skill must be successfully built for changes to take effect.
+          - listitem [ref=e45]:
+            - link "SC" [ref=e46] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e47]: SC
+          - listitem [ref=e48]:
+            - link "" [ref=e49] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e52]: 
+    - generic [ref=e56]:
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - link "Back" [ref=e61] [cursor=pointer]:
+            - /url: /alexa/console/ask
+            - img [ref=e62]
+            - text: Back
+          - generic [ref=e66]: To-Do
+        - generic [ref=e67]:
+          - link "Build" [ref=e69] [cursor=pointer]:
+            - /url: /alexa/console/ask/build/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+          - link "Code" [ref=e71] [cursor=pointer]:
+            - /url: /alexa/console/ask/editor/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+          - link "Test" [ref=e73] [cursor=pointer]:
+            - /url: /alexa/console/ask/test/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+          - link "Distribution" [ref=e75] [cursor=pointer]:
+            - /url: /alexa/console/ask/publish/alexapublishing/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/skill-info
+          - link "Certification" [ref=e77] [cursor=pointer]:
+            - /url: /alexa/console/ask/certify/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/validation
+          - link "Analytics" [ref=e79] [cursor=pointer]:
+            - /url: /alexa/console/ask/measure/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+      - generic [ref=e80]:
+        - button "Feedback" [ref=e81] [cursor=pointer]
+        - button "Cancel" [ref=e82] [cursor=pointer]:
+          - img [ref=e84]
+      - main [ref=e86]:
+        - generic [ref=e87]:
+          - navigation [ref=e89]:
+            - list [ref=e90]:
+              - listitem [ref=e91]:
+                - link "Custom" [ref=e94] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/dashboard
+              - listitem [ref=e95]:
+                - generic [ref=e96]:
+                  - button [ref=e97] [cursor=pointer]:
+                    - img [ref=e99]
+                  - generic "Invocations" [ref=e102] [cursor=pointer]
+              - listitem [ref=e103]:
+                - generic [ref=e104]:
+                  - button [ref=e105] [cursor=pointer]:
+                    - img [ref=e420]
+                  - generic "Interaction Model" [ref=e110] [cursor=pointer]
+                - list [ref=e422]:
+                  - listitem [ref=e423]:
+                    - generic [ref=e424]:
+                      - button [ref=e425] [cursor=pointer]:
+                        - img [ref=e427]
+                      - link "Intents (7)" [ref=e596] [cursor=pointer]:
+                        - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intents
+                  - listitem [ref=e431]:
+                    - link "Annotation Sets" [ref=e434] [cursor=pointer]:
+                      - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/annotationSets
+                  - listitem [ref=e435]:
+                    - link "Intent History" [ref=e438] [cursor=pointer]:
+                      - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intent-history
+                  - listitem [ref=e439]:
+                    - link "JSON Editor" [ref=e442] [cursor=pointer]:
+                      - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/json-editor
+              - listitem [ref=e111]:
+                - generic [ref=e112]:
+                  - button [ref=e113] [cursor=pointer]:
+                    - img [ref=e115]
+                  - generic "Assets" [ref=e118] [cursor=pointer]
+                - list [ref=e119]:
+                  - listitem [ref=e120]:
+                    - generic [ref=e121]:
+                      - button [ref=e597] [cursor=pointer]:
+                        - img [ref=e599]
+                      - link "Slot Types (3)" [ref=e601] [cursor=pointer]:
+                        - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/slot-types
+              - listitem [ref=e124]:
+                - link "Multimodal Responses" [ref=e127] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/multimodal
+              - listitem [ref=e128]:
+                - link "Tasks" [ref=e131] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/tasks
+              - listitem [ref=e132]:
+                - link "Interfaces" [ref=e135] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/interfaces
+              - listitem [ref=e136]:
+                - link "Endpoint" [ref=e139] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/endpoint
+              - listitem [ref=e140]:
+                - link "Build History" [ref=e143] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/build-history
+              - listitem [ref=e144]:
+                - link "Models" [ref=e147] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/prebuilts/modify/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+              - listitem [ref=e148]:
+                - generic "Tools" [ref=e151]
+                - list [ref=e152]:
+                  - listitem [ref=e153]:
+                    - link "Monetize Your Skill" [ref=e156] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/monetization
+                  - listitem [ref=e157]:
+                    - link "Account Linking" [ref=e160] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/account-linking
+                  - listitem [ref=e161]:
+                    - link "Permissions" [ref=e164] [cursor=pointer]:
+                      - /url: /alexa/console/ask/build/permissions/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+                  - listitem [ref=e165]:
+                    - link "Languages" [ref=e168] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/language-settings
+          - generic [ref=e443]:
+            - generic [ref=e445]:
+              - generic [ref=e446]:
+                - button "Save" [ref=e447]:
+                  - generic [ref=e448]: Save
+                - button "Evaluate model" [ref=e450]:
+                  - generic [ref=e451]: Evaluate model
+                - button "Update live skill" [ref=e453]:
+                  - generic [ref=e454]: Update live skill
+              - generic [ref=e455]:
+                - generic [ref=e458]:
+                  - generic [ref=e459]: "Last successful build:"
+                  - generic [ref=e460]: 4/26/2026@8:24 AM
+                  - generic [ref=e461]: "-"
+                  - link "View history" [ref=e462] [cursor=pointer]:
+                    - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/build-history
+                    - generic [ref=e463]: View history
+                - button "Build skill" [ref=e464]:
+                  - generic [ref=e465]: Build skill
+            - generic [ref=e467]:
+              - generic [ref=e468]:
+                - list [ref=e471]:
+                  - listitem [ref=e472]: JSON Editor
+                - generic [ref=e474]:
+                  - generic [ref=e477]:
+                    - option "English (US)" [selected] [ref=e479]:
+                      - generic [ref=e480]:
+                        - img [ref=e482]
+                        - text: English (US)
+                    - combobox [ref=e485]
+                  - img [ref=e491] [cursor=pointer]:
+                    - generic [ref=e494]: "?"
+              - generic [ref=e496]:
+                - link "Click here" [ref=e497] [cursor=pointer]:
+                  - /url: https://developer.amazon.com/docs/smapi/interaction-model-schema.html
+                - text: to learn more about the schema definition for interaction models.
+            - generic [ref=e500]:
+              - generic [ref=e502] [cursor=pointer]: Drag and drop a .json file
+              - generic [ref=e504]:
+                - textbox [active] [ref=e505]: "\x01\x01"
+                - generic [ref=e507]:
+                  - generic [ref=e508]: "1"
+                  - generic [ref=e510]: "2"
+                  - generic [ref=e512]: "3"
+                  - generic [ref=e514]: "4"
+                  - generic [ref=e515]: "5"
+                  - generic [ref=e517]: "6"
+                  - generic [ref=e519]: "7"
+                  - generic [ref=e520]: "8"
+                  - generic [ref=e521]: "9"
+                  - generic [ref=e522]: "10"
+                  - generic [ref=e524]: "11"
+                  - generic [ref=e525]: "12"
+                  - generic [ref=e526]: "13"
+                  - generic [ref=e527]: "14"
+                  - generic [ref=e529]: "15"
+                  - generic [ref=e530]: "16"
+                  - generic [ref=e531]: "17"
+                  - generic [ref=e532]: "18"
+                  - generic [ref=e534]: "19"
+                  - generic [ref=e535]: "20"
+                  - generic [ref=e536]: "21"
+                  - generic [ref=e538]: "22"
+                  - generic [ref=e539]: "23"
+                  - generic [ref=e540]: "24"
+                  - generic [ref=e541]: "25"
+                  - generic [ref=e542]: "26"
+                  - generic [ref=e543]: "27"
+                  - generic [ref=e544]: "28"
+                  - generic [ref=e545]: "29"
+                  - generic [ref=e546]: "30"
+                  - generic [ref=e547]: "31"
+                  - generic [ref=e549]: "32"
+                  - generic [ref=e550]: "33"
+                  - generic [ref=e551]: "34"
+                  - generic [ref=e552]: "35"
+                  - generic [ref=e554]: "36"
+                  - generic [ref=e555]: "37"
+                  - generic [ref=e556]: "38"
+                  - generic [ref=e557]: "39"
+                  - generic [ref=e558]: "40"
+                  - generic [ref=e559]: "41"
+                  - generic [ref=e560]: "42"
+                  - generic [ref=e561]: "43"
+                  - generic [ref=e568]: "44"
+                  - generic [ref=e569]: "45"
+                  - generic [ref=e570]: "46"
+                  - generic [ref=e572]: "47"
+                  - generic [ref=e573]: "48"
+                  - generic [ref=e574]: "49"
+                  - generic [ref=e575]: "50"
+                  - generic [ref=e577]: "51"
+                  - generic [ref=e578]: "52"
+                - generic [ref=e564]:
+                  - generic:
+                    - generic: "{"
+                    - generic: "\"interactionModel\": {"
+                    - generic: "\"languageModel\": {"
+                    - generic: "\"invocationName\": \"my to do list\","
+                    - generic: "\"intents\": ["
+                    - generic: "{"
+                    - generic: "\"name\": \"AMAZON.CancelIntent\","
+                    - generic: "\"samples\": []"
+                    - generic: "},"
+                    - generic: "{"
+                    - generic: "\"name\": \"AMAZON.HelpIntent\","
+                    - generic: "\"samples\": []"
+                    - generic: "},"
+                    - generic: "{"
+                    - generic: "\"name\": \"AMAZON.StopIntent\","
+                    - generic: "\"samples\": []"
+                    - generic: "},"
+                    - generic: "{"
+                    - generic: "\"name\": \"HelloWorldIntent\","
+                    - generic: "\"slots\": [],"
+                    - generic: "\"samples\": ["
+                    - generic: "\"hello\","
+                    - generic: "\"how are you\","
+                    - generic: "\"say hi world\","
+                    - generic: "\"say hi\","
+                    - generic: "\"hi\","
+                    - generic: "\"say hello world\","
+                    - generic: "\"say hello\""
+                    - generic: "]"
+                    - generic: "},"
+                    - generic: "{"
+                    - generic: "\"name\": \"AMAZON.NavigateHomeIntent\","
+                    - generic: "\"samples\": []"
+                    - generic: "},"
+                    - generic: "{"
+                    - generic: "\"name\": \"AMAZON.FallbackIntent\","
+                    - generic: "\"samples\": []"
+                    - generic: "},"
+                    - generic: "{"
+                    - generic: "\"name\": \"AddTaskIntent\","
+                    - generic: "\"slots\": ["
+                    - generic: "{"
+                    - generic: "\"name\": \"Task\","
+                    - generic: "\"type\": \"AMAZON.SearchQuery\""
+                    - generic: "},"
+                    - generic: "{"
+                    - generic: "\"name\": \"UserName\","
+                    - generic: "\"type\": \"UserNameType\""
+                    - generic: "},"
+                    - generic: "{"
+                    - generic: "\"name\": \"ListName\","
+                    - generic: "\"type\": \"ListNameType\""
+    - contentinfo [ref=e379]:
+      - generic [ref=e382]:
+        - generic [ref=e383]: Errors and Warnings
+        - generic [ref=e384]:
+          - generic [ref=e385]:
+            - img [ref=e386]
+            - text: "0"
+            - img [ref=e390]
+            - text: "0"
+          - button [ref=e395] [cursor=pointer]:
+            - img [ref=e396]
+      - generic [ref=e399]:
+        - button "English (US)" [ref=e402] [cursor=pointer]:
+          - generic [ref=e404]: English (US)
+        - generic [ref=e406]:
+          - generic [ref=e407]: © 2010 - 2026, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+          - generic [ref=e409]:
+            - link "Terms" [ref=e410] [cursor=pointer]:
+              - /url: https://developer.amazon.com/terms-and-agreements
+            - link "Docs" [ref=e411] [cursor=pointer]:
+              - /url: /alexa/alexa-developer-documentation-welcome
+            - link "Stack Overflow" [ref=e412] [cursor=pointer]:
+              - /url: https://stackoverflow.com/tags/alexa-skills-kit
+            - link "Blog" [ref=e413] [cursor=pointer]:
+              - /url: https://developer.amazon.com/blogs/alexa
+            - link "Alexa Developer Home" [ref=e414] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa
+  - img "Amazon Developer Assistant" [ref=e417]
+  - generic:
+    - generic:
+      - generic: Instant publish is only available for published skills.
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - text: Build resources will be saved and built across all synced locales.
+          - link "Learn more about sync locales.":
+            - /url: https://developer.amazon.com/en-US/docs/alexa/custom-skills/add-additional-locales-of-the-same-language-to-your-custom-skills.html

@@ -1,0 +1,122 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Alexa Developer Console developer console" [ref=e7] [cursor=pointer]:
+          - /url: /alexa/console/ask
+          - generic [ref=e8]:
+            - img "Alexa Developer Console" [ref=e10]
+            - generic [ref=e12]: developer console
+        - generic:   
+        - list [ref=e14]:
+          - listitem [ref=e15]
+          - listitem [ref=e16]:
+            - link "Notifications" [ref=e18] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e21]
+          - listitem [ref=e26]:
+            - link "SC" [ref=e27] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e28]: SC
+          - listitem [ref=e29]:
+            - link "" [ref=e30] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e33]: 
+    - generic [ref=e37]:
+      - generic [ref=e40]:
+        - button "Feedback" [ref=e41] [cursor=pointer]
+        - button "Cancel" [ref=e42] [cursor=pointer]:
+          - img [ref=e44]
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - tablist [ref=e52]:
+            - generic [ref=e53]:
+              - tab "Skills" [ref=e54]:
+                - radio "Skills" [checked] [ref=e55]
+                - generic [ref=e57] [cursor=pointer]: Skills
+              - tab "Earnings" [ref=e58]:
+                - radio "Earnings" [ref=e59]
+                - generic [ref=e61] [cursor=pointer]: Earnings
+              - tab "Payments" [ref=e62]:
+                - radio "Payments" [ref=e63]
+                - generic [ref=e65] [cursor=pointer]: Payments
+              - tab "Hosting" [ref=e66]:
+                - radio "Hosting" [ref=e67]
+                - generic [ref=e69] [cursor=pointer]: Hosting
+              - tab "Settings" [ref=e70]:
+                - radio "Settings" [ref=e71]
+                - generic [ref=e73] [cursor=pointer]: Settings
+          - generic:
+            - tabpanel "Skills"
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - generic [ref=e77]:
+              - heading "Alexa Skills" [level=2] [ref=e78]
+              - link "Skill examples" [ref=e79] [cursor=pointer]:
+                - /url: https://github.com/alexa-samples
+              - generic [ref=e80]: "|"
+              - link "Learn more" [ref=e81] [cursor=pointer]:
+                - /url: https://developer.amazon.com/en-US/alexa/alexa-skills-kit/start
+            - heading "Resources" [level=5] [ref=e92]
+          - generic [ref=e95]:
+            - link "Create an Alexa Widget in 15 minutes or less - View tech doc" [ref=e104] [cursor=pointer]:
+              - /url: https://developer.amazon.com/en-US/blogs/alexa/alexa-skills-kit/2023/04/alexa-widgets-april-2023?sc_category=Owned&sc_channel=DC&sc_campaign=ASK-apl-q2-23&sc_publisher=ASK&sc_content=Blog&sc_detail=Learn_More&sc_funnel=Awareness&sc_country=WW&sc_segment=Skill_Builders
+              - img "Create an Alexa Widget in 15 minutes or less - View tech doc" [ref=e107]
+            - generic [ref=e108]:
+              - generic [ref=e109]:
+                - heading "Alexa Skill Insights" [level=5] [ref=e110]
+                - generic [ref=e113]:
+                  - img [ref=e114]
+                  - heading "Check back for more" [level=6] [ref=e115]
+                  - paragraph [ref=e116]: The insights in this section have been updated to show opportunities to improve your skills. We'll have suggestions for your skills soon.
+              - generic [ref=e117]:
+                - heading "To Dos" [level=5] [ref=e118]
+                - generic [ref=e120]:
+                  - article [ref=e121]:
+                    - paragraph [ref=e122]
+                    - img [ref=e126]
+                  - separator [ref=e129]
+                  - article [ref=e130]:
+                    - paragraph [ref=e131]
+                    - img [ref=e135]
+                  - separator [ref=e138]
+                  - article [ref=e139]:
+                    - paragraph [ref=e140]
+                    - img [ref=e144]
+            - generic [ref=e147]:
+              - heading "Announcements" [level=5] [ref=e148]
+              - generic [ref=e149]:
+                - article [ref=e150]:
+                  - heading [level=6] [ref=e151]
+                  - paragraph [ref=e152]
+                  - img [ref=e156]
+                - article [ref=e160]:
+                  - heading [level=6] [ref=e161]
+                  - paragraph [ref=e162]
+                  - img [ref=e166]
+                - article [ref=e170]:
+                  - heading [level=6] [ref=e171]
+                  - paragraph [ref=e172]
+                  - img [ref=e176]
+                - link "See all feature announcements" [ref=e180] [cursor=pointer]:
+                  - /url: https://developer.amazon.com/en-US/alexa/alexa-skills-kit/new#feature-updates
+                  - text: See all feature announcements
+                  - img [ref=e182]
+    - contentinfo [ref=e185]:
+      - generic [ref=e187]:
+        - button "English (US)" [ref=e190] [cursor=pointer]:
+          - generic [ref=e192]: English (US)
+        - generic [ref=e194]:
+          - generic [ref=e195]: © 2010 - 2026, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+          - generic [ref=e197]:
+            - link "Terms" [ref=e198] [cursor=pointer]:
+              - /url: https://developer.amazon.com/terms-and-agreements
+            - link "Docs" [ref=e199] [cursor=pointer]:
+              - /url: /alexa/alexa-developer-documentation-welcome
+            - link "Stack Overflow" [ref=e200] [cursor=pointer]:
+              - /url: https://stackoverflow.com/tags/alexa-skills-kit
+            - link "Blog" [ref=e201] [cursor=pointer]:
+              - /url: https://developer.amazon.com/blogs/alexa
+            - link "Alexa Developer Home" [ref=e202] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa
+  - img "Amazon Developer Assistant" [ref=e204]

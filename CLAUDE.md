@@ -4,8 +4,8 @@
 
 Personal to-do list application for Jay (jaysuzi5@gmail.com) and Suzanne (jaysuziq@gmail.com).
 Users manage named task lists with tasks of varying priority. Phase 2 adds Amazon Alexa skill
-integration so users can say "Add wash the windows to Jay's To Do List" and tasks are added
-via voice command.
+integration so users can say "Alexa, ask my chores to add wash the windows to Jay's list"
+and tasks are added via voice command. Invocation name is "my chores".
 
 ## Stack
 

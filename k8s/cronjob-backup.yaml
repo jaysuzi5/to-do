@@ -1,9 +1,13 @@
 ---
+# Local backup - pg_dump to PVC every 6 hours
 apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: to-do-backup-local
   namespace: to-do
+  labels:
+    app: to-do
+    component: backup
 spec:
   schedule: "0 */6 * * *"
   concurrencyPolicy: Forbid
@@ -11,47 +15,92 @@ spec:
   failedJobsHistoryLimit: 3
   jobTemplate:
     spec:
+      backoffLimit: 2
       template:
+        metadata:
+          labels:
+            app: to-do
+            component: backup
         spec:
           restartPolicy: OnFailure
           containers:
-            - name: backup
-              image: postgres:17-alpine
-              env:
-                - name: PGPASSWORD
-                  valueFrom:
-                    secretKeyRef:
-                      name: to-do
-                      key: postgres_password
-              command:
-                - /bin/sh
-                - -c
-                - |
-                  set -e
-                  DATE=$(date +%Y%m%d-%H%M%S)
-                  FILE="/backups/to-do-${DATE}.dump"
-                  pg_dump -h postgresql-rw.postgresql.svc.cluster.local \
-                          -U $(cat /dev/stdin) \
-                          -d to-do \
-                          --format=custom \
-                          --compress=9 \
-                          -f "$FILE"
-                  find /backups -name "*.dump" -mtime +7 -delete
-                  echo "Backup complete: $FILE"
-              volumeMounts:
-                - name: backup-storage
-                  mountPath: /backups
-          volumes:
+          - name: backup
+            image: postgres:17-alpine
+            command:
+            - /bin/sh
+            - -c
+            - |
+              set -e
+
+              BACKUP_DIR="/backups"
+              TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+              BACKUP_FILE="${BACKUP_DIR}/to-do_${TIMESTAMP}.dump"
+              RETENTION_DAYS=7
+
+              echo "Starting PostgreSQL backup at $(date)"
+              mkdir -p ${BACKUP_DIR}
+
+              PGPASSWORD="${POSTGRES_PASSWORD}" pg_dump \
+                -h postgresql-rw.postgresql.svc.cluster.local \
+                -U "${POSTGRES_USER}" \
+                -d "${POSTGRES_DB}" \
+                --verbose \
+                --format=custom \
+                --compress=9 \
+                > "${BACKUP_FILE}"
+
+              if [ -s "${BACKUP_FILE}" ]; then
+                BACKUP_SIZE=$(du -h "${BACKUP_FILE}" | cut -f1)
+                echo "Backup completed: ${BACKUP_FILE} (${BACKUP_SIZE})"
+              else
+                echo "ERROR: Backup file is empty or not created!"
+                exit 1
+              fi
+
+              echo "Cleaning up backups older than ${RETENTION_DAYS} days..."
+              find ${BACKUP_DIR} -name "to-do_*.dump" -type f -mtime +${RETENTION_DAYS} -delete
+
+              echo "Current backups:"
+              ls -lah ${BACKUP_DIR}/to-do_*.dump 2>/dev/null || echo "No backups found"
+              echo "Backup job completed at $(date)"
+            env:
+            - name: POSTGRES_DB
+              value: "to-do"
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: postgres_user
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: postgres_password
+            volumeMounts:
             - name: backup-storage
-              persistentVolumeClaim:
-                claimName: to-do-postgres-backup-pvc
+              mountPath: /backups
+            resources:
+              requests:
+                memory: "128Mi"
+                cpu: "100m"
+              limits:
+                memory: "512Mi"
+                cpu: "500m"
+          volumes:
+          - name: backup-storage
+            persistentVolumeClaim:
+              claimName: to-do-postgres-backup-pvc
 
 ---
+# Cloud backup - Daily upload to S3 at 2 AM
 apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: to-do-backup-cloud-daily
   namespace: to-do
+  labels:
+    app: to-do
+    component: backup
 spec:
   schedule: "0 2 * * *"
   concurrencyPolicy: Forbid
@@ -59,38 +108,243 @@ spec:
   failedJobsHistoryLimit: 3
   jobTemplate:
     spec:
+      backoffLimit: 2
       template:
+        metadata:
+          labels:
+            app: to-do
+            component: backup
         spec:
           restartPolicy: OnFailure
           containers:
-            - name: s3-upload
-              image: amazon/aws-cli:latest
-              env:
-                - name: AWS_ACCESS_KEY_ID
-                  valueFrom:
-                    secretKeyRef:
-                      name: to-do
-                      key: aws_access_key_id
-                - name: AWS_SECRET_ACCESS_KEY
-                  valueFrom:
-                    secretKeyRef:
-                      name: to-do
-                      key: aws_secret_access_key
-                - name: AWS_DEFAULT_REGION
-                  value: "us-east-1"
-              command:
-                - /bin/sh
-                - -c
-                - |
-                  LATEST=$(ls -t /backups/*.dump 2>/dev/null | head -1)
-                  if [ -z "$LATEST" ]; then echo "No backup found"; exit 1; fi
-                  DATE_PATH=$(date +%Y/%m/%d)
-                  aws s3 cp "$LATEST" "s3://jay-curtis-backup/to-do/backups/daily/${DATE_PATH}/$(basename $LATEST)" \
-                    --storage-class STANDARD_IA
-              volumeMounts:
-                - name: backup-storage
-                  mountPath: /backups
-          volumes:
+          - name: backup-cloud-daily
+            image: amazon/aws-cli:latest
+            command:
+            - /bin/sh
+            - -c
+            - |
+              set -e
+
+              BACKUP_DIR="/backups"
+              echo "Starting daily cloud backup upload at $(date)"
+
+              LATEST_BACKUP=$(ls -t ${BACKUP_DIR}/to-do_*.dump 2>/dev/null | head -1)
+
+              if [ -z "${LATEST_BACKUP}" ]; then
+                echo "ERROR: No local backup found to upload!"
+                exit 1
+              fi
+
+              echo "Uploading: ${LATEST_BACKUP} ($(du -h "${LATEST_BACKUP}" | cut -f1))"
+
+              S3_PATH="s3://${S3_BUCKET}/to-do/backups/daily/$(date +%Y/%m/%d)/$(basename ${LATEST_BACKUP})"
+
+              aws s3 cp "${LATEST_BACKUP}" "${S3_PATH}" --storage-class STANDARD_IA
+
+              echo "Uploaded to: ${S3_PATH}"
+
+              echo "Recent daily backups:"
+              aws s3 ls "s3://${S3_BUCKET}/to-do/backups/daily/" --recursive | tail -10
+              echo "Daily cloud backup completed at $(date)"
+            env:
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: aws_access_key_id
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: aws_secret_access_key
+            - name: S3_BUCKET
+              value: "jay-curtis-backup"
+            - name: AWS_DEFAULT_REGION
+              value: "us-east-1"
+            volumeMounts:
             - name: backup-storage
-              persistentVolumeClaim:
-                claimName: to-do-postgres-backup-pvc
+              mountPath: /backups
+              readOnly: true
+            resources:
+              requests:
+                memory: "128Mi"
+                cpu: "100m"
+              limits:
+                memory: "256Mi"
+                cpu: "250m"
+          volumes:
+          - name: backup-storage
+            persistentVolumeClaim:
+              claimName: to-do-postgres-backup-pvc
+
+---
+# Cloud backup - Monthly upload to S3 on 1st of month at 3 AM
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: to-do-backup-cloud-monthly
+  namespace: to-do
+  labels:
+    app: to-do
+    component: backup
+spec:
+  schedule: "0 3 1 * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      template:
+        metadata:
+          labels:
+            app: to-do
+            component: backup
+        spec:
+          restartPolicy: OnFailure
+          containers:
+          - name: backup-cloud-monthly
+            image: amazon/aws-cli:latest
+            command:
+            - /bin/sh
+            - -c
+            - |
+              set -e
+
+              BACKUP_DIR="/backups"
+              echo "Starting monthly cloud backup upload at $(date)"
+
+              LATEST_BACKUP=$(ls -t ${BACKUP_DIR}/to-do_*.dump 2>/dev/null | head -1)
+
+              if [ -z "${LATEST_BACKUP}" ]; then
+                echo "ERROR: No local backup found to upload!"
+                exit 1
+              fi
+
+              echo "Uploading: ${LATEST_BACKUP} ($(du -h "${LATEST_BACKUP}" | cut -f1))"
+
+              S3_PATH="s3://${S3_BUCKET}/to-do/backups/monthly/$(date +%Y/%m)/$(basename ${LATEST_BACKUP})"
+
+              aws s3 cp "${LATEST_BACKUP}" "${S3_PATH}" --storage-class STANDARD_IA
+
+              echo "Uploaded to: ${S3_PATH}"
+
+              echo "Monthly backups:"
+              aws s3 ls "s3://${S3_BUCKET}/to-do/backups/monthly/" --recursive | tail -10
+              echo "Monthly cloud backup completed at $(date)"
+            env:
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: aws_access_key_id
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: aws_secret_access_key
+            - name: S3_BUCKET
+              value: "jay-curtis-backup"
+            - name: AWS_DEFAULT_REGION
+              value: "us-east-1"
+            volumeMounts:
+            - name: backup-storage
+              mountPath: /backups
+              readOnly: true
+            resources:
+              requests:
+                memory: "128Mi"
+                cpu: "100m"
+              limits:
+                memory: "256Mi"
+                cpu: "250m"
+          volumes:
+          - name: backup-storage
+            persistentVolumeClaim:
+              claimName: to-do-postgres-backup-pvc
+
+---
+# Cloud backup - Yearly upload to S3 on Jan 1st at 4 AM
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: to-do-backup-cloud-yearly
+  namespace: to-do
+  labels:
+    app: to-do
+    component: backup
+spec:
+  schedule: "0 4 1 1 *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      template:
+        metadata:
+          labels:
+            app: to-do
+            component: backup
+        spec:
+          restartPolicy: OnFailure
+          containers:
+          - name: backup-cloud-yearly
+            image: amazon/aws-cli:latest
+            command:
+            - /bin/sh
+            - -c
+            - |
+              set -e
+
+              BACKUP_DIR="/backups"
+              echo "Starting yearly cloud backup upload at $(date)"
+
+              LATEST_BACKUP=$(ls -t ${BACKUP_DIR}/to-do_*.dump 2>/dev/null | head -1)
+
+              if [ -z "${LATEST_BACKUP}" ]; then
+                echo "ERROR: No local backup found to upload!"
+                exit 1
+              fi
+
+              echo "Uploading: ${LATEST_BACKUP} ($(du -h "${LATEST_BACKUP}" | cut -f1))"
+
+              S3_PATH="s3://${S3_BUCKET}/to-do/backups/yearly/$(date +%Y)/$(basename ${LATEST_BACKUP})"
+
+              aws s3 cp "${LATEST_BACKUP}" "${S3_PATH}" --storage-class STANDARD_IA
+
+              echo "Uploaded to: ${S3_PATH}"
+
+              echo "Yearly backups:"
+              aws s3 ls "s3://${S3_BUCKET}/to-do/backups/yearly/" --recursive
+              echo "Yearly cloud backup completed at $(date)"
+            env:
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: aws_access_key_id
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: to-do
+                  key: aws_secret_access_key
+            - name: S3_BUCKET
+              value: "jay-curtis-backup"
+            - name: AWS_DEFAULT_REGION
+              value: "us-east-1"
+            volumeMounts:
+            - name: backup-storage
+              mountPath: /backups
+              readOnly: true
+            resources:
+              requests:
+                memory: "128Mi"
+                cpu: "100m"
+              limits:
+                memory: "256Mi"
+                cpu: "250m"
+          volumes:
+          - name: backup-storage
+            persistentVolumeClaim:
+              claimName: to-do-postgres-backup-pvc

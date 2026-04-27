@@ -1,0 +1,283 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Alexa Developer Console developer console" [ref=e7] [cursor=pointer]:
+          - /url: /alexa/console/ask
+          - generic [ref=e8]:
+            - img "Alexa Developer Console" [ref=e10]
+            - generic [ref=e12]: developer console
+        - generic:   
+        - list [ref=e14]:
+          - listitem [ref=e15]
+          - listitem [ref=e16]:
+            - link "Notifications" [ref=e18] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e21]
+          - listitem [ref=e26]:
+            - link "SC" [ref=e27] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e28]: SC
+          - listitem [ref=e29]:
+            - link "" [ref=e30] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e33]: 
+    - generic [ref=e37]:
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - link "Back" [ref=e42] [cursor=pointer]:
+            - /url: /alexa/console/ask
+            - img [ref=e43]
+            - text: Back
+          - generic [ref=e47]: To-Do
+        - generic [ref=e48]:
+          - link "Build" [ref=e50] [cursor=pointer]:
+            - /url: /alexa/console/ask/build/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+          - link "Code" [ref=e52] [cursor=pointer]:
+            - /url: /alexa/console/ask/editor/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+          - link "Test" [ref=e54] [cursor=pointer]:
+            - /url: /alexa/console/ask/test/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+          - link "Distribution" [ref=e56] [cursor=pointer]:
+            - /url: /alexa/console/ask/publish/alexapublishing/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/skill-info
+          - link "Certification" [ref=e58] [cursor=pointer]:
+            - /url: /alexa/console/ask/certify/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/validation
+          - link "Analytics" [ref=e60] [cursor=pointer]:
+            - /url: /alexa/console/ask/measure/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+      - generic [ref=e61]:
+        - button "Feedback" [ref=e62] [cursor=pointer]
+        - button "Cancel" [ref=e63] [cursor=pointer]:
+          - img [ref=e65]
+      - main [ref=e67]:
+        - generic [ref=e68]:
+          - navigation [ref=e70]:
+            - list [ref=e71]:
+              - listitem [ref=e72]:
+                - link "Custom" [ref=e75] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/dashboard
+              - listitem [ref=e76]:
+                - generic [ref=e77]:
+                  - button [ref=e78] [cursor=pointer]:
+                    - img [ref=e80]
+                  - generic "Invocations" [ref=e83] [cursor=pointer]
+              - listitem [ref=e84]:
+                - generic [ref=e85]:
+                  - button [ref=e86] [cursor=pointer]:
+                    - img [ref=e88]
+                  - generic "Interaction Model" [ref=e91] [cursor=pointer]
+              - listitem [ref=e92]:
+                - generic [ref=e93]:
+                  - button [ref=e94] [cursor=pointer]:
+                    - img [ref=e96]
+                  - generic "Assets" [ref=e99] [cursor=pointer]
+                - list [ref=e100]:
+                  - listitem [ref=e101]:
+                    - link "Slot Types (0)" [ref=e104] [cursor=pointer]:
+                      - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/slot-types
+              - listitem [ref=e105]:
+                - link "Multimodal Responses" [ref=e108] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/multimodal
+              - listitem [ref=e109]:
+                - link "Tasks" [ref=e112] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/tasks
+              - listitem [ref=e113]:
+                - link "Interfaces" [ref=e116] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/interfaces
+              - listitem [ref=e117]:
+                - link "Endpoint" [ref=e120] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/endpoint
+              - listitem [ref=e121]:
+                - link "Build History" [ref=e124] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/build-history
+              - listitem [ref=e125]:
+                - link "Models" [ref=e128] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/prebuilts/modify/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+              - listitem [ref=e129]:
+                - generic "Tools" [ref=e132]
+                - list [ref=e133]:
+                  - listitem [ref=e134]:
+                    - link "Monetize Your Skill" [ref=e137] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/monetization
+                  - listitem [ref=e138]:
+                    - link "Account Linking" [ref=e141] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/account-linking
+                  - listitem [ref=e142]:
+                    - link "Permissions" [ref=e145] [cursor=pointer]:
+                      - /url: /alexa/console/ask/build/permissions/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+                  - listitem [ref=e146]:
+                    - link "Languages" [ref=e149] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/language-settings
+          - generic [ref=e150]:
+            - generic [ref=e152]:
+              - generic [ref=e153]:
+                - button "Save" [ref=e154]:
+                  - generic [ref=e155]: Save
+                - button "Evaluate model" [ref=e157]:
+                  - generic [ref=e158]: Evaluate model
+                - button "Update live skill" [ref=e160]:
+                  - generic [ref=e161]: Update live skill
+              - button "Build skill" [ref=e163]:
+                - generic [ref=e164]: Build skill
+            - generic [ref=e167]:
+              - generic [ref=e169]:
+                - list [ref=e172]:
+                  - listitem [ref=e173]: Intents
+                - generic [ref=e175]:
+                  - generic [ref=e178]:
+                    - option "English (US)" [selected] [ref=e180]:
+                      - generic [ref=e181]:
+                        - img [ref=e183]
+                        - text: English (US)
+                    - combobox [ref=e186]
+                  - img [ref=e192] [cursor=pointer]:
+                    - generic [ref=e195]: "?"
+              - generic [ref=e196]:
+                - generic [ref=e197]:
+                  - link "+ Add Intent" [ref=e199] [cursor=pointer]:
+                    - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intents/add-intent
+                    - generic [ref=e200]: + Add Intent
+                  - generic [ref=e201]:
+                    - generic [ref=e202]:
+                      - generic [ref=e203]: Skill Model Sensitivity
+                      - img [ref=e207] [cursor=pointer]:
+                        - generic [ref=e210]: "?"
+                      - generic [ref=e214]:
+                        - option "Recommended" [selected] [ref=e216]
+                        - combobox [ref=e217]
+                    - generic [ref=e220]:
+                      - textbox [ref=e221]:
+                        - /placeholder: Filter intents
+                      - img [ref=e223] [cursor=pointer]
+                - generic [ref=e227]:
+                  - table [ref=e229]:
+                    - rowgroup [ref=e230]:
+                      - row "Name Utterances Slots Type Actions" [ref=e231]:
+                        - columnheader "Name" [ref=e232]
+                        - columnheader "Utterances" [ref=e233]
+                        - columnheader "Slots" [ref=e234]
+                        - columnheader "Type" [ref=e235]
+                        - columnheader "Actions" [ref=e236]
+                    - rowgroup [ref=e237]:
+                      - row "AMAZON.CancelIntent - - Required Edit" [ref=e238]:
+                        - cell "AMAZON.CancelIntent" [ref=e239]:
+                          - link "AMAZON.CancelIntent" [ref=e240] [cursor=pointer]:
+                            - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intents/AMAZON.CancelIntent
+                        - cell "-" [ref=e241]
+                        - cell "-" [ref=e242]
+                        - cell "Required" [ref=e243]
+                        - cell "Edit" [ref=e244]:
+                          - link "Edit" [ref=e247] [cursor=pointer]:
+                            - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intents/AMAZON.CancelIntent
+                            - generic [ref=e248]: Edit
+                      - row "AMAZON.HelpIntent - - Required Edit" [ref=e249]:
+                        - cell "AMAZON.HelpIntent" [ref=e250]:
+                          - link "AMAZON.HelpIntent" [ref=e251] [cursor=pointer]:
+                            - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intents/AMAZON.HelpIntent
+                        - cell "-" [ref=e252]
+                        - cell "-" [ref=e253]
+                        - cell "Required" [ref=e254]
+                        - cell "Edit" [ref=e255]:
+                          - link "Edit" [ref=e258] [cursor=pointer]:
+                            - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intents/AMAZON.HelpIntent
+                            - generic [ref=e259]: Edit
+                      - row "AMAZON.StopIntent - - Required Edit" [ref=e260]:
+                        - cell "AMAZON.StopIntent" [ref=e261]:
+                          - link "AMAZON.StopIntent" [ref=e262] [cursor=pointer]:
+                            - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intents/AMAZON.StopIntent
+                        - cell "-" [ref=e263]
+                        - cell "-" [ref=e264]
+                        - cell "Required" [ref=e265]
+                        - cell "Edit" [ref=e266]:
+                          - link "Edit" [ref=e269] [cursor=pointer]:
+                            - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intents/AMAZON.StopIntent
+                            - generic [ref=e270]: Edit
+                      - row "HelloWorldIntent 7 - Custom Edit | Delete" [ref=e271]:
+                        - cell "HelloWorldIntent" [ref=e272]:
+                          - link "HelloWorldIntent" [ref=e273] [cursor=pointer]:
+                            - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intents/HelloWorldIntent
+                        - cell "7" [ref=e274]
+                        - cell "-" [ref=e275]
+                        - cell "Custom" [ref=e276]
+                        - cell "Edit | Delete" [ref=e277]:
+                          - generic [ref=e278]:
+                            - link "Edit" [ref=e280] [cursor=pointer]:
+                              - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intents/HelloWorldIntent
+                              - generic [ref=e281]: Edit
+                            - text: "|"
+                            - button "Delete" [ref=e284] [cursor=pointer]:
+                              - generic [ref=e285]: Delete
+                      - row "AMAZON.NavigateHomeIntent - - Required Edit" [ref=e286]:
+                        - cell "AMAZON.NavigateHomeIntent" [ref=e287]:
+                          - link "AMAZON.NavigateHomeIntent" [ref=e288] [cursor=pointer]:
+                            - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intents/AMAZON.NavigateHomeIntent
+                        - cell "-" [ref=e289]
+                        - cell "-" [ref=e290]
+                        - cell "Required" [ref=e291]
+                        - cell "Edit" [ref=e292]:
+                          - link "Edit" [ref=e295] [cursor=pointer]:
+                            - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intents/AMAZON.NavigateHomeIntent
+                            - generic [ref=e296]: Edit
+                      - row "AMAZON.FallbackIntent - - Built-In Edit | Delete" [ref=e297]:
+                        - cell "AMAZON.FallbackIntent" [ref=e298]:
+                          - link "AMAZON.FallbackIntent" [ref=e299] [cursor=pointer]:
+                            - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intents/AMAZON.FallbackIntent
+                        - cell "-" [ref=e300]
+                        - cell "-" [ref=e301]
+                        - cell "Built-In" [ref=e302]
+                        - cell "Edit | Delete" [ref=e303]:
+                          - generic [ref=e304]:
+                            - link "Edit" [ref=e306] [cursor=pointer]:
+                              - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/intents/AMAZON.FallbackIntent
+                              - generic [ref=e307]: Edit
+                            - text: "|"
+                            - button "Delete" [ref=e310] [cursor=pointer]:
+                              - generic [ref=e311]: Delete
+                  - generic [ref=e315]:
+                    - button "Previous Page" [disabled] [ref=e316] [cursor=pointer]
+                    - generic [ref=e318]: 1 – 6
+                    - generic [ref=e319]: of
+                    - text: "6"
+                    - generic [ref=e320]: Intents
+                    - button "Next Page" [disabled] [ref=e321] [cursor=pointer]
+    - contentinfo [ref=e323]:
+      - generic [ref=e326]:
+        - generic [ref=e327]: Errors and Warnings
+        - generic [ref=e328]:
+          - generic [ref=e329]:
+            - img [ref=e330]
+            - text: "0"
+            - img [ref=e334]
+            - text: "0"
+          - button [ref=e339] [cursor=pointer]:
+            - img [ref=e340]
+      - generic [ref=e343]:
+        - button "English (US)" [ref=e346] [cursor=pointer]:
+          - generic [ref=e348]: English (US)
+        - generic [ref=e350]:
+          - generic [ref=e351]: © 2010 - 2026, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+          - generic [ref=e353]:
+            - link "Terms" [ref=e354] [cursor=pointer]:
+              - /url: https://developer.amazon.com/terms-and-agreements
+            - link "Docs" [ref=e355] [cursor=pointer]:
+              - /url: /alexa/alexa-developer-documentation-welcome
+            - link "Stack Overflow" [ref=e356] [cursor=pointer]:
+              - /url: https://stackoverflow.com/tags/alexa-skills-kit
+            - link "Blog" [ref=e357] [cursor=pointer]:
+              - /url: https://developer.amazon.com/blogs/alexa
+            - link "Alexa Developer Home" [ref=e358] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - text: Build resources will be saved and built across all synced locales.
+          - link "Learn more about sync locales.":
+            - /url: https://developer.amazon.com/en-US/docs/alexa/custom-skills/add-additional-locales-of-the-same-language-to-your-custom-skills.html
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - text: If AMAZON.FallbackIntent is enabled for a skill, default sensitivity value is set to 'LOW'. As the sensitivity for a skill is increased, more customer utterances that are not supported by your skill's custom intents will be captured by AMAZON.FallbackIntent.
+          - link "Learn more":
+            - /url: /docs/alexa/custom-skills/standard-built-in-intents.html#adjust-sensitivity
+          - text: about skill's model sensitivity tuning.
+  - img "Amazon Developer Assistant" [ref=e360]

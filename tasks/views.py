@@ -26,13 +26,13 @@ class DashboardView(LoginRequiredMixin, TemplateView):
     def get_context_data(self, **kwargs):
         ctx = super().get_context_data(**kwargs)
         task_lists = TaskList.objects.filter(owner=self.request.user).annotate(
-            pending_count=Count('tasks', filter=Q(tasks__status__in=['pending', 'in_progress'])),
-            completed_count=Count('tasks', filter=Q(tasks__status='completed')),
-            total_count=Count('tasks'),
+            ann_pending=Count('tasks', filter=Q(tasks__status__in=['pending', 'in_progress'])),
+            ann_completed=Count('tasks', filter=Q(tasks__status='completed')),
+            ann_total=Count('tasks'),
         )
         ctx['task_lists'] = task_lists
-        ctx['total_pending'] = sum(tl.pending_count for tl in task_lists)
-        ctx['total_completed'] = sum(tl.completed_count for tl in task_lists)
+        ctx['total_pending'] = sum(tl.ann_pending for tl in task_lists)
+        ctx['total_completed'] = sum(tl.ann_completed for tl in task_lists)
         ctx['quick_form'] = QuickAddTaskForm()
         return ctx
 

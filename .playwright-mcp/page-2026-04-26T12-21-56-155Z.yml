@@ -1,0 +1,337 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Alexa Developer Console developer console" [ref=e7] [cursor=pointer]:
+          - /url: /alexa/console/ask
+          - generic [ref=e8]:
+            - img "Alexa Developer Console" [ref=e10]
+            - generic [ref=e12]: developer console
+        - generic [ref=e17]:
+          - button "All Search" [expanded] [ref=e21] [cursor=pointer]:
+            - text: All
+            - img "Search" [ref=e23]
+          - textbox "Search" [ref=e27]
+          - img "Search Logo" [ref=e30] [cursor=pointer]
+        - generic:   
+        - list [ref=e32]:
+          - listitem [ref=e33]
+          - listitem [ref=e34]:
+            - link "Notifications" [ref=e36] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e39]
+          - listitem [ref=e44]:
+            - link "SC" [ref=e45] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e46]: SC
+          - listitem [ref=e47]:
+            - link "" [ref=e48] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e51]: 
+    - generic [ref=e55]:
+      - generic [ref=e58]:
+        - button "Feedback" [ref=e59] [cursor=pointer]
+        - button "Cancel" [ref=e60] [cursor=pointer]:
+          - img [ref=e62]
+      - generic [ref=e70]:
+        - navigation [ref=e71]:
+          - generic [ref=e72]:
+            - link "Name, Locale To-Do , English (US)" [ref=e138] [cursor=pointer]:
+              - /url: /alexa/console/ask/create-new-skill/name
+              - generic [ref=e75]:
+                - img [ref=e140]
+                - generic [ref=e78]:
+                  - paragraph [ref=e79]: Name, Locale
+                  - generic [ref=e142]:
+                    - generic [ref=e143]: To-Do
+                    - generic [ref=e144]: ", English (US)"
+            - link "2 Experience, Model, Hosting service" [ref=e145] [cursor=pointer]:
+              - /url: /alexa/console/ask/create-new-skill/models
+              - generic [ref=e146]:
+                - generic [ref=e148]: "2"
+                - paragraph [ref=e150]: Experience, Model, Hosting service
+            - generic [ref=e81]:
+              - link "3 Templates":
+                - /url: https://developer.amazon.com/alexa/console/ask/editor/templates?runtime=nodejs10.x&locale=en_US&name=To-Do&hosting=provision-your-own&category=others
+                - generic:
+                  - generic:
+                    - generic: "3"
+                  - generic:
+                    - paragraph: Templates
+            - generic [ref=e82]:
+              - link "4 Review":
+                - /url: /alexa/console/ask/create-new-skill/review
+                - generic:
+                  - generic:
+                    - generic: "4"
+                  - generic:
+                    - paragraph: Review
+          - generic [ref=e83]:
+            - link "Back" [ref=e151] [cursor=pointer]:
+              - /url: /alexa/console/ask/create-new-skill/name
+              - button "Back" [ref=e152]
+            - link "Next" [ref=e153] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa/console/ask/editor/templates?runtime=nodejs10.x&locale=en_US&name=To-Do&hosting=provision-your-own&category=others
+              - button "Next" [ref=e154]
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - paragraph [ref=e158]: 1. Choose a type of experience
+            - paragraph [ref=e160]: Tell us what kind of experience you want to build and we'll recommend a voice interaction model (also known as a skill model) to get you started. A skill model has pre-defined words and phrases that users can say when interacting with your skill. You'll be able to customize what Alexa responds with that is unique to your skill's use-case.
+            - group [ref=e162]:
+              - generic [ref=e163]:
+                - generic [ref=e164]:
+                  - generic [ref=e165] [cursor=pointer]:
+                    - radio "Food & Drink"
+                    - generic [ref=e168]: Food & Drink
+                  - img [ref=e171] [cursor=pointer]:
+                    - generic [ref=e174]: "?"
+                - generic [ref=e175]:
+                  - generic [ref=e176] [cursor=pointer]:
+                    - radio "Games & trivia"
+                    - generic [ref=e179]: Games & trivia
+                  - img [ref=e182] [cursor=pointer]:
+                    - generic [ref=e185]: "?"
+                - generic [ref=e186]:
+                  - generic [ref=e187] [cursor=pointer]:
+                    - radio "Movies & TV"
+                    - generic [ref=e190]: Movies & TV
+                  - img [ref=e193] [cursor=pointer]:
+                    - generic [ref=e196]: "?"
+                - generic [ref=e197]:
+                  - generic [ref=e198] [cursor=pointer]:
+                    - radio "Music & Audio"
+                    - generic [ref=e201]: Music & Audio
+                  - img [ref=e204] [cursor=pointer]:
+                    - generic [ref=e207]: "?"
+                - generic [ref=e208]:
+                  - generic [ref=e209] [cursor=pointer]:
+                    - radio "News"
+                    - generic [ref=e212]: News
+                  - img [ref=e215] [cursor=pointer]:
+                    - generic [ref=e218]: "?"
+                - generic [ref=e219]:
+                  - generic [ref=e220] [cursor=pointer]:
+                    - radio "Smart home"
+                    - generic [ref=e223]: Smart home
+                  - img [ref=e226] [cursor=pointer]:
+                    - generic [ref=e229]: "?"
+                - generic [ref=e230]:
+                  - generic [ref=e231] [cursor=pointer]:
+                    - radio "Other" [checked]
+                    - generic [ref=e234]: Other
+                  - img [ref=e237] [cursor=pointer]:
+                    - generic [ref=e240]: "?"
+          - generic [ref=e241]:
+            - paragraph [ref=e243]: 2. Choose a model
+            - generic [ref=e244]:
+              - link [expanded]:
+                - /url: "#"
+              - generic [ref=e248]:
+                - generic [ref=e249]:
+                  - generic [ref=e251]:
+                    - text: Our pre-built models provide words and phrases people can say to Alexa to interact with your skill. With the custom model, you'll define words and phrases yourself. To learn more, go to our
+                    - link "Alexa Skills Kit Help documentation" [ref=e252] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/docs/alexa/ask-overviews/voice-interaction-models.html
+                      - generic [ref=e253]: Alexa Skills Kit Help documentation
+                      - img [ref=e255]
+                    - text: for voice interaction models.
+                  - paragraph [ref=e259]:
+                    - strong [ref=e260]: Note
+                    - text: ": Different models allow for different degrees of customization. Make sure to review these potential limitations while choosing your model."
+                - generic [ref=e261]:
+                  - generic [ref=e263]:
+                    - paragraph [ref=e264]: Custom
+                    - paragraph [ref=e265]: Design a unique experience for your users from scratch. A custom model enables you to create all of your skill's interactions.
+                    - generic [ref=e266]:
+                      - paragraph [ref=e267]: What this skill type offers
+                      - list [ref=e268]:
+                        - listitem [ref=e269]:
+                          - paragraph [ref=e270]: Built in voice interactions to stop, cancel, navigate to home, get help, and more.
+                        - listitem [ref=e271]:
+                          - paragraph [ref=e272]: Customize your own visual and audio responses within your interaction model, with APL, or with Alexa Conversations
+                        - listitem [ref=e273]:
+                          - paragraph [ref=e274]: Fully customize your skill to suit the needs and wants of your users.
+                    - link "Learn more" [ref=e276] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/docs/alexa/custom-skills/understanding-custom-skills.html
+                      - generic [ref=e277]: Learn more
+                      - img [ref=e279]
+                  - generic [ref=e283]:
+                    - paragraph [ref=e284]: Flash Briefing
+                    - paragraph [ref=e285]: Give users control of their news feed. This pre-built model lets users manage what updates they listen to.
+                    - generic [ref=e286]:
+                      - paragraph [ref=e287]: What this skill type offers
+                      - list [ref=e288]:
+                        - listitem [ref=e289]:
+                          - paragraph [ref=e290]: Voice interactions for a flash briefing skill are pre-defined and not customizable.
+                        - listitem [ref=e291]:
+                          - paragraph [ref=e292]: Configure HTTPS, RSS and/or JSON for content
+                    - link "Learn more" [ref=e294] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/docs/alexa/flashbriefing/understand-the-flash-briefing-skill-api.html
+                      - generic [ref=e295]: Learn more
+                      - img [ref=e297]
+                  - generic [ref=e301]:
+                    - paragraph [ref=e302]: Music
+                    - paragraph [ref=e303]: Give users complete control of your audio streaming service. The pre-built model provides a voice interface that includes ways to discover and interact with your audio content.
+                    - generic [ref=e304]:
+                      - paragraph [ref=e305]: What this skill type offers
+                      - list [ref=e306]:
+                        - listitem [ref=e307]:
+                          - paragraph [ref=e308]: Voice interactions to shuffle, loop, start, stop, pause, and search.
+                        - listitem [ref=e309]:
+                          - paragraph [ref=e310]: Integrate your service so customers can play music, radio, and podcasts from your catalog
+                        - listitem [ref=e311]:
+                          - paragraph [ref=e312]:
+                            - text: This model can’t be customized without Amazon permission. You’ll need to
+                            - link "contact us" [ref=e313] [cursor=pointer]:
+                              - /url: https://developer.amazon.com/alexa/console/contact-us
+                              - generic [ref=e314]: contact us
+                              - img [ref=e316]
+                            - text: to be allow-listed for this to work. If approved, you can add the custom skill model to this pre-built model.
+                        - listitem [ref=e319]:
+                          - paragraph [ref=e320]: Code in your tool of choice or the Alexa Developer Console.
+                    - link "Learn more" [ref=e322] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/docs/alexa/music-skills/understand-the-music-skill-api.html
+                      - generic [ref=e323]: Learn more
+                      - img [ref=e325]
+                  - generic [ref=e329]:
+                    - paragraph [ref=e330]: Smart Home
+                    - paragraph [ref=e331]: This pre-built model lets users control their Smart Home devices without getting up.
+                    - generic [ref=e332]:
+                      - paragraph [ref=e333]: What this skill type offers
+                      - list [ref=e334]:
+                        - listitem [ref=e335]:
+                          - paragraph [ref=e336]: Features name-free invocation
+                        - listitem [ref=e337]:
+                          - paragraph [ref=e338]: Lets users set up lighting controls, temperature monitoring, device power levels, and more.
+                        - listitem [ref=e339]:
+                          - paragraph [ref=e340]: Start with a low-effort, pre-built model and add more flexibility and control with a custom model when needed.
+                    - link "Learn more" [ref=e342] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/docs/alexa/smarthome/understand-the-smart-home-skill-api.html
+                      - generic [ref=e343]: Learn more
+                      - img [ref=e345]
+                  - generic [ref=e349]:
+                    - paragraph [ref=e350]: Video
+                    - paragraph [ref=e351]: Allow users to discover content across apps and skills through voice interactions. This pre-built model supports playback of video content on entertainment devices like Fire TV and Echo Show.
+                    - generic [ref=e352]:
+                      - paragraph [ref=e353]: What this skill type offers
+                      - list [ref=e354]:
+                        - listitem [ref=e355]:
+                          - paragraph [ref=e356]: Voice interactions to search, play, control playback, adjust volume, and more
+                        - listitem [ref=e357]:
+                          - paragraph [ref=e358]: Supports a non-customizable set of commands
+                    - link "Learn more" [ref=e360] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/docs/alexa/video/understand-the-video-skill-api.html
+                      - generic [ref=e361]: Learn more
+                      - img [ref=e363]
+                - generic [ref=e366]:
+                  - generic [ref=e367] [cursor=pointer]:
+                    - checkbox "Sync Locales"
+                    - generic [ref=e370]: Sync Locales
+                  - generic [ref=e371]:
+                    - text: Automatically distribute your skill across all locales with the same language as your primary locale. Any changes you make to your skill will automatically propagate to all locales of the same language. You can change this setting anytime in your skill’s language settings.
+                    - link "Learn more" [ref=e373] [cursor=pointer]:
+                      - /url: https://developer.amazon.com/en-US/docs/alexa/custom-skills/add-additional-locales-of-the-same-language-to-your-custom-skills.html
+                      - generic [ref=e374]: Learn more
+                      - img [ref=e376]
+          - generic [ref=e379]:
+            - generic [ref=e380]:
+              - paragraph [ref=e381]: 3. Hosting services
+              - paragraph [ref=e382]: If you're creating a custom skill, you can provision your own backend resources or Alexa can host them. If Alexa hosts your skill, you'll get access to our code editor, which lets you deploy code directly to AWS Lambda from the developer console.
+            - generic [ref=e383]:
+              - link [expanded] [ref=e384] [cursor=pointer]:
+                - /url: "#"
+              - generic [ref=e389]:
+                - generic [ref=e391]:
+                  - paragraph [ref=e392]: Provision your own
+                  - paragraph [ref=e393]: Provision your own endpoint and backend resources for your skill. This is recommended for skills that have significant data transfer requirements.
+                  - generic [ref=e394]:
+                    - paragraph [ref=e395]: Things to know
+                    - list [ref=e396]:
+                      - listitem [ref=e397]:
+                        - paragraph [ref=e398]: You’re in full control of your endpoint and backend resources.
+                      - listitem [ref=e399]:
+                        - paragraph [ref=e400]: No usage limits.
+                      - listitem [ref=e401]:
+                        - paragraph [ref=e402]: You’ll need your own AWS account
+                      - listitem [ref=e403]:
+                        - paragraph [ref=e404]: You won’t have access to the console’s code editor.
+                - generic [ref=e406]:
+                  - paragraph [ref=e407]: Alexa-hosted (Node.js)
+                  - paragraph [ref=e408]: Alexa will host skills in your account and get you started with a Node.js template.
+                  - generic [ref=e409]:
+                    - paragraph [ref=e410]: Things to know
+                    - list [ref=e411]:
+                      - listitem [ref=e412]:
+                        - paragraph [ref=e413]: Get your skill up and running in less than a minute with free hosting across all Alexa regions.
+                      - listitem [ref=e414]:
+                        - paragraph [ref=e415]: Unlimited Lambda calls, 25GB S3 storage, 250GB/month S3 throughput, and a single Dynamo table with 10M reads and writes.
+                      - listitem [ref=e416]:
+                        - paragraph [ref=e417]:
+                          - text: If you exceed usage limits, you can use your own AWS account later.
+                          - link "Learn how to use your own account" [ref=e418] [cursor=pointer]:
+                            - /url: https://developer.amazon.com/en-US/docs/alexa/hosted-skills/alexa-hosted-skills-personal-aws.html
+                            - generic [ref=e419]: Learn how to use your own account
+                            - img [ref=e421]
+                          - text: .
+                      - listitem [ref=e424]:
+                        - paragraph [ref=e425]: Code in your tool of choice or the Alexa Developer Console.
+                  - link "Learn more" [ref=e427] [cursor=pointer]:
+                    - /url: https://developer.amazon.com/en-US/docs/alexa/hosted-skills/build-a-skill-end-to-end-using-an-alexa-hosted-skill.html
+                    - generic [ref=e428]: Learn more
+                    - img [ref=e430]
+                - generic [ref=e434]:
+                  - paragraph [ref=e435]: Alexa-hosted (Python)
+                  - paragraph [ref=e436]: Alexa will host skills in your account and get you started with a Python template.
+                  - generic [ref=e437]:
+                    - paragraph [ref=e438]: Things to know
+                    - list [ref=e439]:
+                      - listitem [ref=e440]:
+                        - paragraph [ref=e441]: Get your skill up and running in less than a minute with free hosting across all Alexa regions.
+                      - listitem [ref=e442]:
+                        - paragraph [ref=e443]: Unlimited Lambda calls, 25GB S3 storage, 250GB/month S3 throughput, and a single Dynamo table with 10M reads and writes.
+                      - listitem [ref=e444]:
+                        - paragraph [ref=e445]:
+                          - text: If you exceed usage limits, you can use your own AWS account later.
+                          - link "Learn how to use your own account" [ref=e446] [cursor=pointer]:
+                            - /url: https://developer.amazon.com/en-US/docs/alexa/hosted-skills/alexa-hosted-skills-personal-aws.html
+                            - generic [ref=e447]: Learn how to use your own account
+                            - img [ref=e449]
+                          - text: .
+                      - listitem [ref=e452]:
+                        - paragraph [ref=e453]: Code in your tool of choice or the Alexa Developer Console.
+                  - link "Learn more" [ref=e455] [cursor=pointer]:
+                    - /url: https://developer.amazon.com/en-US/docs/alexa/hosted-skills/build-a-skill-end-to-end-using-an-alexa-hosted-skill.html
+                    - generic [ref=e456]: Learn more
+                    - img [ref=e458]
+    - contentinfo [ref=e115]:
+      - generic [ref=e117]:
+        - button "English (US)" [ref=e120] [cursor=pointer]:
+          - generic [ref=e122]: English (US)
+        - generic [ref=e124]:
+          - generic [ref=e125]: © 2010 - 2026, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+          - generic [ref=e127]:
+            - link "Terms" [ref=e128] [cursor=pointer]:
+              - /url: https://developer.amazon.com/terms-and-agreements
+            - link "Docs" [ref=e129] [cursor=pointer]:
+              - /url: /alexa/alexa-developer-documentation-welcome
+            - link "Stack Overflow" [ref=e130] [cursor=pointer]:
+              - /url: https://stackoverflow.com/tags/alexa-skills-kit
+            - link "Blog" [ref=e131] [cursor=pointer]:
+              - /url: https://developer.amazon.com/blogs/alexa
+            - link "Alexa Developer Home" [ref=e132] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa
+  - img "Amazon Developer Assistant" [ref=e135]
+  - generic:
+    - generic: Food & drink experiences include skills around cooking, receipies, and restaurant booking. You can build these with our food ordering model or custom model with pre-built templates.
+  - generic:
+    - generic: Games & trivia experiences include skills like games, game information, and knowledge & trivia. You can build these with our custom model and pre-built templates.
+  - generic:
+    - generic: Movies & TV experience includes skills around movie & tv games, reviews, and trivia. You can either use the video skill model kit or the custom model to build these types of skills.
+  - generic:
+    - generic: Music & Audio experiences include skills like music, podcasts, and radio skills. All three can be built using our music skill model or custom model.
+  - generic:
+    - generic: News experiences include news skills and flash briefings. You can build these experiences with our flash briefing skill model or custom model.
+  - generic:
+    - generic: Smart home experiences can be built using our smart home skill model or our custom model.
+  - generic:
+    - generic: If your skill doesn’t fit any of the experience groups that are listed, then select this option to see all models.

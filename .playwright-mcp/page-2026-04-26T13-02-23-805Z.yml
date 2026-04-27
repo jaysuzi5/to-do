@@ -1,0 +1,151 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Alexa Developer Console developer console" [ref=e7] [cursor=pointer]:
+          - /url: /alexa/console/ask
+          - generic [ref=e8]:
+            - img "Alexa Developer Console" [ref=e10]
+            - generic [ref=e12]: developer console
+        - generic [ref=e39]:
+          - button "All Search" [expanded] [ref=e43] [cursor=pointer]:
+            - text: All
+            - img "Search" [ref=e45]
+          - textbox "Search" [ref=e49]
+          - img "Search Logo" [ref=e52] [cursor=pointer]
+        - generic:   
+        - list [ref=e14]:
+          - listitem [ref=e15]
+          - listitem [ref=e16]:
+            - link "Notifications" [ref=e18] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e21]
+          - listitem [ref=e26]:
+            - link "SC" [ref=e27] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e28]: SC
+          - listitem [ref=e29]:
+            - link "" [ref=e30] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e33]: 
+    - generic [ref=e56]:
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - link "Back" [ref=e61] [cursor=pointer]:
+            - /url: /alexa/console/ask
+            - img [ref=e62]
+            - text: Back
+          - generic [ref=e66]: To-Do
+        - generic [ref=e67]:
+          - link "Build" [ref=e69] [cursor=pointer]:
+            - /url: /alexa/console/ask/build/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+          - link "Code" [ref=e71] [cursor=pointer]:
+            - /url: /alexa/console/ask/editor/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+          - link "Test" [ref=e73] [cursor=pointer]:
+            - /url: /alexa/console/ask/test/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+          - link "Distribution" [ref=e75] [cursor=pointer]:
+            - /url: /alexa/console/ask/publish/alexapublishing/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/skill-info
+          - link "Certification" [ref=e77] [cursor=pointer]:
+            - /url: /alexa/console/ask/certify/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/validation
+          - link "Analytics" [ref=e79] [cursor=pointer]:
+            - /url: /alexa/console/ask/measure/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+      - generic [ref=e80]:
+        - button "Feedback" [ref=e81] [cursor=pointer]
+        - button "Cancel" [ref=e82] [cursor=pointer]:
+          - img [ref=e84]
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - paragraph [ref=e91]: When test is enabled, you can interact with the selected stage of your skill in the Alexa simulator and on all devices linked to your Alexa developer account
+          - generic [ref=e94]:
+            - generic [ref=e96]: Test is disabled for this skill.
+            - generic [ref=e101]:
+              - option "Off" [selected] [ref=e103]
+              - combobox [expanded] [active] [ref=e104]:
+                - listbox [ref=e232]:
+                  - option "Development" [ref=e233] [cursor=pointer]
+                  - option "Off" [ref=e234] [cursor=pointer]
+        - generic [ref=e107]:
+          - generic [ref=e111]:
+            - tablist [ref=e112]:
+              - generic [ref=e113]:
+                - generic [ref=e114]:
+                  - radio "Alexa Simulator" [checked] [ref=e115]
+                  - generic [ref=e117] [cursor=pointer]: Alexa Simulator
+                - generic [ref=e118]:
+                  - radio "Manual JSON" [ref=e119]
+                  - generic [ref=e121] [cursor=pointer]: Manual JSON
+                - generic [ref=e122]:
+                  - radio "Voice & Tone" [ref=e123]
+                  - generic [ref=e125] [cursor=pointer]: Voice & Tone
+            - tabpanel "Alexa Simulator" [ref=e127]:
+              - generic [ref=e128]:
+                - generic [ref=e132]:
+                  - option "English (US)" [selected] [ref=e134]
+                  - combobox [disabled] [ref=e135]
+                - generic [ref=e136]:
+                  - combobox [ref=e138]:
+                    - textbox "Type or click and hold the mic" [ref=e139]
+                  - img [ref=e142] [cursor=pointer]
+              - generic [ref=e145]:
+                - img [ref=e147]
+                - paragraph [ref=e149]: First, open your skill with your invocation name. Then start testing your dialog.
+          - generic [ref=e150]:
+            - generic [ref=e151]:
+              - iframe [ref=e153]:
+                - generic [ref=f4e4]:
+                  - img [ref=f4e5] [cursor=pointer]
+                  - img [ref=f4e6]
+                  - heading "Testing Personalization..." [level=1] [ref=f4e7]
+                  - heading "To test this skill for personalization you must first enable personalization for this skill, then select a profile to test." [level=2] [ref=f4e8]
+                  - heading "Enable Personalization" [level=2] [ref=f4e9]:
+                    - link "Enable Personalization" [ref=f4e10] [cursor=pointer]:
+                      - /url: /alexa/console/ask/build/permissions-v2/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+                      - generic [ref=f4e11]: Enable Personalization
+              - iframe [ref=e155]:
+                - link "Personalization" [ref=f5e9]:
+                  - /url: "#"
+                  - generic [ref=f5e11]:
+                    - img [ref=f5e12]
+                    - paragraph [ref=f5e13]: Personalization
+            - generic [ref=e156]:
+              - img [ref=e159]
+              - generic [ref=e161]:
+                - heading "Skill Invocations | Viewing:" [level=3] [ref=e162]:
+                  - generic [ref=e163]: Skill Invocations
+                  - generic [ref=e164]: "|"
+                  - generic [ref=e165]: "Viewing:"
+                - generic [ref=e167]: Skill I/O is available only for speech requests to skills you have created.
+                - generic [ref=e168]:
+                  - generic [ref=e169]:
+                    - heading "JSON Input" [level=4] [ref=e170]
+                    - generic [ref=e171]:
+                      - textbox [ref=e172]: "\x01\x01"
+                      - generic [ref=e175]: "1"
+                  - generic [ref=e179]:
+                    - heading "JSON Output" [level=4] [ref=e180]
+                    - generic [ref=e181]:
+                      - textbox [ref=e182]: "\x01\x01"
+                      - generic [ref=e185]: "1"
+              - generic [ref=e189]:
+                - generic [ref=e195]:
+                  - option "Hub Landscape Medium" [selected] [ref=e197]
+                  - combobox [ref=e198]
+                - generic [ref=e204]: The template is not available or currently not supported
+    - contentinfo [ref=e206]:
+      - generic [ref=e208]:
+        - button "English (US)" [ref=e211] [cursor=pointer]:
+          - generic [ref=e213]: English (US)
+        - generic [ref=e215]:
+          - generic [ref=e216]: © 2010 - 2026, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+          - generic [ref=e218]:
+            - link "Terms" [ref=e219] [cursor=pointer]:
+              - /url: https://developer.amazon.com/terms-and-agreements
+            - link "Docs" [ref=e220] [cursor=pointer]:
+              - /url: /alexa/alexa-developer-documentation-welcome
+            - link "Stack Overflow" [ref=e221] [cursor=pointer]:
+              - /url: https://stackoverflow.com/tags/alexa-skills-kit
+            - link "Blog" [ref=e222] [cursor=pointer]:
+              - /url: https://developer.amazon.com/blogs/alexa
+            - link "Alexa Developer Home" [ref=e223] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa
+  - img "Amazon Developer Assistant" [ref=e225]

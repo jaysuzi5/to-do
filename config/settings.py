@@ -113,6 +113,8 @@ ACCOUNT_LOGIN_METHODS = {'email'}
 ACCOUNT_SIGNUP_FIELDS = ['email*', 'password1*', 'password2*']
 ACCOUNT_EMAIL_VERIFICATION = 'optional'
 SOCIALACCOUNT_LOGIN_ON_GET = True
+ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Email
 if DEBUG:
@@ -172,3 +174,5 @@ LOGGING = {
 
 # Alexa skill token (Phase 2) — set in .env / k8s secret
 ALEXA_SKILL_TOKEN = env('ALEXA_SKILL_TOKEN', default='')
+# Set ALEXA_SKIP_VERIFY=true in k8s to bypass signature verification for diagnostics
+ALEXA_SKIP_VERIFY = env.bool('ALEXA_SKIP_VERIFY', default=False)

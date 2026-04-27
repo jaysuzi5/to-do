@@ -1,0 +1,14 @@
+- generic [ref=e3]:
+  - img [ref=e6]
+  - generic [ref=e17]:
+    - list [ref=e21]:
+      - listitem [ref=e22]:
+        - link "Conditions of Use" [ref=e23] [cursor=pointer]:
+          - /url: /gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088
+      - listitem [ref=e24]:
+        - link "Privacy Notice" [ref=e25] [cursor=pointer]:
+          - /url: /gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=468496
+      - listitem [ref=e26]:
+        - link "Help" [ref=e27] [cursor=pointer]:
+          - /url: /help
+    - generic [ref=e28]: © 1996-2026, Amazon.com, Inc. or its affiliates

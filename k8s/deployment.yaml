@@ -120,6 +120,8 @@ spec:
                   name: to-do
                   key: alexa_skill_token
                   optional: true
+            - name: ALEXA_SKIP_VERIFY
+              value: "true"
             - name: OTEL_SERVICE_NAME
               value: "to-do"
             - name: OTEL_EXPORTER_OTLP_ENDPOINT

@@ -1,0 +1,197 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Alexa Developer Console developer console" [ref=e7] [cursor=pointer]:
+          - /url: /alexa/console/ask
+          - generic [ref=e8]:
+            - img "Alexa Developer Console" [ref=e10]
+            - generic [ref=e12]: developer console
+        - generic:   
+        - list [ref=e14]:
+          - listitem [ref=e15]
+          - listitem [ref=e16]:
+            - link "Notifications" [ref=e18] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e21]
+          - listitem [ref=e26]:
+            - link "SC" [ref=e27] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e28]: SC
+          - listitem [ref=e29]:
+            - link "" [ref=e30] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e33]: 
+    - generic [ref=e37]:
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - link "Back" [ref=e42] [cursor=pointer]:
+            - /url: /alexa/console/ask
+            - img [ref=e43]
+            - text: Back
+          - generic [ref=e47]: Milka
+        - generic [ref=e48]:
+          - link "Build" [ref=e50] [cursor=pointer]:
+            - /url: /alexa/console/ask/build/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+          - link "Code" [ref=e52] [cursor=pointer]:
+            - /url: /alexa/console/ask/editor/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+          - link "Test" [ref=e54] [cursor=pointer]:
+            - /url: /alexa/console/ask/test/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+          - link "Distribution" [ref=e56] [cursor=pointer]:
+            - /url: /alexa/console/ask/publish/alexapublishing/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/skill-info
+          - link "Certification" [ref=e58] [cursor=pointer]:
+            - /url: /alexa/console/ask/certify/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/validation
+          - link "Analytics" [ref=e60] [cursor=pointer]:
+            - /url: /alexa/console/ask/measure/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+      - generic [ref=e61]:
+        - button "Feedback" [ref=e62] [cursor=pointer]
+        - button "Cancel" [ref=e63] [cursor=pointer]:
+          - img [ref=e65]
+      - main [ref=e67]:
+        - generic [ref=e68]:
+          - navigation [ref=e70]:
+            - list [ref=e71]:
+              - listitem [ref=e72]:
+                - link "Custom" [ref=e75] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/dashboard
+              - listitem [ref=e76]:
+                - generic [ref=e77]:
+                  - button [ref=e78] [cursor=pointer]:
+                    - img [ref=e80]
+                  - generic "Invocations" [ref=e83] [cursor=pointer]
+              - listitem [ref=e84]:
+                - generic [ref=e85]:
+                  - button [ref=e86] [cursor=pointer]:
+                    - img [ref=e88]
+                  - generic "Interaction Model" [ref=e91] [cursor=pointer]
+              - listitem [ref=e92]:
+                - generic [ref=e93]:
+                  - button [ref=e94] [cursor=pointer]:
+                    - img [ref=e96]
+                  - generic "Assets" [ref=e99] [cursor=pointer]
+                - list [ref=e100]:
+                  - listitem [ref=e101]:
+                    - generic [ref=e102]:
+                      - button [ref=e103] [cursor=pointer]:
+                        - img [ref=e105]
+                      - link "Slot Types (3)" [ref=e108] [cursor=pointer]:
+                        - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/slot-types
+              - listitem [ref=e109]:
+                - link "Multimodal Responses" [ref=e112] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/multimodal
+              - listitem [ref=e113]:
+                - link "Tasks" [ref=e116] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/tasks
+              - listitem [ref=e117]:
+                - link "Interfaces" [ref=e120] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/interfaces
+              - listitem [ref=e121]:
+                - link "Endpoint" [ref=e124] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/endpoint
+              - listitem [ref=e125]:
+                - link "Build History" [ref=e128] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/build-history
+              - listitem [ref=e129]:
+                - link "Models" [ref=e132] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/prebuilts/modify/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+              - listitem [ref=e133]:
+                - generic "Tools" [ref=e136]
+                - list [ref=e137]:
+                  - listitem [ref=e138]:
+                    - link "Monetize Your Skill" [ref=e141] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/monetization
+                  - listitem [ref=e142]:
+                    - link "Account Linking" [ref=e145] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/account-linking
+                  - listitem [ref=e146]:
+                    - link "Permissions" [ref=e149] [cursor=pointer]:
+                      - /url: /alexa/console/ask/build/permissions/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+                  - listitem [ref=e150]:
+                    - link "Languages" [ref=e153] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/language-settings
+          - generic [ref=e154]:
+            - generic [ref=e156]:
+              - generic [ref=e157]:
+                - button "Save" [ref=e158]:
+                  - generic [ref=e159]: Save
+                - button "Evaluate model" [ref=e162]:
+                  - generic [ref=e163]: Evaluate model
+                - button "Update live skill" [ref=e165]:
+                  - generic [ref=e166]: Update live skill
+              - button "Build skill" [ref=e168]:
+                - generic [ref=e169]: Build skill
+            - generic [ref=e171]:
+              - generic [ref=e172]:
+                - generic [ref=e173]:
+                  - list [ref=e176]:
+                    - listitem [ref=e177]: Invocation
+                  - generic [ref=e179]:
+                    - generic [ref=e182]:
+                      - option "English (US)" [selected] [ref=e184]:
+                        - generic [ref=e185]:
+                          - img [ref=e187]
+                          - text: English (US)
+                      - combobox [ref=e190]
+                    - img [ref=e196] [cursor=pointer]:
+                      - generic [ref=e199]: "?"
+                - generic [ref=e201]:
+                  - text: Users say a skill's invocation name to begin an interaction with a particular custom skill.
+                  - text: "For example, if the invocation name is \"daily horoscopes\", users can say:"
+              - generic [ref=e202]:
+                - generic [ref=e207]:
+                  - strong [ref=e208]: User
+                  - text: ": Alexa, open"
+                  - emphasis [ref=e209]: daily horoscopes
+                - generic [ref=e214]:
+                  - strong [ref=e215]: User
+                  - text: ": Alexa, ask"
+                  - emphasis [ref=e216]: daily horoscopes
+                  - text: for the horoscope for Gemini
+                - generic [ref=e218]:
+                  - heading "Skill Invocation Name" [level=3] [ref=e219]
+                  - link "How to pick a right name" [ref=e222] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                  - generic [ref=e223]: Your skill’s invocation name does not need to be unique throughout Alexa.
+                - generic [ref=e225]:
+                  - 'textbox "Ex: Daily horoscopes" [active] [ref=e226]': milka
+                  - generic [ref=e227]:
+                    - img [ref=e229]
+                    - paragraph [ref=e231]: Invocation name must be at least 2 words.
+                  - generic [ref=e232]: "Brand names are only allowed if you provide proof of rights in the testing instructions or if you use the brand name in a referential manner that doesn’t imply ownership (examples of terms that can be added to a brand name for referential usage: unofficial, unauthorized, fan, fandom, for, about)."
+                  - generic [ref=e233]: "If invocation name is an abbreviation, it should contain a space and a period after each letter (e.g.: a. b. c.)."
+                  - generic [ref=e234]: Once the skill is published, the invocation name can no longer be changed.
+    - contentinfo [ref=e235]:
+      - generic [ref=e238]:
+        - generic [ref=e239]: Errors and Warnings
+        - generic [ref=e240]:
+          - generic [ref=e241]:
+            - img [ref=e242]
+            - text: "0"
+            - img [ref=e246]
+            - text: "0"
+          - button [ref=e251] [cursor=pointer]:
+            - img [ref=e252]
+      - generic [ref=e255]:
+        - button "English (US)" [ref=e258] [cursor=pointer]:
+          - generic [ref=e260]: English (US)
+        - generic [ref=e262]:
+          - generic [ref=e263]: © 2010 - 2026, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+          - generic [ref=e265]:
+            - link "Terms" [ref=e266] [cursor=pointer]:
+              - /url: https://developer.amazon.com/terms-and-agreements
+            - link "Docs" [ref=e267] [cursor=pointer]:
+              - /url: /alexa/alexa-developer-documentation-welcome
+            - link "Stack Overflow" [ref=e268] [cursor=pointer]:
+              - /url: https://stackoverflow.com/tags/alexa-skills-kit
+            - link "Blog" [ref=e269] [cursor=pointer]:
+              - /url: https://developer.amazon.com/blogs/alexa
+            - link "Alexa Developer Home" [ref=e270] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - text: Build resources will be saved and built across all synced locales.
+          - link "Learn more about sync locales.":
+            - /url: https://developer.amazon.com/en-US/docs/alexa/custom-skills/add-additional-locales-of-the-same-language-to-your-custom-skills.html
+  - img "Amazon Developer Assistant" [ref=e272]

@@ -1,0 +1,33 @@
+[     984ms] [WARNING] adcReporting.uiEvent is not found @ webpack:///./src/utils/reporting.js?:245
+[    3154ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://developer.amazon.com/alexa/console/ask/test/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/mejs-controls.svg#icon-play:0
+[    3352ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[    3365ms] [LOG] ecid @ :4
+[    3396ms] Permission denied
+[    3402ms] [ERROR] Error logged with the Track&Report JS errors API(http://tiny/1covqr6l8/wamazindeClieUserJava): {"m":"[ADC:Testing] Unknown error","csm":"v5 ueLogError callee","logLevel":"WARN","attribution":"ADC:Testing","pageURL":"https://developer.amazon.com/alexa/console/ask/test/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US","s":[],"t":2584} {m: [ADC:Testing] Unknown error, name: undefined, type: undefined, csm: v5 ueLogError callee, logLevel: WARN} @ https://images-na.ssl-images-amazon.com/images/I/215h87l68bL.js:3
+[    3451ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://d3u7caksmkfrzm.cloudfront.net') does not match the recipient window's origin ('https://developer.amazon.com'). @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:62815
+[    3451ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://d3u7caksmkfrzm.cloudfront.net') does not match the recipient window's origin ('https://developer.amazon.com'). @ https://d15wb6kq5zpbnv.cloudfront.net/vendor.f52f0d46e1fcc9e7697e.js:62815
+[    3538ms] [WARNING] Warning: Accessing PropTypes via the main React package is deprecated, and will be removed in  React v16.0. Use the latest available v15.* prop-types package from npm instead. For info on usage, compatibility, migration and more, see https://fb.me/prop-types-docs @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[    3542ms] [WARNING] Warning: Accessing createClass via the main React package is deprecated, and will be removed in React v16.0. Use a plain JavaScript class instead. If you're not yet ready to migrate, create-react-class v15.* is available on npm as a temporary, drop-in replacement. For more info see https://fb.me/react-create-class @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[    3544ms] [LOG] IntlProviderWrapper: conecting to STWBridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37903
+[    3544ms] [LOG] Rendering IntlProviderWrapper widget @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37908
+[    3556ms] [WARNING] Warning: Accessing PropTypes via the main React package is deprecated, and will be removed in  React v16.0. Use the latest available v15.* prop-types package from npm instead. For info on usage, compatibility, migration and more, see https://fb.me/prop-types-docs @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[    3559ms] [WARNING] Warning: Accessing createClass via the main React package is deprecated, and will be removed in React v16.0. Use a plain JavaScript class instead. If you're not yet ready to migrate, create-react-class v15.* is available on npm as a temporary, drop-in replacement. For more info see https://fb.me/react-create-class @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:3786
+[    3561ms] [LOG] IntlProviderWrapper: conecting to STWBridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37903
+[    3561ms] [LOG] Rendering IntlProviderWrapper widget @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37908
+[    3562ms] [ERROR] Warning: Failed prop type: Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types
+    in Unknown (created by SkillPersonalizationCardView)
+    in SkillPersonalizationCardView (created by Connect(SkillPersonalizationCardView))
+    in Connect(SkillPersonalizationCardView) (created by Route)
+    in Route (created by Routes)
+    in Switch (created by Routes)
+    in Router (created by HashRouter)
+    in HashRouter (created by Routes)
+    in Routes
+    in Provider
+    in IntlProvider (created by IntlProviderWrapper)
+    in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/vendor.js:4262
+[    3599ms] [LOG] Connected to STW tenant bridge in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37912
+[    3599ms] [LOG] Selected locale : en-US @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37915
+[    3600ms] [LOG] Connected to STW tenant bridge in IntlProviderWrapper @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37912
+[    3600ms] [LOG] Selected locale : en-US @ https://d3u7caksmkfrzm.cloudfront.net/main.js:37915
+[    3600ms] [LOG] Connected to STW tenant bridge @ https://d3u7caksmkfrzm.cloudfront.net/main.js:36749

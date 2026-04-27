@@ -1,0 +1,256 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Alexa Developer Console developer console" [ref=e7] [cursor=pointer]:
+          - /url: /alexa/console/ask
+          - generic [ref=e8]:
+            - img "Alexa Developer Console" [ref=e24]
+            - generic [ref=e11]: developer console
+        - generic [ref=e29]:
+          - button "All Search" [expanded] [ref=e33] [cursor=pointer]:
+            - text: All
+            - img "Search" [ref=e35]
+          - textbox "Search" [ref=e39]
+          - img "Search Logo" [ref=e42] [cursor=pointer]
+        - generic:   
+        - list [ref=e13]:
+          - listitem [ref=e14]
+          - listitem [ref=e43]:
+            - link "Notifications" [ref=e45] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e48]
+          - listitem [ref=e15]:
+            - link "SC" [ref=e16] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e17]: SC
+          - listitem [ref=e18]:
+            - link "" [ref=e19] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e22]: 
+    - generic [ref=e56]:
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - link "Back" [ref=e61] [cursor=pointer]:
+            - /url: /alexa/console/ask
+            - img [ref=e62]
+            - text: Back
+          - generic [ref=e66]: To-Do
+        - generic [ref=e67]:
+          - link "Build" [ref=e69] [cursor=pointer]:
+            - /url: /alexa/console/ask/build/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+          - link "Code" [ref=e71] [cursor=pointer]:
+            - /url: /alexa/console/ask/editor/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+          - link "Test" [ref=e73] [cursor=pointer]:
+            - /url: /alexa/console/ask/test/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+          - link "Distribution" [ref=e75] [cursor=pointer]:
+            - /url: /alexa/console/ask/publish/alexapublishing/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/skill-info
+          - link "Certification" [ref=e77] [cursor=pointer]:
+            - /url: /alexa/console/ask/certify/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/validation
+          - link "Analytics" [ref=e79] [cursor=pointer]:
+            - /url: /alexa/console/ask/measure/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+      - generic [ref=e80]:
+        - button "Feedback" [ref=e81] [cursor=pointer]
+        - button "Cancel" [ref=e82] [cursor=pointer]:
+          - img [ref=e84]
+      - main [ref=e86]:
+        - generic [ref=e87]:
+          - navigation [ref=e89]:
+            - list [ref=e90]:
+              - listitem [ref=e91]:
+                - link "Custom" [ref=e94] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/dashboard
+              - listitem [ref=e95]:
+                - generic [ref=e96]:
+                  - button [ref=e97] [cursor=pointer]:
+                    - img [ref=e99]
+                  - generic "Invocations" [ref=e102] [cursor=pointer]
+              - listitem [ref=e103]:
+                - generic [ref=e104]:
+                  - button [ref=e105] [cursor=pointer]:
+                    - img [ref=e107]
+                  - generic "Interaction Model" [ref=e110] [cursor=pointer]
+              - listitem [ref=e111]:
+                - generic [ref=e112]:
+                  - button [ref=e113] [cursor=pointer]:
+                    - img [ref=e115]
+                  - generic "Assets" [ref=e118] [cursor=pointer]
+                - list [ref=e119]:
+                  - listitem [ref=e120]:
+                    - generic [ref=e121]:
+                      - button [ref=e122] [cursor=pointer]:
+                        - img [ref=e124]
+                      - link "Slot Types (3)" [ref=e127] [cursor=pointer]:
+                        - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/slot-types
+              - listitem [ref=e128]:
+                - link "Multimodal Responses" [ref=e131] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/multimodal
+              - listitem [ref=e132]:
+                - link "Tasks" [ref=e135] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/tasks
+              - listitem [ref=e136]:
+                - link "Interfaces" [ref=e139] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/interfaces
+              - listitem [ref=e140]:
+                - link "Endpoint" [ref=e143] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/endpoint
+              - listitem [ref=e144]:
+                - link "Build History" [ref=e147] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/build-history
+              - listitem [ref=e148]:
+                - link "Models" [ref=e151] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/prebuilts/modify/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+              - listitem [ref=e152]:
+                - generic "Tools" [ref=e155]
+                - list [ref=e156]:
+                  - listitem [ref=e157]:
+                    - link "Monetize Your Skill" [ref=e160] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/monetization
+                  - listitem [ref=e161]:
+                    - link "Account Linking" [ref=e164] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/account-linking
+                  - listitem [ref=e165]:
+                    - link "Permissions" [ref=e168] [cursor=pointer]:
+                      - /url: /alexa/console/ask/build/permissions/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US
+                  - listitem [ref=e169]:
+                    - link "Languages" [ref=e172] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.5d420c5c-ed51-4e3a-b76c-0fbd842bea15/development/en_US/language-settings
+          - generic [ref=e173]:
+            - generic [ref=e175]:
+              - button "Update live skill" [ref=e178]:
+                - generic [ref=e179]: Update live skill
+              - button "Save" [ref=e181]:
+                - generic [ref=e182]: Save
+            - generic [ref=e184]:
+              - list [ref=e189]:
+                - listitem [ref=e190]: Endpoint
+              - generic [ref=e191]:
+                - generic [ref=e193]:
+                  - img [ref=e196]
+                  - generic [ref=e210]:
+                    - text: The Endpoint will receive POST requests when a user interacts with your Alexa Skill. The request body contains parameters that your service can use to perform logic and generate a JSON-formatted response. Learn more about AWS Lambda endpoints
+                    - link "here" [ref=e211] [cursor=pointer]:
+                      - /url: /docs/custom-skills/host-a-custom-skill-as-an-aws-lambda-function.html
+                    - text: . You can host your own HTTPS web service endpoint as long as the service meets the requirements described
+                    - link "here." [ref=e212] [cursor=pointer]:
+                      - /url: /docs/custom-skills/host-a-custom-skill-as-a-web-service.html
+                - heading "Service Endpoint Type" [level=2] [ref=e214]
+                - paragraph [ref=e215]:
+                  - generic [ref=e216]: Select how you will host your skill's service endpoint.
+                - generic [ref=e219] [cursor=pointer]:
+                  - radio "AWS Lambda ARN ?"
+                  - generic [ref=e221]:
+                    - generic [ref=e223]:
+                      - text: AWS Lambda ARN
+                      - img [ref=e227]:
+                        - generic [ref=e230]: "?"
+                    - paragraph [ref=e231]: (Recommended)
+                - generic [ref=e232]:
+                  - generic [ref=e234] [cursor=pointer]:
+                    - radio "HTTPS ?" [checked]
+                    - generic [ref=e238]:
+                      - text: HTTPS
+                      - img [ref=e242]:
+                        - generic [ref=e245]: "?"
+                  - generic [ref=e247]:
+                    - generic [ref=e249]:
+                      - generic [ref=e250]:
+                        - generic [ref=e251]:
+                          - paragraph [ref=e252]: Default Region
+                          - img [ref=e256] [cursor=pointer]:
+                            - generic [ref=e259]: "?"
+                        - paragraph [ref=e260]:
+                          - generic [ref=e261]: (Required)
+                      - generic [ref=e263]:
+                        - textbox "Enter URI..." [ref=e266]: https://todo.jaycurtis.org/api/alexa/add-task/
+                        - generic [ref=e271]:
+                          - option "My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority" [selected] [ref=e273]
+                          - combobox [ref=e274]
+                    - generic [ref=e278]:
+                      - generic [ref=e279]:
+                        - generic [ref=e280]:
+                          - paragraph [ref=e281]: North America
+                          - img [ref=e285] [cursor=pointer]:
+                            - generic [ref=e288]: "?"
+                        - paragraph [ref=e289]:
+                          - generic [ref=e290]: (Optional)
+                      - generic [ref=e292]:
+                        - textbox "Enter URI..." [ref=e295]
+                        - generic [ref=e300]:
+                          - generic [ref=e301]: Select SSL certificate type
+                          - combobox [ref=e302]
+                    - generic [ref=e306]:
+                      - generic [ref=e307]:
+                        - generic [ref=e308]:
+                          - paragraph [ref=e309]: Europe and India
+                          - img [ref=e313] [cursor=pointer]:
+                            - generic [ref=e316]: "?"
+                        - paragraph [ref=e317]:
+                          - generic [ref=e318]: (Optional)
+                      - generic [ref=e320]:
+                        - textbox "Enter URI..." [ref=e323]
+                        - generic [ref=e328]:
+                          - generic [ref=e329]: Select SSL certificate type
+                          - combobox [ref=e330]
+                    - generic [ref=e334]:
+                      - generic [ref=e335]:
+                        - generic [ref=e336]:
+                          - paragraph [ref=e337]: Far East
+                          - img [ref=e341] [cursor=pointer]:
+                            - generic [ref=e344]: "?"
+                        - paragraph [ref=e345]:
+                          - generic [ref=e346]: (Optional)
+                      - generic [ref=e348]:
+                        - textbox "Enter URI..." [ref=e351]
+                        - generic [ref=e356]:
+                          - generic [ref=e357]: Select SSL certificate type
+                          - combobox [ref=e358]
+    - contentinfo [ref=e361]:
+      - generic [ref=e364]:
+        - generic [ref=e365]: Errors and Warnings
+        - generic [ref=e366]:
+          - generic [ref=e367]:
+            - img [ref=e368]
+            - text: "0"
+            - img [ref=e372]
+            - text: "0"
+          - button [ref=e377] [cursor=pointer]:
+            - img [ref=e378]
+      - generic [ref=e381]:
+        - button "English (US)" [ref=e384] [cursor=pointer]:
+          - generic [ref=e386]: English (US)
+        - generic [ref=e388]:
+          - generic [ref=e389]: © 2010 - 2026, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+          - generic [ref=e391]:
+            - link "Terms" [ref=e392] [cursor=pointer]:
+              - /url: https://developer.amazon.com/terms-and-agreements
+            - link "Docs" [ref=e393] [cursor=pointer]:
+              - /url: /alexa/alexa-developer-documentation-welcome
+            - link "Stack Overflow" [ref=e394] [cursor=pointer]:
+              - /url: https://stackoverflow.com/tags/alexa-skills-kit
+            - link "Blog" [ref=e395] [cursor=pointer]:
+              - /url: https://developer.amazon.com/blogs/alexa
+            - link "Alexa Developer Home" [ref=e396] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa
+  - img "Amazon Developer Assistant" [ref=e398]
+  - generic:
+    - generic:
+      - generic: Instant publish is only available for published skills.
+  - generic:
+    - generic:
+      - generic: Host your endpoint using AWS Lambda, a server-less compute service.
+  - generic:
+    - generic:
+      - generic: Host your endpoint using an HTTPS web service that you manage.
+  - generic:
+    - generic:
+      - generic: Provide a URL that will be invoked by default when users interact with your skill.
+  - generic:
+    - generic:
+      - generic: Provide a URL that will be invoked when users from the North America region interact with your skill.
+  - generic:
+    - generic:
+      - generic: Provide a URL that will be invoked when users from the Europe and India regions interact with your skill.
+  - generic:
+    - generic:
+      - generic: Provide a URL that will be invoked when users from the Far East region interact with your skill.

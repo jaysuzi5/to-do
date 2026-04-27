@@ -1,0 +1,298 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Alexa Developer Console developer console" [ref=e7] [cursor=pointer]:
+          - /url: /alexa/console/ask
+          - generic [ref=e8]:
+            - img "Alexa Developer Console" [ref=e10]
+            - generic [ref=e12]: developer console
+        - generic [ref=e17]:
+          - button "All Search" [expanded] [ref=e21] [cursor=pointer]:
+            - text: All
+            - img "Search" [ref=e23]
+          - textbox "Search" [ref=e27]
+          - img "Search Logo" [ref=e30] [cursor=pointer]
+        - generic:   
+        - list [ref=e32]:
+          - listitem [ref=e33]
+          - listitem [ref=e34]:
+            - link "Notifications" [ref=e36] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e39]
+          - listitem [ref=e44]:
+            - link "SC" [ref=e45] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e46]: SC
+          - listitem [ref=e47]:
+            - link "" [ref=e48] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e51]: 
+    - generic [ref=e55]:
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - link "Back" [ref=e60] [cursor=pointer]:
+            - /url: /alexa/console/ask
+            - img [ref=e61]
+            - text: Back
+          - generic [ref=e65]: Milka
+        - generic [ref=e66]:
+          - link "Build" [ref=e68] [cursor=pointer]:
+            - /url: /alexa/console/ask/build/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+          - link "Code" [ref=e70] [cursor=pointer]:
+            - /url: /alexa/console/ask/editor/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+          - link "Test" [ref=e72] [cursor=pointer]:
+            - /url: /alexa/console/ask/test/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+          - link "Distribution" [ref=e74] [cursor=pointer]:
+            - /url: /alexa/console/ask/publish/alexapublishing/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/skill-info
+          - link "Certification" [ref=e76] [cursor=pointer]:
+            - /url: /alexa/console/ask/certify/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/validation
+          - link "Analytics" [ref=e78] [cursor=pointer]:
+            - /url: /alexa/console/ask/measure/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+      - generic [ref=e79]:
+        - button "Feedback" [ref=e80] [cursor=pointer]
+        - button "Cancel" [ref=e81] [cursor=pointer]:
+          - img [ref=e83]
+      - main [ref=e85]:
+        - generic [ref=e86]:
+          - navigation [ref=e88]:
+            - list [ref=e89]:
+              - listitem [ref=e90]:
+                - link "Custom" [ref=e93] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/dashboard
+              - listitem [ref=e94]:
+                - generic [ref=e95]:
+                  - button [ref=e96] [cursor=pointer]:
+                    - img [ref=e98]
+                  - generic "Invocations" [ref=e101] [cursor=pointer]
+              - listitem [ref=e102]:
+                - generic [ref=e103]:
+                  - button [ref=e104] [cursor=pointer]:
+                    - img [ref=e106]
+                  - generic "Interaction Model" [ref=e109] [cursor=pointer]
+              - listitem [ref=e110]:
+                - generic [ref=e111]:
+                  - button [ref=e112] [cursor=pointer]:
+                    - img [ref=e114]
+                  - generic "Assets" [ref=e117] [cursor=pointer]
+                - list [ref=e118]:
+                  - listitem [ref=e119]:
+                    - generic [ref=e120]:
+                      - button [ref=e121] [cursor=pointer]:
+                        - img [ref=e123]
+                      - link "Slot Types (3)" [ref=e126] [cursor=pointer]:
+                        - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/slot-types
+              - listitem [ref=e127]:
+                - link "Multimodal Responses" [ref=e130] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/multimodal
+              - listitem [ref=e131]:
+                - link "Tasks" [ref=e134] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/tasks
+              - listitem [ref=e135]:
+                - link "Interfaces" [ref=e138] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/interfaces
+              - listitem [ref=e139]:
+                - link "Endpoint" [ref=e142] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/endpoint
+              - listitem [ref=e143]:
+                - link "Build History" [ref=e146] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/build-history
+              - listitem [ref=e147]:
+                - link "Models" [ref=e150] [cursor=pointer]:
+                  - /url: /alexa/console/ask/build/prebuilts/modify/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+              - listitem [ref=e151]:
+                - generic "Tools" [ref=e154]
+                - list [ref=e155]:
+                  - listitem [ref=e156]:
+                    - link "Monetize Your Skill" [ref=e159] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/monetization
+                  - listitem [ref=e160]:
+                    - link "Account Linking" [ref=e163] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/account-linking
+                  - listitem [ref=e164]:
+                    - link "Permissions" [ref=e167] [cursor=pointer]:
+                      - /url: /alexa/console/ask/build/permissions/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+                  - listitem [ref=e168]:
+                    - link "Languages" [ref=e171] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/language-settings
+          - generic [ref=e172]:
+            - generic [ref=e174]:
+              - generic [ref=e175]:
+                - button "Save" [ref=e176]:
+                  - generic [ref=e177]: Save
+                - button "Evaluate model" [ref=e180]:
+                  - generic [ref=e181]: Evaluate model
+                - button "Update live skill" [ref=e183]:
+                  - generic [ref=e184]: Update live skill
+              - button "Build skill" [ref=e186]:
+                - generic [ref=e187]: Build skill
+            - generic [ref=e190]:
+              - generic [ref=e192]:
+                - heading "Design and skill building resources" [level=1] [ref=e193]
+                - generic [ref=e194]:
+                  - generic [ref=e195]:
+                    - heading "Design" [level=3] [ref=e196]
+                    - generic [ref=e197]:
+                      - generic [ref=e198]:
+                        - link "Alexa design guide" [ref=e200] [cursor=pointer]:
+                          - /url: https://alexa.design/design-guide
+                        - img [ref=e202]
+                      - generic [ref=e204]: Learn how to design engaging and creative visual responses for your skills using APL.
+                  - generic [ref=e205]:
+                    - heading "Build" [level=3] [ref=e206]
+                    - generic [ref=e207]:
+                      - generic [ref=e208]:
+                        - link "Custom skill building, a step-by-step-guide" [ref=e210] [cursor=pointer]:
+                          - /url: https://developer.amazon.com/en-US/docs/alexa/custom-skills/steps-to-build-a-custom-skill.html
+                        - img [ref=e212]
+                      - generic [ref=e214]: Follow this basic guide on how to build a custom skill.
+                    - generic [ref=e215]:
+                      - generic [ref=e216]:
+                        - link "Alexa Presentation Language (APL) documentation" [ref=e218] [cursor=pointer]:
+                          - /url: /docs/alexa-presentation-language/add-visuals-and-audio-to-your-skill.html
+                        - img [ref=e220]
+                      - generic [ref=e222]: Use our APL technical documentation to build skills with full-featured, responsive, and interactive screen displays.
+                    - generic [ref=e223]:
+                      - generic [ref=e224]:
+                        - link "Make money" [ref=e226] [cursor=pointer]:
+                          - /url: https://developer.amazon.com/en-US/docs/alexa/custom-skills/sell-products-in-an-alexa-skill.html
+                        - img [ref=e228]
+                      - generic [ref=e230]: Create an In-Skill Product and add it to your skill. This enables you to sell premium content to your customers via voice.
+                  - generic [ref=e231]:
+                    - heading "Test" [level=3] [ref=e232]
+                    - generic [ref=e233]:
+                      - generic [ref=e234]:
+                        - link "Testing and debugging your skill" [ref=e236] [cursor=pointer]:
+                          - /url: https://developer.amazon.com/en-US/docs/alexa/test/test-your-skill-overview.html
+                        - img [ref=e238]
+                      - generic [ref=e240]: Learn how you can test and debug your skill, and what tools you can use to do so.
+                  - generic [ref=e241]:
+                    - heading "Certify and publish" [level=3] [ref=e242]
+                    - generic [ref=e243]:
+                      - generic [ref=e244]:
+                        - link "Alexa skill certification requirements" [ref=e246] [cursor=pointer]:
+                          - /url: https://developer.amazon.com/en-US/docs/alexa/custom-skills/certification-requirements-for-custom-skills.html
+                        - img [ref=e248]
+                      - generic [ref=e250]: Ready to submit your skill? Make sure it meets our certification requirements.
+                  - generic [ref=e251]:
+                    - heading "Skill maintenance" [level=3] [ref=e252]
+                    - generic [ref=e253]:
+                      - generic [ref=e254]:
+                        - link "Monitor your skill metrics and earnings" [ref=e256] [cursor=pointer]:
+                          - /url: https://developer.amazon.com/en-US/docs/alexa/monitor/monitor-your-skill.html
+                        - img [ref=e258]
+                      - generic [ref=e260]: How you can monitor your skill, maintain it, improve it, and monitor your earnings.
+                - heading "Resources" [level=2] [ref=e261]
+                - generic [ref=e262]:
+                  - generic [ref=e263]:
+                    - generic [ref=e264]:
+                      - link "Alexa developer forums" [ref=e266] [cursor=pointer]:
+                        - /url: https://forums.developer.amazon.com
+                      - img [ref=e268]
+                    - generic [ref=e270]: Visit our forums to get inspired, join our Alexa developer community.
+                  - generic [ref=e271]:
+                    - generic [ref=e272]:
+                      - link "Sample Alexa projects" [ref=e274] [cursor=pointer]:
+                        - /url: https://github.com/alexa
+                      - img [ref=e276]
+                    - generic [ref=e278]: Whatever your experience, you can get started quickly using one of our Alexa projects on GitHub.
+                  - generic [ref=e279]:
+                    - generic [ref=e280]:
+                      - link "Weekly office hours" [ref=e282] [cursor=pointer]:
+                        - /url: https://www.youtube.com/playlist?list=PL2KJmkHeYQTN5AzaPrw2-vU28JEeDKLuH
+                      - img [ref=e284]
+                    - generic [ref=e286]: Drop in with your questions and thoughts. We're here to help you.
+              - generic [ref=e287]:
+                - generic [ref=e289]: Building your skill
+                - generic [ref=e290]: Complete these steps to be able to test your skill using the simulator in the test tab, or with your echo device.
+                - list [ref=e292]:
+                  - listitem [ref=e293]:
+                    - link "REQUIRED 1. Invocation Name Enter an invocation name for your skill" [ref=e294] [cursor=pointer]:
+                      - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/invocation/skill-invocation-name
+                      - generic [ref=e295]:
+                        - paragraph [ref=e297]: REQUIRED
+                        - generic [ref=e298]:
+                          - generic [ref=e299]:
+                            - generic [ref=e300]:
+                              - generic [ref=e301]: 1. Invocation Name
+                              - img [ref=e303]
+                            - generic [ref=e305]: Enter an invocation name for your skill
+                          - img [ref=e308]
+                  - listitem [ref=e310]:
+                    - link "REQUIRED 2. Intents, Samples, and Slots Add at least one intent and one sample utterance" [ref=e311] [cursor=pointer]:
+                      - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/intents/add-intent
+                      - generic [ref=e312]:
+                        - paragraph [ref=e314]: REQUIRED
+                        - generic [ref=e315]:
+                          - generic [ref=e316]:
+                            - generic [ref=e317]:
+                              - generic [ref=e318]: 2. Intents, Samples, and Slots
+                              - img [ref=e320]
+                            - generic [ref=e322]: Add at least one intent and one sample utterance
+                          - img [ref=e325]
+                  - listitem [ref=e327]:
+                    - generic [ref=e329] [cursor=pointer]:
+                      - paragraph [ref=e331]: REQUIRED
+                      - generic [ref=e332]:
+                        - generic [ref=e333]:
+                          - generic [ref=e334]:
+                            - generic [ref=e335]: 3. Build Model
+                            - img [ref=e337]
+                          - generic [ref=e339]: Successfully build your interaction model
+                        - img [ref=e342]
+                  - listitem [ref=e344]:
+                    - link "REQUIRED 4. Endpoint Set a web service endpoint to handle skill requests" [ref=e345] [cursor=pointer]:
+                      - /url: /alexa/console/ask/build/custom/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/endpoint
+                      - generic [ref=e346]:
+                        - paragraph [ref=e348]: REQUIRED
+                        - generic [ref=e349]:
+                          - generic [ref=e350]:
+                            - generic [ref=e351]:
+                              - generic [ref=e352]: 4. Endpoint
+                              - img [ref=e354]
+                            - generic [ref=e356]: Set a web service endpoint to handle skill requests
+                          - img [ref=e359]
+                  - listitem [ref=e361]:
+                    - link "OPTIONAL Monetize Your Skill Add In-Skill Products, or offer a Paid Skill, or setup a Skill Deal" [ref=e362] [cursor=pointer]:
+                      - /url: /alexa/console/ask/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/monetization
+                      - generic [ref=e363]:
+                        - paragraph [ref=e365]: OPTIONAL
+                        - generic [ref=e367]:
+                          - generic [ref=e368]:
+                            - generic [ref=e369]: Monetize Your Skill
+                            - img [ref=e371]
+                          - generic [ref=e373]: Add In-Skill Products, or offer a Paid Skill, or setup a Skill Deal
+    - contentinfo [ref=e374]:
+      - generic [ref=e377]:
+        - generic [ref=e378]: Errors and Warnings
+        - generic [ref=e379]:
+          - generic [ref=e380]:
+            - img [ref=e381]
+            - text: "0"
+            - img [ref=e385]
+            - text: "0"
+          - button [ref=e390] [cursor=pointer]:
+            - img [ref=e391]
+      - generic [ref=e394]:
+        - button "English (US)" [ref=e397] [cursor=pointer]:
+          - generic [ref=e399]: English (US)
+        - generic [ref=e401]:
+          - generic [ref=e402]: © 2010 - 2026, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+          - generic [ref=e404]:
+            - link "Terms" [ref=e405] [cursor=pointer]:
+              - /url: https://developer.amazon.com/terms-and-agreements
+            - link "Docs" [ref=e406] [cursor=pointer]:
+              - /url: /alexa/alexa-developer-documentation-welcome
+            - link "Stack Overflow" [ref=e407] [cursor=pointer]:
+              - /url: https://stackoverflow.com/tags/alexa-skills-kit
+            - link "Blog" [ref=e408] [cursor=pointer]:
+              - /url: https://developer.amazon.com/blogs/alexa
+            - link "Alexa Developer Home" [ref=e409] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa
+  - img "Amazon Developer Assistant" [ref=e411]
+  - generic:
+    - generic:
+      - generic: This is only supported for evaluating the Interaction Model. Click any tab under Interaction Model to enable this button.
+  - generic:
+    - generic:
+      - generic: Instant publish is only available for published skills.

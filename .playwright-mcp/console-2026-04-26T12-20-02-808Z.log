@@ -1,0 +1,49 @@
+[     574ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://www.amazon.com/ap/signin?openid.pape.preferred_auth_policies=Singlefactor&openid.pape.max_auth_age=7200000&openid.return_to=https%3A%2F%2Fdeveloper.amazon.com%2Falexa%2Fconsole%2Fask&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_dante_us&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&:0
+[   17903ms] [WARNING] AbortFromContinueButtonClick @ https://m.media-amazon.com/images/I/71lBQVKaNZL.js?AUIClients/IdentityWebAuthnAssets:345
+[   17904ms] [ERROR] Unable to publish metrics Error: Expected field name to be a string, but it was a undefined
+    at c.default (https://m.media-amazon.com/images/I/71lBQVKaNZL.js?AUIClients/IdentityWebAuthnAssets:142:83)
+    at b.value (https://m.media-amazon.com/images/I/71lBQVKaNZL.js?AUIClients/IdentityWebAuthnAssets:162:216)
+    at b.value (https://m.media-amazon.com/images/I/71lBQVKaNZL.js?AUIClients/IdentityWebAuthnAssets:167:386)
+    at https://m.media-amazon.com/images/I/71lBQVKaNZL.js?AUIClients/IdentityWebAuthnAssets:135:303
+    at a.value (https://m.media-amazon.com/images/I/71lBQVKaNZL.js?AUIClients/IdentityWebAuthnAssets:134:161)
+    at a.value (https://m.media-amazon.com/images/I/71lBQVKaNZL.js?AUIClients/IdentityWebAuthnAssets:135:50)
+    at a.value (https://m.media-amazon.com/images/I/71lBQVKaNZL.js?AUIClients/IdentityWebAuthnAssets:138:169)
+    at a.value (https://m.media-amazon.com/images/I/71lBQVKaNZL.js?AUIClients/IdentityWebAuthnAssets:19:245)
+    at a.value (https://m.media-amazon.com/images/I/71lBQVKaNZL.js?AUIClients/IdentityWebAuthnAssets:423:232)
+    at a.value (https://m.media-amazon.com/images/I/71lBQVKaNZL.js?AUIClients/IdentityWebAuthnAssets:421:461) @ https://m.media-amazon.com/images/I/71lBQVKaNZL.js?AUIClients/IdentityWebAuthnAssets:15
+[   56149ms] [LOG] ecid @ :4
+[   56149ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[   56275ms] [WARNING] Failed parsing 'srcset' attribute value since it has an unknown descriptor. @ https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:6
+[   56275ms] [WARNING] Dropped srcset candidate "//ds6yc8t7pnx74.cloudfront.net/content/dam/ASK_APL_AlexaWidgets_Console_337x280_optimized" @ https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:6
+[   56304ms] Uncaught ReferenceError: Handlebars is not defined
+    at <anonymous> (https://ds6yc8t7pnx74.cloudfront.net/etc.clientlibs/developer-portal/clientlibs/main.js:2045:0)
+[   84232ms] [LOG] Cannot set properties of undefined (setting 'prop7')Error Message @ https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:6
+[   84755ms] [ERROR] Connecting to 'https://edge.adobedc.net/ee/va6/v1/identity/acquire?configId=1315fe3e-1999-4b1b-8fad-8fe7ac996ab6&requestId=cc04c831-ffd8-4f8b-9c8d-869c5565ab3b' violates the following Content Security Policy directive: "default-src 'self' https://*.amazon.com https://*.media-amazon.com https://*.ssl-images-amazon.com https://*.amazon-adsystem.com https://cdn.jsdelivr.net https://*.cloudfront.net https://assets.adobedtm.com *.omtrdc.net www.googletagmanager.com m.media-amazon.com 'unsafe-inline' 'unsafe-eval'". Note that 'connect-src' was not explicitly set, so 'default-src' is used as a fallback. The action has been blocked. @ https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:7
+[   84755ms] [ERROR] Fetch API cannot load https://edge.adobedc.net/ee/va6/v1/identity/acquire?configId=1315fe3e-1999-4b1b-8fad-8fe7ac996ab6&requestId=cc04c831-ffd8-4f8b-9c8d-869c5565ab3b. Refused to connect because it violates the document's Content Security Policy. @ https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:7
+[   84767ms] Uncaught (in promise) TypeError: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: Network request failed.
+Caused by: Failed to fetch
+    at <anonymous> (https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:7:19953)
+    at f (https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:7:10739)
+    at <anonymous> (https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:7:11147)
+    at <anonymous> (https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:7:28645)
+[   84880ms] [ERROR] Connecting to 'https://edge.adobedc.net/ee/va6/v1/interact?configId=1315fe3e-1999-4b1b-8fad-8fe7ac996ab6&requestId=403983a3-ac5f-4301-9035-d7ff09681d5a' violates the following Content Security Policy directive: "default-src 'self' https://*.amazon.com https://*.media-amazon.com https://*.ssl-images-amazon.com https://*.amazon-adsystem.com https://cdn.jsdelivr.net https://*.cloudfront.net https://assets.adobedtm.com *.omtrdc.net www.googletagmanager.com m.media-amazon.com 'unsafe-inline' 'unsafe-eval'". Note that 'connect-src' was not explicitly set, so 'default-src' is used as a fallback. The action has been blocked. @ https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:7
+[   84880ms] [ERROR] Fetch API cannot load https://edge.adobedc.net/ee/va6/v1/interact?configId=1315fe3e-1999-4b1b-8fad-8fe7ac996ab6&requestId=403983a3-ac5f-4301-9035-d7ff09681d5a. Refused to connect because it violates the document's Content Security Policy. @ https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:7
+[   84886ms] Uncaught (in promise) TypeError: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: Network request failed.
+Caused by: Failed to fetch
+    at <anonymous> (https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:7:19953)
+    at f (https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:7:10739)
+    at <anonymous> (https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:7:11147)
+    at <anonymous> (https://ds6yc8t7pnx74.cloudfront.net/content/dam/developer-portal/analytics/prod/launch-d6fef6f5d06a.min.js:7:28645)
+[   84954ms] [WARNING] Loading Dev Loader from module @flexo/dev-loader. This should not be used in production environments. @ https://d1y1gcxaof2ipb.cloudfront.net/manifestAssets/b8b880cdd641b7064678bdfe1f18f0bae339cf74e61f56995445998bbae80169/root-config.js:0
+[   85066ms] [LOG] app askCreateSkill-Prod:default is css isolated @ https://d1y1gcxaof2ipb.cloudfront.net/manifestAssets/b8b880cdd641b7064678bdfe1f18f0bae339cf74e61f56995445998bbae80169/@amzn/flexo-client.js:0
+[   85066ms] [LOG] Isolated child is receiving injected dep astro @ https://d1y1gcxaof2ipb.cloudfront.net/manifestAssets/b8b880cdd641b7064678bdfe1f18f0bae339cf74e61f56995445998bbae80169/astroStyle.css @ https://d1y1gcxaof2ipb.cloudfront.net/manifestAssets/b8b880cdd641b7064678bdfe1f18f0bae339cf74e61f56995445998bbae80169/@amzn/flexo-client.js:0
+[   85066ms] [LOG] Isolated child is receiving injected dep https://dk4tyojk34lnx.cloudfront.net/manifestAssets/8aaa8eb8e362a39baf6a4d83595065c83eb1d65fccddd56b50fd3d8bdd60292d/main.css @ https://dk4tyojk34lnx.cloudfront.net/manifestAssets/8aaa8eb8e362a39baf6a4d83595065c83eb1d65fccddd56b50fd3d8bdd60292d/main.css @ https://d1y1gcxaof2ipb.cloudfront.net/manifestAssets/b8b880cdd641b7064678bdfe1f18f0bae339cf74e61f56995445998bbae80169/@amzn/flexo-client.js:0
+[   85211ms] [WARNING] single-spa-react: askCreateSkill-Prod:default's rootComponent does not implement an error boundary.  If using a functional component, consider providing an opts.errorBoundary to singleSpaReact(opts). @ https://dk4tyojk34lnx.cloudfront.net/manifestAssets/8aaa8eb8e362a39baf6a4d83595065c83eb1d65fccddd56b50fd3d8bdd60292d/main.system.js:1
+[   85211ms] [LOG] app askCreateSkill-Prod:default is css isolated @ https://d1y1gcxaof2ipb.cloudfront.net/manifestAssets/b8b880cdd641b7064678bdfe1f18f0bae339cf74e61f56995445998bbae80169/@amzn/flexo-client.js:0
+[   85211ms] [LOG] shadow dom already exist on element for askCreateSkill-Prod:default, returning @ https://d1y1gcxaof2ipb.cloudfront.net/manifestAssets/b8b880cdd641b7064678bdfe1f18f0bae339cf74e61f56995445998bbae80169/@amzn/flexo-client.js:0
+[  161515ms] [LOG] ecid @ :4
+[  161595ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0
+[  197335ms] [LOG] ecid @ :4
+[  197380ms] [LOG] UserVoice widget not found. @ https://widget.uservoice.com/BKxDZqeiLRvyj2Ot9kgeA.js:0

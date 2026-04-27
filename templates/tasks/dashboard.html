@@ -56,21 +56,21 @@
                 </div>
                 <div class="task-list-stats">
                     <div class="stat">
-                        <span class="stat-value text-primary">{{ tl.pending_count }}</span>
+                        <span class="stat-value text-primary">{{ tl.ann_pending }}</span>
                         <span class="stat-label">Pending</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-value text-success">{{ tl.completed_count }}</span>
+                        <span class="stat-value text-success">{{ tl.ann_completed }}</span>
                         <span class="stat-label">Done</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-value text-muted">{{ tl.total_count }}</span>
+                        <span class="stat-value text-muted">{{ tl.ann_total }}</span>
                         <span class="stat-label">Total</span>
                     </div>
                 </div>
-                {% if tl.total_count %}
+                {% if tl.ann_total %}
                 <div class="progress mt-3" style="height: 6px;">
-                    <div class="progress-bar bg-success" style="width: {% widthratio tl.completed_count tl.total_count 100 %}%"></div>
+                    <div class="progress-bar bg-success" style="width: {% widthratio tl.ann_completed tl.ann_total 100 %}%"></div>
                 </div>
                 {% endif %}
             </div>

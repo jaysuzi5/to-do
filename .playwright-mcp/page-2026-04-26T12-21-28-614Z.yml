@@ -1,0 +1,114 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Alexa Developer Console developer console" [ref=e7] [cursor=pointer]:
+          - /url: /alexa/console/ask
+          - generic [ref=e8]:
+            - img "Alexa Developer Console" [ref=e10]
+            - generic [ref=e12]: developer console
+        - generic [ref=e17]:
+          - button "All Search" [expanded] [ref=e21] [cursor=pointer]:
+            - text: All
+            - img "Search" [ref=e23]
+          - textbox "Search" [ref=e27]
+          - img "Search Logo" [ref=e30] [cursor=pointer]
+        - generic:   
+        - list [ref=e32]:
+          - listitem [ref=e33]
+          - listitem [ref=e34]:
+            - link "Notifications" [ref=e36] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e39]
+          - listitem [ref=e44]:
+            - link "SC" [ref=e45] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e46]: SC
+          - listitem [ref=e47]:
+            - link "" [ref=e48] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e51]: 
+    - generic [ref=e55]:
+      - generic [ref=e58]:
+        - button "Feedback" [ref=e59] [cursor=pointer]
+        - button "Cancel" [ref=e60] [cursor=pointer]:
+          - img [ref=e62]
+      - generic [ref=e70]:
+        - navigation [ref=e71]:
+          - generic [ref=e72]:
+            - link "1 Name, Locale" [ref=e74] [cursor=pointer]:
+              - /url: /alexa/console/ask/create-new-skill/name
+              - generic [ref=e75]:
+                - generic [ref=e77]: "1"
+                - paragraph [ref=e79]: Name, Locale
+            - generic [ref=e80]:
+              - link "2 Experience, Model, Hosting service":
+                - /url: /alexa/console/ask/create-new-skill/models
+                - generic:
+                  - generic:
+                    - generic: "2"
+                  - generic:
+                    - paragraph: Experience, Model, Hosting service
+            - generic [ref=e81]:
+              - link "3 Templates":
+                - /url: https://developer.amazon.com/alexa/console/ask/editor/templates?runtime=nodejs10.x&locale=en_US&name=&hosting=provision-your-own&category=
+                - generic:
+                  - generic:
+                    - generic: "3"
+                  - generic:
+                    - paragraph: Templates
+            - generic [ref=e82]:
+              - link "4 Review":
+                - /url: /alexa/console/ask/create-new-skill/review
+                - generic:
+                  - generic:
+                    - generic: "4"
+                  - generic:
+                    - paragraph: Review
+          - generic [ref=e83]:
+            - link "Cancel" [ref=e84] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa/console/ask
+              - button "Cancel" [ref=e85]
+            - link "Next" [ref=e86] [cursor=pointer]:
+              - /url: /alexa/console/ask/create-new-skill/models
+              - button "Next" [disabled] [ref=e87]
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - heading "1. Name your Skill" [level=2] [ref=e91]
+            - paragraph [ref=e92]: Enter a name for your skill. This is not the same as the skill invocation name, which you’ll set up after you complete the skill set up process.
+            - generic [ref=e94]:
+              - text: Skill name
+              - generic [ref=e95]:
+                - textbox [ref=e96]
+                - generic [ref=e97]:
+                  - generic [ref=e98]: 0/50
+                  - text: characters
+            - paragraph [ref=e99]: "Brand names are only allowed if you provide proof of rights in the testing instructions or if you use the brand name in a referential manner that doesn’t imply ownership (examples of terms that can be added to a brand name for referential usage: unofficial, unauthorized, fan, fandom, for, about)."
+            - separator [ref=e100]
+          - generic [ref=e101]:
+            - heading "2. Choose a primary locale" [level=2] [ref=e103]
+            - paragraph [ref=e104]: A locale refers to a language and the country in which it's spoken. Build your skill in your primary locale. You can add more locales after you create the skill.
+            - generic [ref=e107]:
+              - option "English (US)" [selected] [ref=e109]
+              - combobox [ref=e111]
+            - separator [ref=e114]
+    - contentinfo [ref=e115]:
+      - generic [ref=e117]:
+        - button "English (US)" [ref=e120] [cursor=pointer]:
+          - generic [ref=e122]: English (US)
+        - generic [ref=e124]:
+          - generic [ref=e125]: © 2010 - 2026, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+          - generic [ref=e127]:
+            - link "Terms" [ref=e128] [cursor=pointer]:
+              - /url: https://developer.amazon.com/terms-and-agreements
+            - link "Docs" [ref=e129] [cursor=pointer]:
+              - /url: /alexa/alexa-developer-documentation-welcome
+            - link "Stack Overflow" [ref=e130] [cursor=pointer]:
+              - /url: https://stackoverflow.com/tags/alexa-skills-kit
+            - link "Blog" [ref=e131] [cursor=pointer]:
+              - /url: https://developer.amazon.com/blogs/alexa
+            - link "Alexa Developer Home" [ref=e132] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa
+  - generic [ref=e133]:
+    - generic [ref=e134]: Welcome! Ask the DevAssistant
+    - img "Amazon Developer Assistant" [ref=e135]

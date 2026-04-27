@@ -1,0 +1,134 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Alexa Developer Console developer console" [ref=e7] [cursor=pointer]:
+          - /url: /alexa/console/ask
+          - generic [ref=e8]:
+            - img "Alexa Developer Console" [ref=e10]
+            - generic [ref=e12]: developer console
+        - generic [ref=e17]:
+          - button "All Search" [expanded] [ref=e21] [cursor=pointer]:
+            - text: All
+            - img "Search" [ref=e23]
+          - textbox "Search" [ref=e27]
+          - img "Search Logo" [ref=e30] [cursor=pointer]
+        - generic:   
+        - list [ref=e32]:
+          - listitem [ref=e33]
+          - listitem [ref=e34]:
+            - link "Notifications" [ref=e36] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e39]
+          - listitem [ref=e44]:
+            - link "SC" [ref=e45] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e46]: SC
+          - listitem [ref=e47]:
+            - link "" [ref=e48] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e51]: 
+    - generic [ref=e55]:
+      - generic [ref=e58]:
+        - button "Feedback" [ref=e59] [cursor=pointer]
+        - button "Cancel" [ref=e60] [cursor=pointer]:
+          - img [ref=e62]
+      - generic [ref=e306]:
+        - navigation [ref=e307]:
+          - generic [ref=e308]:
+            - link "Name, Locale To-Do , English (US)" [ref=e310] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa/console/ask/create-new-skill/name?name=To-Do&locale=en_US&category=others&hosting=self-hosted&isALCActive=false&primaryRegion=&templateName=Start%20from%20Scratch
+              - generic [ref=e311]:
+                - img [ref=e314]
+                - generic [ref=e316]:
+                  - paragraph [ref=e317]: Name, Locale
+                  - generic [ref=e318]:
+                    - generic [ref=e319]: To-Do
+                    - generic [ref=e320]: ", English (US)"
+            - link "Experience, Model, Hosting Service Other, Custom, Provision your own" [ref=e322] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa/console/ask/create-new-skill/models?name=To-Do&locale=en_US&category=others&hosting=self-hosted&isALCActive=false&primaryRegion=&templateName=Start%20from%20Scratch
+              - generic [ref=e323]:
+                - img [ref=e326]
+                - generic [ref=e328]:
+                  - paragraph [ref=e329]: Experience, Model, Hosting Service
+                  - generic [ref=e330]: Other, Custom, Provision your own
+            - link "Templates Start from Scratch" [ref=e332] [cursor=pointer]:
+              - /url: /alexa/console/ask/editor/templates?runtime=nodejs10.x&locale=en_US&name=To-Do&hosting=provision-your-own&category=others
+              - generic [ref=e333]:
+                - img [ref=e336]
+                - generic [ref=e338]:
+                  - paragraph [ref=e339]: Templates
+                  - generic [ref=e340]: Start from Scratch
+            - link "4 Review" [ref=e342] [cursor=pointer]:
+              - /url: /alexa/console/ask/editor/review
+              - generic [ref=e343]:
+                - generic [ref=e345]: "4"
+                - paragraph [ref=e347]: Review
+          - generic [ref=e348]:
+            - link "Back" [ref=e349] [cursor=pointer]:
+              - /url: /alexa/console/ask/editor/templates?runtime=nodejs10.x&locale=en_US&name=To-Do&hosting=provision-your-own&category=others
+              - button "Back" [ref=e350]
+            - button "Create Skill" [ref=e351] [cursor=pointer]
+        - generic [ref=e352]:
+          - heading "Review your selections" [level=2] [ref=e353]
+          - generic [ref=e354]:
+            - generic [ref=e355]:
+              - paragraph [ref=e356]: 1. Name, Locale
+              - link "Edit" [ref=e357] [cursor=pointer]:
+                - /url: https://developer.amazon.com/alexa/console/ask/create-new-skill/name?name=To-Do&locale=en_US&category=others&hosting=self-hosted&isALCActive=false&primaryRegion=&templateName=Start%20from%20Scratch
+            - generic [ref=e358]:
+              - generic [ref=e359]:
+                - paragraph [ref=e360]: Skill name
+                - paragraph [ref=e361]: To-Do
+              - generic [ref=e362]:
+                - paragraph [ref=e363]: Primary locale
+                - paragraph [ref=e364]: English (US)
+            - separator [ref=e365]
+          - generic [ref=e366]:
+            - generic [ref=e367]:
+              - paragraph [ref=e368]: 2. Experience, Model, Hosting Service
+              - link "Edit" [ref=e369] [cursor=pointer]:
+                - /url: https://developer.amazon.com/alexa/console/ask/create-new-skill/models?name=To-Do&locale=en_US&category=others&hosting=self-hosted&isALCActive=false&primaryRegion=&templateName=Start%20from%20Scratch
+            - generic [ref=e370]:
+              - img [ref=e372]
+              - paragraph [ref=e374]: Make sure you have chosen the right model and hosting region. They can’t be changed after you have created the skill.
+            - generic [ref=e375]:
+              - generic [ref=e376]:
+                - paragraph [ref=e377]: Type of experience
+                - paragraph [ref=e378]: Other
+              - generic [ref=e379]:
+                - paragraph [ref=e380]: Model
+                - paragraph [ref=e381]: Custom
+              - generic [ref=e382]:
+                - paragraph [ref=e383]: Sync locales
+                - paragraph [ref=e384]: Disabled
+            - generic [ref=e386]:
+              - paragraph [ref=e387]: Hosting service
+              - paragraph [ref=e388]: Provision your own
+            - separator [ref=e389]
+          - generic [ref=e390]:
+            - generic [ref=e391]:
+              - paragraph [ref=e392]: 3. Templates
+              - link "Edit" [ref=e393] [cursor=pointer]:
+                - /url: /alexa/console/ask/editor/templates?runtime=nodejs10.x&locale=en_US&name=To-Do&hosting=provision-your-own&category=others
+            - generic [ref=e395]:
+              - paragraph [ref=e396]: Templates
+              - paragraph [ref=e397]: Start from Scratch
+    - contentinfo [ref=e283]:
+      - generic [ref=e285]:
+        - button "English (US)" [ref=e288] [cursor=pointer]:
+          - generic [ref=e290]: English (US)
+        - generic [ref=e292]:
+          - generic [ref=e293]: © 2010 - 2026, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+          - generic [ref=e295]:
+            - link "Terms" [ref=e296] [cursor=pointer]:
+              - /url: https://developer.amazon.com/terms-and-agreements
+            - link "Docs" [ref=e297] [cursor=pointer]:
+              - /url: /alexa/alexa-developer-documentation-welcome
+            - link "Stack Overflow" [ref=e298] [cursor=pointer]:
+              - /url: https://stackoverflow.com/tags/alexa-skills-kit
+            - link "Blog" [ref=e299] [cursor=pointer]:
+              - /url: https://developer.amazon.com/blogs/alexa
+            - link "Alexa Developer Home" [ref=e300] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa
+  - img "Amazon Developer Assistant" [ref=e303]

@@ -1,0 +1,150 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Alexa Developer Console developer console" [ref=e7] [cursor=pointer]:
+          - /url: /alexa/console/ask
+          - generic [ref=e8]:
+            - img "Alexa Developer Console" [ref=e10]
+            - generic [ref=e12]: developer console
+        - generic [ref=e17]:
+          - button "All Search" [expanded] [ref=e21] [cursor=pointer]:
+            - text: All
+            - img "Search" [ref=e23]
+          - textbox "Search" [ref=e27]
+          - img "Search Logo" [ref=e30] [cursor=pointer]
+        - generic:   
+        - list [ref=e32]:
+          - listitem [ref=e33]
+          - listitem [ref=e34]:
+            - generic [ref=e35]:
+              - link "Notifications" [ref=e36] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e39]
+              - alert [ref=e46]:
+                - generic "Warning" [ref=e47]:
+                  - img [ref=e49]
+                - generic [ref=e53]:
+                  - generic [ref=e54]:
+                    - heading "Microphone permission error" [level=6] [ref=e55]
+                    - link "Dismiss" [ref=e57] [cursor=pointer]:
+                      - /url: "#"
+                  - paragraph [ref=e58]: Permission to use microphone denied. Check your browser settings.
+          - listitem [ref=e59]:
+            - link "SC" [ref=e60] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e61]: SC
+          - listitem [ref=e62]:
+            - link "" [ref=e63] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e66]: 
+    - generic [ref=e70]:
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - link "Back" [ref=e75] [cursor=pointer]:
+            - /url: /alexa/console/ask
+            - img [ref=e76]
+            - text: Back
+          - generic [ref=e80]: Milka
+        - generic [ref=e81]:
+          - link "Build" [ref=e83] [cursor=pointer]:
+            - /url: /alexa/console/ask/build/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+          - link "Code" [ref=e85] [cursor=pointer]:
+            - /url: /alexa/console/ask/editor/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+          - link "Test" [ref=e87] [cursor=pointer]:
+            - /url: /alexa/console/ask/test/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+          - link "Distribution" [ref=e89] [cursor=pointer]:
+            - /url: /alexa/console/ask/publish/alexapublishing/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/skill-info
+          - link "Certification" [ref=e91] [cursor=pointer]:
+            - /url: /alexa/console/ask/certify/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US/validation
+          - link "Analytics" [ref=e93] [cursor=pointer]:
+            - /url: /alexa/console/ask/measure/amzn1.ask.skill.32b7e429-6b18-4baa-913b-eba70d97ba0c/development/en_US
+      - generic [ref=e94]:
+        - button "Feedback" [ref=e95] [cursor=pointer]
+        - button "Cancel" [ref=e96] [cursor=pointer]:
+          - img [ref=e98]
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - generic [ref=e106]:
+            - generic [ref=e108]: "Skill testing is enabled in:"
+            - generic [ref=e113]:
+              - option "Development" [selected] [ref=e115]
+              - combobox [ref=e116]
+          - group [ref=e120]:
+            - generic [ref=e121]:
+              - generic [ref=e122] [cursor=pointer]:
+                - checkbox "Skill I/O" [checked]
+                - generic [ref=e125]: Skill I/O
+              - generic [ref=e126] [cursor=pointer]:
+                - checkbox "Device Display" [checked]
+                - generic [ref=e129]: Device Display
+              - generic [ref=e130] [cursor=pointer]:
+                - checkbox "Device Log"
+                - generic [ref=e133]: Device Log
+        - generic [ref=e134]:
+          - generic [ref=e137]:
+            - tablist [ref=e138]:
+              - generic [ref=e139]:
+                - generic [ref=e140]:
+                  - radio "Alexa Simulator" [checked] [ref=e141]
+                  - generic [ref=e143] [cursor=pointer]: Alexa Simulator
+                - generic [ref=e144]:
+                  - radio "Manual JSON" [ref=e145]
+                  - generic [ref=e147] [cursor=pointer]: Manual JSON
+                - generic [ref=e148]:
+                  - radio "Voice & Tone" [ref=e149]
+                  - generic [ref=e151] [cursor=pointer]: Voice & Tone
+            - tabpanel "Alexa Simulator" [ref=e153]:
+              - generic [ref=e154]:
+                - generic [ref=e158]:
+                  - option "English (US)" [selected] [ref=e160]
+                  - combobox [disabled] [ref=e161]
+                - generic [ref=e162]:
+                  - combobox [ref=e164]:
+                    - textbox "Type or click and hold the mic" [ref=e165]
+                  - img [ref=e168] [cursor=pointer]
+              - generic [ref=e171]:
+                - img [ref=e173]
+                - paragraph [ref=e175]: First, open your skill with your invocation name. Then start testing your dialog.
+          - generic [ref=e177]:
+            - img [ref=e180]
+            - generic [ref=e182]:
+              - heading "Skill Invocations | Viewing:" [level=3] [ref=e183]:
+                - generic [ref=e184]: Skill Invocations
+                - generic [ref=e185]: "|"
+                - generic [ref=e186]: "Viewing:"
+              - generic [ref=e188]: Skill I/O is available only for speech requests to skills you have created.
+              - generic [ref=e189]:
+                - generic [ref=e190]:
+                  - heading "JSON Input" [level=4] [ref=e191]
+                  - generic [ref=e192]:
+                    - textbox [ref=e193]: "\x01\x01"
+                    - generic [ref=e196]: "1"
+                - generic [ref=e200]:
+                  - heading "JSON Output" [level=4] [ref=e201]
+                  - generic [ref=e202]:
+                    - textbox [ref=e203]: "\x01\x01"
+                    - generic [ref=e206]: "1"
+            - generic [ref=e210]:
+              - generic [ref=e216]:
+                - option "Hub Landscape Medium" [selected] [ref=e218]
+                - combobox [ref=e219]
+              - generic [ref=e225]: The template is not available or currently not supported
+    - contentinfo [ref=e227]:
+      - generic [ref=e229]:
+        - button "English (US)" [ref=e232] [cursor=pointer]:
+          - generic [ref=e234]: English (US)
+        - generic [ref=e236]:
+          - generic [ref=e237]: © 2010 - 2026, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+          - generic [ref=e239]:
+            - link "Terms" [ref=e240] [cursor=pointer]:
+              - /url: https://developer.amazon.com/terms-and-agreements
+            - link "Docs" [ref=e241] [cursor=pointer]:
+              - /url: /alexa/alexa-developer-documentation-welcome
+            - link "Stack Overflow" [ref=e242] [cursor=pointer]:
+              - /url: https://stackoverflow.com/tags/alexa-skills-kit
+            - link "Blog" [ref=e243] [cursor=pointer]:
+              - /url: https://developer.amazon.com/blogs/alexa
+            - link "Alexa Developer Home" [ref=e244] [cursor=pointer]:
+              - /url: https://developer.amazon.com/alexa
+  - img "Amazon Developer Assistant" [ref=e246]
