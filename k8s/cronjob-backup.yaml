@@ -151,12 +151,12 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: to-do
-                  key: aws_access_key_id
+                  key: backup_access_key_id
             - name: AWS_SECRET_ACCESS_KEY
               valueFrom:
                 secretKeyRef:
                   name: to-do
-                  key: aws_secret_access_key
+                  key: backup_secret_access_key
             - name: S3_BUCKET
               value: "jay-curtis-backup"
             - name: AWS_DEFAULT_REGION
@@ -237,12 +237,12 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: to-do
-                  key: aws_access_key_id
+                  key: backup_access_key_id
             - name: AWS_SECRET_ACCESS_KEY
               valueFrom:
                 secretKeyRef:
                   name: to-do
-                  key: aws_secret_access_key
+                  key: backup_secret_access_key
             - name: S3_BUCKET
               value: "jay-curtis-backup"
             - name: AWS_DEFAULT_REGION
@@ -323,12 +323,12 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: to-do
-                  key: aws_access_key_id
+                  key: backup_access_key_id
             - name: AWS_SECRET_ACCESS_KEY
               valueFrom:
                 secretKeyRef:
                   name: to-do
-                  key: aws_secret_access_key
+                  key: backup_secret_access_key
             - name: S3_BUCKET
               value: "jay-curtis-backup"
             - name: AWS_DEFAULT_REGION

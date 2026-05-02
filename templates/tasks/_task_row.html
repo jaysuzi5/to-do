@@ -1,43 +1,12 @@
-<div class="task-row {% if task.is_complete %}completed{% endif %} {% if task.is_overdue %}overdue{% endif %}">
-    <div class="task-row-main">
-        <form method="post" action="{% url 'task_toggle' task.pk %}" class="d-inline">
-            {% csrf_token %}
-            <button type="submit" class="btn-toggle" title="{% if task.is_complete %}Mark pending{% else %}Mark complete{% endif %}">
-                <i class="bi {% if task.is_complete %}bi-check-circle-fill text-success{% else %}bi-circle text-muted{% endif %}"></i>
-            </button>
-        </form>
-        <div class="task-content">
-            <span class="task-title {% if task.is_complete %}text-decoration-line-through text-muted{% endif %}">
-                {{ task.title }}
-            </span>
-            <div class="task-meta">
-                <span class="badge bg-{{ task.priority_badge_class }}-subtle text-{{ task.priority_badge_class }} border border-{{ task.priority_badge_class }}-subtle">
-                    {{ task.get_priority_display }}
-                </span>
-                {% if task.due_date %}
-                <span class="task-due {% if task.is_overdue %}text-danger{% else %}text-muted{% endif %}">
-                    <i class="bi bi-calendar3 me-1"></i>{{ task.due_date|date:"M j" }}
-                    {% if task.is_overdue %}<span class="badge bg-danger-subtle text-danger ms-1">Overdue</span>{% endif %}
-                </span>
-                {% endif %}
-                {% if task.added_via_alexa %}
-                <span class="task-alexa" title="Added via Alexa">
-                    <i class="bi bi-alexa text-info"></i>
-                </span>
-                {% endif %}
-                {% if task.notes %}
-                <span class="text-muted" title="{{ task.notes }}"><i class="bi bi-sticky ms-1"></i></span>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-    <div class="task-row-actions">
-        <a href="{% url 'task_edit' task.pk %}" class="btn btn-sm btn-ghost" title="Edit">
-            <i class="bi bi-pencil"></i>
-        </a>
-        <a href="{% url 'task_delete' task.pk %}" class="btn btn-sm btn-ghost text-danger" title="Delete"
-           onclick="return confirm('Delete &quot;{{ task.title }}&quot;?')">
-            <i class="bi bi-trash"></i>
-        </a>
-    </div>
+<div class="list-group-item d-flex align-items-center gap-3 py-3 px-0">
+    <form method="post" action="{% url 'task_toggle' task.pk %}">
+        {% csrf_token %}
+        <button type="submit" class="border-0 bg-transparent p-0 lh-1">
+            <i class="bi {% if task.is_complete %}bi-check-circle-fill text-success{% else %}bi-circle text-muted{% endif %} fs-5"></i>
+        </button>
+    </form>
+    <a href="{% url 'task_edit' task.pk %}"
+       class="flex-grow-1 text-decoration-none {% if task.is_complete %}text-muted{% else %}text-body{% endif %}">
+        <span {% if task.is_complete %}style="text-decoration:line-through"{% endif %}>{{ task.title }}</span>
+    </a>
 </div>

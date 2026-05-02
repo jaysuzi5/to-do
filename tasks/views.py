@@ -2,11 +2,9 @@ import logging
 
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.db.models import Count, Q
-from django.http import JsonResponse
+from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, redirect
 from django.views import View
-from django.http import HttpResponse
 from django.views.generic import CreateView, DeleteView, TemplateView, UpdateView
 from django.urls import reverse, reverse_lazy
 
@@ -20,21 +18,15 @@ def health(request):
     return HttpResponse('ok')
 
 
-class DashboardView(LoginRequiredMixin, TemplateView):
-    template_name = 'tasks/dashboard.html'
-
-    def get_context_data(self, **kwargs):
-        ctx = super().get_context_data(**kwargs)
-        task_lists = TaskList.objects.filter(owner=self.request.user).annotate(
-            ann_pending=Count('tasks', filter=Q(tasks__status__in=['pending', 'in_progress'])),
-            ann_completed=Count('tasks', filter=Q(tasks__status='completed')),
-            ann_total=Count('tasks'),
+class DashboardView(LoginRequiredMixin, View):
+    def get(self, request):
+        task_list = (
+            TaskList.objects.filter(owner=request.user, is_default=True).first()
+            or TaskList.objects.filter(owner=request.user).first()
         )
-        ctx['task_lists'] = task_lists
-        ctx['total_pending'] = sum(tl.ann_pending for tl in task_lists)
-        ctx['total_completed'] = sum(tl.ann_completed for tl in task_lists)
-        ctx['quick_form'] = QuickAddTaskForm()
-        return ctx
+        if task_list:
+            return redirect('task_list_detail', slug=task_list.slug)
+        return redirect('task_list_create')
 
 
 class TaskListDetailView(LoginRequiredMixin, TemplateView):

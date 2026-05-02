@@ -24,6 +24,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+    'rest_framework',
+    'drf_spectacular',
     'tasks',
 ]
 
@@ -176,3 +178,22 @@ LOGGING = {
 ALEXA_SKILL_TOKEN = env('ALEXA_SKILL_TOKEN', default='')
 # Set ALEXA_SKIP_VERIFY=true in k8s to bypass signature verification for diagnostics
 ALEXA_SKIP_VERIFY = env.bool('ALEXA_SKIP_VERIFY', default=False)
+
+# Dashboard / external API token — set in .env / k8s secret
+TODO_API_TOKEN = env('TODO_API_TOKEN', default='')
+
+# Django REST Framework
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': ['rest_framework.renderers.JSONRenderer'],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    'UNAUTHENTICATED_USER': None,
+}
+
+# drf-spectacular (OpenAPI / Swagger)
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'To-Do API',
+    'DESCRIPTION': 'REST API for the To-Do application — list tasks, complete tasks, and add tasks.',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    'COMPONENT_SPLIT_REQUEST': True,
+}
