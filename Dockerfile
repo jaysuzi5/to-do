@@ -21,9 +21,5 @@ RUN SECRET_KEY=build-placeholder \
 
 EXPOSE 8000
 
-CMD ["uv", "run", "opentelemetry-instrument", \
-     "--traces_exporter", "otlp", \
-     "--metrics_exporter", "otlp", \
-     "--logs_exporter", "otlp", \
-     "--", "gunicorn", "config.wsgi:application", \
+CMD ["uv", "run", "gunicorn", "config.wsgi:application", \
      "--bind", "0.0.0.0:8000", "--workers", "4", "--timeout", "120"]

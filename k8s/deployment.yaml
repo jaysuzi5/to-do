@@ -129,9 +129,9 @@ spec:
             - name: ALEXA_SKIP_VERIFY
               value: "true"
             - name: OTEL_SERVICE_NAME
-              value: "to-do"
-            - name: OTEL_EXPORTER_OTLP_ENDPOINT
-              value: "http://otel-collector-collector.monitoring.svc.cluster.local:4317"
+              value: "to-do list"
+            - name: OTLP_ENDPOINT
+              value: "http://otel-collector-collector.monitoring.svc.cluster.local:4318"
 
 ---
 apiVersion: v1
